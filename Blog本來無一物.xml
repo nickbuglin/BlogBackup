@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-
     <head>
 
-        <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>
-        <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>
-        <meta content='https://www.facebook.com/YesYogaBuddha' property='article:author'/>
+        <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>  <!--google-search-->
+        <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>  <!--MS-BingSearch-->
+        <meta content='https://www.facebook.com/YesYogaBuddha' property='article:author'/>  <!--FB-轉貼文章-->
+		<meta content='7bb289c60a094375a309eaf65d3bdf98' name='p:domain_verify'/>  
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
-
-
 
 
         <!--google-analytics-->
@@ -19,10 +17,8 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
             ga(&#39;create&#39;, &#39;UA-96445277-1&#39;, &#39;auto&#39;);
             ga(&#39;send&#39;, &#39;pageview&#39;);
-
         </script>
 
 
@@ -41,15 +37,14 @@
             <title>
                 <data:blog.pageName/> | <data:blog.title/>
             </title>
-            <b:else/>
+        <b:else/>
             <title>
                 <data:blog.pageTitle/>
             </title>
         </b:if>
 
 
-        <b:skin><![CDATA[/*-----------------------------------------------
-
+<b:skin><![CDATA[/*-----------------------------------------------
 Blogger Template Style
 Name:     Picture Window
 Designer: Blogger
@@ -613,7 +608,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 /* CSS For related post widget----------- */
 #related-posts {
 float:left;
-width:101%;
+width:100%;
 }
 
 #related-posts sl{
@@ -621,7 +616,7 @@ margin:0 !important;
 padding:0 !important;
 }
 
-/* 推薦文章標題的樣式 */
+/* related posts推薦文章標題的樣式 */
 #related-posts h4{
 margin:10px 0px 10px;
 font:18px Oswald;
@@ -633,11 +628,11 @@ text-transform:uppercase
 .related-posts-list ci{
 background-color:#fff;
 box-shadow:0 0 40px rgba(180, 180, 180, 0.7);   /* 外框陰影 */
-width:29.5%;                /* 外框寬度佔百分比 */
+width:29.5%;               /* 外框寬度佔百分比 */
 float:left;
 position:relative;        /* 位置樣式 */
-margin:0 2% 2% 0;         /* 外框的外面空白上下左右距離多少 */
-padding:1%;
+margin:0 2% 2% 0%;        /* 外框的外面空白上下左右距離多少 */
+padding:1%;               /* 留白 */
 }
 
 .related-posts-list ci:nth-child(3n){margin-right:0 !important;}
@@ -650,17 +645,18 @@ text-decoration:none;               /* 文字標線 */
 }
 
 #related-posts sl ci p{
-margin-bottom:0;      /* 下邊框留邊大小 */
+margin-bottom:0px;      /* 下邊框留邊大小 */
 padding-top:10px;     /* 文字上面留邊大小 */
-margin-top:-5px;      /* 文字離上邊框留邊距離 */
+margin-left:3px;      /* 文字離左邊框留邊距離 */
 
 }
 
 /* 圖片樣式 */
 #related-posts .related_img{
-height:85px;          /* 圖片長 */
-width:85px;           /* 圖片寬 */
+height:120px;          /* 圖片高 */
+width:230px;           /* 圖片寬 */
 object-fit:cover;
+
 }
 
 .related-title{
@@ -671,18 +667,16 @@ padding:5px 0px;
 .rthumb{
 float:left;
 margin-top:2px;      /* 圖片離上邊框留邊距離 */
-margin-button:0px;   /* 圖片離下邊框留邊距離 */
-margin-left:0px;     /* 圖片離左邊框留邊距離 */
-margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
+margin-left:5px;      /* 圖片離左邊框留邊距離 */
+margin-right:0px;}   /* 圖片離右邊文字留邊距離 */
 /* CSS For related post widget-----END------ */
-
 
 ]]></b:skin>
 
         <b:template-skin>
             <b:variable default='960px' name='content.width' type='length' value='1200px'/>
-            <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
-            <b:variable default='310px' name='main.column.right.width' type='length' value='320px'/>
+            <b:variable default='0' name='main.column.left.width' type='length' value='320px'/>
+            <b:variable default='310px' name='main.column.right.width' type='length' value='0px'/>
 
             <![CDATA[
       body {
@@ -757,7 +751,7 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
         </b:if>
 
 
-        <!--Tab標籤頁&#65292;關掉原本的工具-->
+        <!--Tab標籤頁關掉原本的工具-->
         <style type='text/css'>
             #HTML6 {display: none;}
             #BlogSearch1 {display: none;}
@@ -780,12 +774,12 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             }
 
             #dropMenu a {
-            color: #ffffff; /*文字顏色*/
+            color: #ffffff;                  /*文字顏色*/
             display: inline-block;
             font-family: &#39;Lucida Grande&#39;, &#39;Lucida Sans Unicode&#39;, Helvetica, Arial, Verdana, sans-serif;
-            font-size: 14px; /*文字大小*/
+            font-size: 14px;                 /*文字大小*/
             min-width: 35px;
-            text-align: center; /*文字位置*/
+            text-align: center;              /*文字位置*/
             text-decoration: none;
             /*text-shadow: 0 -1px 0 #eeeeee; /*文字陰影顏色*/
             }
@@ -804,31 +798,35 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
 
             /* 按鈕原本色樣  */
             #dropMenu &gt; ul &gt; li a {
-            border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
-            border-top: 0px solid #d2d2d2;  /* 上面線寬 */
-            border-right: 2px solid #d2d2d2; /* 按鈕間隔寬 */
-            line-height: 34px; /* 按鈕高度 */
-            padding: 0 16px;  /* 文字兩旁留白多少 */
+            border-bottom: 2px solid #d2d2d2;       /* 下底線寬 */
+            border-top: 0px solid #d2d2d2;          /* 上面線寬 */
+            border-right: 2px solid #d2d2d2;        /* 按鈕間隔寬 */
+            line-height: 36px;                      /* 按鈕高度 */
+            padding: 0 16px;                        /* 文字兩旁留白多少 */
             filter: none;
+			border-radius: 10px 10px 10px 10px;         /* 四角圓弧度 */
+            -moz-border-radius: 10px 10px 10px 10px;    /* 四角圓弧度 */
+            -webkit-border-radius: 10px 10px 10px 10px; /* 四角圓弧度 */
             }
 
-            /* 滑鼠移過去的按鈕色樣  */
+            /* 滑鼠移過最上層文字樣式  */
             #dropMenu &gt; ul &gt; li a:hover {
-            color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
+            color:#af0322;                /* 滑鼠移過去文字顏色 */
+			font-size:130%;               /* 滑鼠移過去文字放大 */
             }
 
             /* 最後一個按鈕邊緣圓弧度 */
             #dropMenu &gt; ul &gt; li:last-child a {
-            border-radius: 10px 10px 0 0;
-            -moz-border-radius: 10px 10px 0 0;
-            -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
             }
 
             /* 第一個按鈕邊緣圓弧度 */
             #dropMenu &gt; ul &gt; li:first-child a {
-            border-radius: 10px 10px 0 0;
-            -moz-border-radius: 10px 10px 0 0;
-            -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
             }
 
             #dropMenu &gt; ul &gt; .has-sub:hover &gt; ul {
@@ -855,19 +853,25 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             #dropMenu .has-sub ul li {
             text-align: center;
             }
+			
+			/* 子選單文字動畫 */
+            #dropMenu .has-sub ul li a:hover {
+            color:#af0322;                /* 滑鼠移過去文字顏色 */
+			font-size:120%;               /* 滑鼠移過去文字放大 */
+            }
 
             /* 子選單按鈕樣式 */
             #dropMenu .has-sub ul li a {
             border-radius: 10px 10px 10px 10px;          /* 子選單按鈕圓弧度 */
             -moz-border-radius: 10px 10px 10px 10px;     /* 子選單按鈕圓弧度 */
-            -webkit-border-radius: 10px 10px 10px 10px; /* 子選單按鈕圓弧度 */
+            -webkit-border-radius: 10px 10px 10px 10px;  /* 子選單按鈕圓弧度 */
             border-top: 0 none;
             border-left: 1px solid #d2d2d2;
             width: 170px;
             display: block;
             font-size: 14px;
-            line-height: 110%;  /* 文字高度 */
-            padding: 8px 10px;  /* 文字上下留空白 左右 */
+            line-height: 110%;                  /* 文字高度 */
+            padding: 10px 10px;                  /* 文字上下留空白 左右 */
             text-align: left;
             }
         </style>
@@ -876,22 +880,22 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
         <!--email訂閱工具-->
         <style>
             #emailForm input {
-            font-size: 16px;  /*文字大小*/
-            border: 2px solid #ffffff;
-            padding: 5px 5px;  /*輸入框的內框大小*/
-            height: 35px;
-            box-sizing: border-box
+				font-size: 16px;  /*文字大小*/
+				border: 2px solid #ffffff;
+				padding: 5px 5px;  /*輸入框的內框大小*/
+				height: 35px;
+				box-sizing: border-box
             }
             .emailInput {
-            width: 65%;
-            background: #fff
+				width: 65%;
+				background: #fff
             }
             .emailSubmit {
-            width: 35%;
-            float: right;
-            cursor: pointer;
-            background: #8C2D17;
-            color: #fff
+				width: 35%;
+				float: right;
+				cursor: pointer;
+				background: #8C2D17;
+				color: #fff
             }
         </style>
 		
@@ -927,7 +931,6 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             height: 40px;        /* 文字離上下邊框空下多少距離 */
             font-size: 32px;     /* 文字大小 */
             text-align: center;  /* 文字位置 */
-
             }
 
             .social_buttons i:before {
@@ -974,22 +977,18 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
-
             g1{
             background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
-
             r1{
             background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
-
             y1{
             background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
-
         </style>
         <!--畫底線功能2-->
         <script type='text/javascript'>
@@ -1004,31 +1003,39 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
 		<!-- 回到頂端(需要jquery)-->
 		<style>
         #goTop {
+			display: inline-block;
+            text-decoration: none;
+            color: #fff;                 /* 文字內容顏色 */
+            padding: 5px;                /* 文字離邊框空下多少距離 */
+            transition: all .2s;
+            border-radius: 8px;          /* 方框圓角 */
 			position: fixed;
-			bottom: 45px;      /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
-			right: 10px;       /* 與右方的距離 */
-			opacity: .3;       /* 按鈕原始透明度 */
-			color:red;
-			z-index: 10;
+			bottom: 0px;             /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+			left: 800px;             /* 與左方的距離 */
+			opacity: .3;             /* 按鈕透明度 */
+			z-index: 9999;
 			cursor: pointer;
-			transition: all .5s; /* 動畫效果 持續期間 */
-			-webkit-transition: all .5s;
-			-moz-transition: all .5s;
+			transition: all .5s;    /* 動畫效果 持續期間 */
+            padding: 2px 12px 2px 12px;   /* 文字旁邊留白多少&#65292;上右下左 */
+            line-height: 28px;
+			background-color: #999999;
         }
 		
         #goTop:hover {         /* 滑鼠經過按鈕時 */
-			opacity: 0.5;      /* 透明度 */
+			opacity: 0.6;      /* 透明度 */
 			color:blue;
 			transition: 0.2s;
-			-moz-transition: 0.5s;
-			-webkit-transition: 0.5s;
-			-o-transition: 0.5s; 
+			-moz-transition: 0.2s;
+			-webkit-transition: 0.2s;
+			-o-transition: 0.2s; 
+			-ms-transform: translateY(-4px);       /* 滑鼠移過方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
         }
       </style>
-	  
-	  
+	  	  
 
-		<!-- Related Posts widget with Thumbnails Code Before Head Start-->
+		<!-- Related Posts widget with Thumbnails Code Before Head Start(需要jquery)-->
 		<b:if cond='data:blog.pageType == &quot;item&quot;'>
 			<script type='text/javascript'>
 				//<![CDATA[
@@ -1118,8 +1125,7 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
 			</script>
 		</b:if>
 		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
-
-
+		
 
     </head>
 
@@ -2419,21 +2425,30 @@ head.appendChild(script);
         &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_83.html&quot;&gt;&lt;span&gt;佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_40.html&quot;&gt;&lt;span&gt;念佛一定得吃素?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/05/blog-post_464.html&quot;&gt;&lt;span&gt;超渡真正意義為何&#65311;誰需要超渡&#65311;要如何超渡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_47.html&quot;&gt;&lt;span&gt;學佛要專入哪個法門&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_47.html&quot;&gt;&lt;span&gt;哪個法門最好&#65311;初學佛要學哪個法門&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_49.html&quot;&gt;&lt;span&gt;重要!不要再燒經文咒文了!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_77.html&quot;&gt;&lt;span&gt;七如來到底為何?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_77.html&quot;&gt;&lt;span&gt;七如來到底為何&#65311;有甘露王如來&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_10.html&quot;&gt;&lt;span&gt;人非人到底是何意思&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html&quot;&gt;&lt;span&gt;功德要如何迴向&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html&quot;&gt;&lt;span&gt;迴向的重要性&#65292;念經&#12289;做功德要如何迴向&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_11.html&quot;&gt;&lt;span&gt;法界&#65311;法界藏&#65311;如來藏&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_61.html&quot;&gt;&lt;span&gt;為何要繞佛或繞塔&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_61.html&quot;&gt;&lt;span&gt;繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_2.html&quot;&gt;&lt;span&gt;淺釋何謂&#12300;法&#12301;&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_95.html&quot;&gt;&lt;span&gt;一生念阿彌陀佛就能成佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像要開光?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_89.html&quot;&gt;&lt;span&gt;三世諸佛&#65311;三世因果&#65311; 三世到底為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_21.html&quot;&gt;&lt;span&gt;為何佛經都要用&#12300;如是我聞&#12301;開頭&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_80.html&quot;&gt;&lt;span&gt;如何安全學佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_44.html&quot;&gt;&lt;span&gt;密宗的佛法要有傳承才能學?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_18.html&quot;&gt;&lt;span&gt;何謂佛?為何稱為佛&#65311;佛意思為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像&#12289;法器要開光&#65311; 怎麼開光&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_72.html&quot;&gt;&lt;span&gt;念佛&#65311;怎麼念佛&#65311; 就是念佛號&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_39.html&quot;&gt;&lt;span&gt;佛經有偽經?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_92.html&quot;&gt;&lt;span&gt;如何供養佛? 怎麼供奉佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_98.html&quot;&gt;&lt;span&gt;金剛經裡面&#12300;著衣持鉢&#65292;入舍衛大城乞食&#12301;智慧在哪裡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/led.html&quot;&gt;&lt;span&gt;佛前供養點燈&#65292;能不能用LED燈&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/03/blog-post_673.html&quot;&gt;&lt;span&gt;更多More...&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛剎寶地 &#9660;&lt;/span&gt;&lt;/a&gt;
@@ -2462,7 +2477,7 @@ head.appendChild(script);
                 &lt;li&gt;&lt;a href=&quot;https://store.line.me/stickershop/product/1429901&quot;&gt;&lt;span&gt;Line貼圖&#12290;FIFI&amp;LULU感情篇&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;http://natureintw.blogspot.tw/&quot;&gt;&lt;span&gt;那裘伊普羅勳&#12290;走遍台灣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://natureintw.blogspot.tw/&quot;&gt;&lt;span&gt;那裘伊普羅勳&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;</b:widget-setting>
                                         </b:widget-settings>
@@ -2937,10 +2952,15 @@ head.appendChild(script);
                                                                     <div class='mobile-link-button' id='blog-pager-home-link'>
                                                                         <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
                                                                     </div>
-
+																	
+																	<!--修改行動版"查看網路版"為"前往電腦版留言"前往-->
                                                                     <div class='mobile-desktop-link'>
-                                                                        <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
-                                                                    </div>
+																		 <b:if cond='data:blog.pageType == &quot;item&quot;'>
+																			  <a class='home-link' expr:href='data:desktopLinkUrl' expr:title='data:desktopLinkMsg'>&#12296; <!-- <data:desktopLinkMsg/> -->前往電腦版留言 &#12297;</a>
+																		 <b:else/>
+																			  <a class='home-link' expr:href='data:desktopLinkUrl'><!-- <data:desktopLinkMsg/> -->前往電腦版留言</a>
+																		 </b:if>
+																	</div>
 
                                                                 </div>
                                                                 <div class='clear'/>
@@ -3183,40 +3203,10 @@ head.appendChild(script);
                                                                                 <b:include data='post' name='postQuickEdit'/>
                                                                             </span>
 																			
-																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
-                                                            <div class='social_buttons'>
-                                                                <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
-                                                                    <i class='social_logo fa fa-facebook'/>
-                                                                </a>
-                                                                <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
-                                                                    <i class='social_logo fa fa-google-plus'/>
-                                                                </a>
-                                                                <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
-                                                                    <i class='social_logo fa fa-weibo'/>
-                                                                </a>
-                                                                <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
-                                                                    <i class='social_logo fa fa-twitter'/>
-                                                                </a>
-                                                                <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-                                                                    <i class='social_logo fa fa-pinterest-p'/>
-                                                                </a>
-                                                                <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
-                                                                    <i class='social_logo fa fa-whatsapp'/>
-                                                                </a>
-
-															</div>
-														</b:if>
-                                                        <!-- -->	
-																			
-																			
-																			
-																			
-
                                                                             <!-- share buttons -->
                                                                             <div class='post-share-buttons goog-inline-block'>
                                                                                 <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
-                                                                            </div>
-																			
+																			</div>
 																			
                                                                         </div>
 																		
@@ -3232,8 +3222,35 @@ head.appendChild(script);
 																			
                                                                         </div>
 
-                                                                        <div class='post-footer-line post-footer-line-3'> <!--文章底&#65292;留言前處-->
+                                                                        <div class='post-footer-line post-footer-line-3'> <!--文章底留言前處-->
 
+																		
+																			<div id='social_but'>
+																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
+																				<div class='social_buttons'>
+																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
+																						<i class='social_logo fa fa-facebook'/>
+																					</a>
+																					<a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
+																						<i class='social_logo fa fa-google-plus'/>
+																					</a>
+																					<a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
+																						<i class='social_logo fa fa-weibo'/>
+																					</a>
+																					<a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
+																						<i class='social_logo fa fa-twitter'/>
+																					</a>
+																					<a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
+																						<i class='social_logo fa fa-pinterest-p'/>
+																					</a>
+																					<a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
+																						<i class='fa fa-commenting-o'/>
+																					</a>
+																				</div>
+																			</b:if>
+																			</div>
+																			<!-- -->	
+																		
 																		
 																		
 																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
@@ -3246,7 +3263,7 @@ head.appendChild(script);
 																				</b:loop>
 																				<script type='text/javascript'>
 																				var findcurrentposturl=&quot;<data:post.url/>&quot;;
-																				var maxpost=6;
+																				var maxpost=9;
 																				var titleofrelatedpost=&quot;<b>推薦文章</b>&quot;;
 																				removeDuplicate_thumbs();
 																				printRelatedLabel_thumbs();
@@ -3290,6 +3307,7 @@ head.appendChild(script);
                                                                         </a>
                                                                     </span>
                                                                 </b:if>
+																
                                                             </b:includable>
                                                         <b:includable id='shareButtons' var='post'> <!--分享按鈕處-->
                                                                 <b:if cond='data:top.showEmailButton'>
@@ -3590,7 +3608,7 @@ head.appendChild(script);
                                                 <div class='column-left-inner'>
                                                     <aside>
                                                         <macro:include id='main-column-left-sections' name='sections'>
-                                                            <macro:param default='0' name='num' value='0'/>
+                                                            <macro:param default='0' name='num' value='2'/>
                                                             <macro:param default='sidebar-left' name='idPrefix'/>
                                                             <macro:param default='sidebar' name='class'/>
                                                             <macro:param default='true' name='includeBottom'/>
@@ -3603,7 +3621,7 @@ head.appendChild(script);
                                                 <div class='column-right-inner'>
                                                     <aside>
                                                         <macro:include id='main-column-right-sections' name='sections'>
-                                                            <macro:param default='2' name='num' value='2'/>
+                                                            <macro:param default='2' name='num' value='0'/>
                                                             <macro:param default='sidebar-right' name='idPrefix'/>
                                                             <macro:param default='sidebar' name='class'/>
                                                             <macro:param default='true' name='includeBottom'/>
@@ -3670,23 +3688,39 @@ head.appendChild(script);
         </script>
 
 
-
         <!-- Go Top 按鈕+動畫 start-->
-		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-chevron-circle-up'/></a>
+		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-angle-double-up'/></a>
         <script>
             $.extend($.easing, {
-            easeOutExpo: function (x, t, b, c, d) {
-            return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
-            }
+				easeOutExpo: function (x, t, b, c, d) {
+					return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+				}
             });
-            $(&quot;#goTop&quot;).click(function(){
-            $(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
+            $(&quot;#goTop&quot;).click(function(){ 
+				$(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
             });
         </script>
         <!-- Go Top 按鈕+動畫 end -->
 		
 		
-
+		<!-- 讓工具浮動固定在底部 (需要jquery) -->
+		<script type='text/javascript'> 
+		$(function() {
+			var ks_widget_top = $(&#39;#social_but&#39;).offset().top - $(window).height() + 70;
+			var ks_sticky_widgets = function(){
+				var ks_current_top = $(window).scrollTop(); 
+				if (ks_widget_top &gt; ks_current_top) { 
+					$(&#39;#social_but&#39;).css({ &#39;position&#39;: &#39;fixed&#39;, &#39;bottom&#39;:0, &#39;z-index&#39;:9999 });
+				} else {
+					$(&#39;#social_but&#39;).css({ &#39;position&#39;: &#39;relative&#39;}); 
+				}   
+			};
+			ks_sticky_widgets();
+			  $(window).scroll(function() {
+				 ks_sticky_widgets();
+			});
+		});</script>	
+		
 
 
     </body>
@@ -3730,7 +3764,7 @@ head.appendChild(script);
         </macro:if>
     </macro:includable>
 
-    <b:section-contents id='sidebar-right-1'>
+    <b:section-contents id='sidebar-left-1'>
   <b:widget id='HTML6' locked='false' title='' type='HTML' version='1'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
@@ -4045,7 +4079,7 @@ head.appendChild(script);
                 </div>
             </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
+</b:section-contents><b:section-contents id='sidebar-left-2-1'/><b:section-contents id='sidebar-left-2-2'/><b:section-contents id='sidebar-left-3'>
   <b:widget id='AdSense3' locked='false' title='' type='AdSense' version='1'>
     <b:widget-settings>
       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
