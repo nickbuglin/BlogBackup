@@ -7,11 +7,36 @@
         <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>
         <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>
         <meta content='https://www.facebook.com/YesYogaBuddha' property='article:author'/>
-
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+
+
+
+
+        <!--google-analytics-->
+        <b:include data='blog' name='google-analytics'/>
+        <script>
+            (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+            ga(&#39;create&#39;, &#39;UA-96445277-1&#39;, &#39;auto&#39;);
+            ga(&#39;send&#39;, &#39;pageview&#39;);
+
+        </script>
+
+
+        <!--ADSense層級廣告-->
+        <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: &quot;ca-pub-6678320447129348&quot;,
+            enable_page_level_ads: true
+            });
+        </script>
+        
+        
         <b:include data='blog' name='all-head-content'/>
-
-
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
             <title>
                 <data:blog.pageName/> | <data:blog.title/>
@@ -663,30 +688,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
         </b:if>
 
 
-        <!--google-analytics-->
-        <b:include data='blog' name='google-analytics'/>
-        <script>
-            (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-            ga(&#39;create&#39;, &#39;UA-96445277-1&#39;, &#39;auto&#39;);
-            ga(&#39;send&#39;, &#39;pageview&#39;);
-
-        </script>
-
-
-        <!--ADSense層級廣告-->
-        <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: &quot;ca-pub-6678320447129348&quot;,
-            enable_page_level_ads: true
-            });
-        </script>
-
-
         <!--Tab標籤頁&#65292;關掉原本的工具-->
         <style type='text/css'>
             #HTML6 {display: none;}
@@ -803,38 +804,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
         </style>
 
 
-        <!--畫底線功能-->
-        <style type='text/css'>
-            b1{
-                background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
-                line-height: 22px;
-            }
-
-            g1{
-                background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
-                line-height: 22px;
-            }
-
-            r1{
-                background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
-                line-height: 22px;
-            }
-
-            y1{
-                background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
-                line-height: 22px;
-            }
-
-        </style>
-        <!--畫底線功能2-->
-        <script type='text/javascript'>
-            document.createElement(&quot;b1&quot;)
-            document.createElement(&quot;g1&quot;)
-            document.createElement(&quot;r1&quot;)
-            document.createElement(&quot;y1&quot;)
-        </script>
-
-
         <!--email訂閱工具-->
         <style>
             #emailForm input {
@@ -854,6 +823,77 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             cursor: pointer;
             background: #8C2D17;
             color: #fff
+            }
+        </style>
+
+        <!--扁平化社群分享按鈕-->
+        <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
+        <style>
+            .social_buttons {
+            display: inline-block;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            }
+
+            .social_buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;      /* 文字內容顏色 */
+            padding: 5px;    /* 文字離邊框&#65292;空下多少距離 */
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            border-radius: 8px;  /* 方框圓角 */
+            }
+
+            .social_buttons a:hover {
+            -ms-transform: translateY(-4px);       /* 滑鼠移過&#65292;方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過&#65292;方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過&#65292;方框移動多少距離 */
+            }
+
+            .social_buttons i {
+            width: 40px;         /* 文字離左右邊框&#65292;空下多少距離 */
+            height: 40px;        /* 文字離上下邊框&#65292;空下多少距離 */
+            font-size: 32px;     /* 文字大小 */
+            text-align: center;  /* 文字位置 */
+
+            }
+
+            .social_buttons i:before {
+            margin: auto;
+            line-height: 40px;  /* 文字離上下邊框&#65292;空下多少距離 */
+            vertical-align: middle;
+            }
+
+            .social_fb {
+            background-color: rgb(59, 89, 152);
+            }
+
+            .social_weibo {
+            background-color: rgb(245, 202, 89);
+            }
+
+            .social_gplus {
+            background-color: rgb(220, 78, 65);
+            }
+
+            .social_twitter {
+            background-color: rgb(85, 172, 238);
+            }
+
+            .social_pinterest {
+            background-color: rgb(190, 30, 30);
+            }
+
+            .social_line {
+            background-color: rgb(70, 190, 30);
+            }
+
+            .social_text {
+            font-size: 12px;
+            padding: 0 15px 20 5px;
+            line-height: 32px;
             }
         </style>
 
@@ -938,78 +978,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
         </style>
 
 
-        <!--扁平化社群分享按鈕-->
-        <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
-        <style>
-            .social_buttons {
-            display: inline-block;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-            }
-
-            .social_buttons a {
-            display: inline-block;
-            text-decoration: none;
-            color: #fff;      /* 文字內容顏色 */
-            padding: 5px;    /* 文字離邊框&#65292;空下多少距離 */
-            transition: all .2s;
-            -webkit-transition: all .2s;
-            -moz-transition: all .2s;
-            border-radius: 8px;  /* 方框圓角 */
-            }
-
-            .social_buttons a:hover {
-            -ms-transform: translateY(-4px);       /* 滑鼠移過&#65292;方框移動多少距離 */
-            -webkit-transform: translateY(-4px);   /* 滑鼠移過&#65292;方框移動多少距離 */
-            transform: translateY(-4px);           /* 滑鼠移過&#65292;方框移動多少距離 */
-            }
-
-            .social_buttons i {
-            width: 40px;         /* 文字離左右邊框&#65292;空下多少距離 */
-            height: 40px;        /* 文字離上下邊框&#65292;空下多少距離 */
-            font-size: 32px;     /* 文字大小 */
-            text-align: center;  /* 文字位置 */
-
-            }
-
-            .social_buttons i:before {
-            margin: auto;
-            line-height: 40px;  /* 文字離上下邊框&#65292;空下多少距離 */
-            vertical-align: middle;
-            }
-
-            .social_fb {
-            background-color: rgb(59, 89, 152);
-            }
-
-            .social_weibo {
-            background-color: rgb(245, 202, 89);
-            }
-
-            .social_gplus {
-            background-color: rgb(220, 78, 65);
-            }
-
-            .social_twitter {
-            background-color: rgb(85, 172, 238);
-            }
-
-            .social_pinterest {
-            background-color: rgb(190, 30, 30);
-            }
-
-            .social_line {
-            background-color: rgb(70, 190, 30);
-            }
-
-            .social_text {
-            font-size: 12px;
-            padding: 0 15px 20 5px;
-            line-height: 32px;
-            }
-        </style>
-
-
       <!--回到頂端(需要jquery)-->
       <style>
         #goTop {
@@ -1032,6 +1000,37 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
         }
       </style>
 
+
+        <!--畫底線功能-->
+        <style type='text/css'>
+            b1{
+            background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            g1{
+            background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            r1{
+            background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            y1{
+            background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+        </style>
+        <!--畫底線功能2-->
+        <script type='text/javascript'>
+            document.createElement(&quot;b1&quot;)
+            document.createElement(&quot;g1&quot;)
+            document.createElement(&quot;r1&quot;)
+            document.createElement(&quot;y1&quot;)
+        </script>
 
 
     </head>
@@ -1244,24 +1243,18 @@ head.appendChild(script);
                                         <b:widget-settings>
                                           <b:widget-setting name='content'>&lt;div id=&quot;dropMenu&quot;&gt;
     &lt;ul&gt;
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;相關資源 &#9660;&lt;/span&gt;&lt;/a&gt;
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;相關資源 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
                 &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411&quot;&gt;&lt;span&gt;FB 粉絲專頁&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Youtube頻道&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;https://plus.google.com/111149140642619080523&quot;&gt;&lt;span&gt;Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Google圖書免費佛經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
         &lt;/li&gt;
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;常見經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;常見經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;首楞嚴咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;首楞嚴咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_83.html&quot;&gt;&lt;span&gt;&quot;楞嚴咒&quot;還是&quot;首楞嚴咒&quot;&#65311;傻傻分不清楚&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_8.html&quot;&gt;&lt;span&gt;首楞嚴經到底是真的還是假的&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_4.html&quot;&gt;&lt;span&gt;首楞嚴咒導引與介紹&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1269,26 +1262,20 @@ head.appendChild(script);
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_23.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_94.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書(純梵音雙面列印版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_10.html&quot;&gt;&lt;span&gt;佛頂大白傘蓋陀羅尼經(加註解)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;佛頂尊勝咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛頂尊勝咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_67.html&quot;&gt;&lt;span&gt;佛頂尊勝咒導引與介紹&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_290.html&quot;&gt;&lt;span&gt;尊勝咒與文殊師利菩薩&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post.html&quot;&gt;&lt;span&gt;佛頂尊勝咒梵文結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_1.html&quot;&gt;&lt;span&gt;佛頂尊勝咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_926.html&quot;&gt;&lt;span&gt;最勝佛頂陀羅尼淨除業障呪經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_350.html&quot;&gt;&lt;span&gt;佛說一切如來烏瑟膩沙最勝總持經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;大悲咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大悲咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_899.html&quot;&gt;&lt;span&gt;大悲咒梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_802.html&quot;&gt;&lt;span&gt;大悲咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_216.html&quot;&gt;&lt;span&gt;金剛頂瑜伽青頸大悲王觀自在念誦儀軌(節錄)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1296,97 +1283,68 @@ head.appendChild(script);
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_813.html&quot;&gt;&lt;span&gt;千手千眼觀世音菩薩大悲心陀羅尼&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_225.html&quot;&gt;&lt;span&gt;千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/04/blog-post_6.html&quot;&gt;&lt;span&gt;大悲咒書寫&#12289;抄經&#12289;練字字帖&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;準提咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;準提咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_23.html&quot;&gt;&lt;span&gt;准提咒梵文版本&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_533.html&quot;&gt;&lt;span&gt;佛說七俱胝佛母心大准提陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;一切如來心祕密全身舍利寶篋印陀羅尼...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;一切如來心祕密全身舍利寶篋印陀羅尼...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_206.html&quot;&gt;&lt;span&gt;問題重重的印刷流通版&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_568.html&quot;&gt;&lt;span&gt;不要再拿&quot;五輪塔&quot;當作舍利塔供養!!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_697.html&quot;&gt;&lt;span&gt;梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_580.html&quot;&gt;&lt;span&gt;梵文仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_599.html&quot;&gt;&lt;span&gt;一切如來正法祕密篋印心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_863.html&quot;&gt;&lt;span&gt;一切如來心祕密全身舍利寶篋印陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;百字明咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;百字明咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_14.html&quot;&gt;&lt;span&gt;百字明咒導引介紹&#12289;功德與釋疑&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_45.html&quot;&gt;&lt;span&gt;梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_15.html&quot;&gt;&lt;span&gt;梵文繁體仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;心經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;心經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_9.html&quot;&gt;&lt;span&gt;心經各版本結集&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_4.html&quot;&gt;&lt;span&gt;心經書寫&#12289;抄經&#12289;練字字帖&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;金剛經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;金剛經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_98.html&quot;&gt;&lt;span&gt;&#12300;著衣持鉢&#65292;入舍衛大城乞食&#12301;智慧在哪裡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_19.html&quot;&gt;&lt;span&gt;能斷金剛般若波羅蜜多經(玄奘版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_17.html&quot;&gt;&lt;span&gt;金剛般若波羅蜜經(鳩摩羅什版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;施食佛法...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;施食佛法...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_36.html&quot;&gt;&lt;span&gt;施食餓鬼導引介紹與釋疑&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_86.html&quot;&gt;&lt;span&gt;佛說救拔熖口餓鬼陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_28.html&quot;&gt;&lt;span&gt;怎麼施食最如法&#65311;最簡易方法&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_25.html&quot;&gt;&lt;span&gt;怎麼施食最如法&#65311;節錄&#12298;瑜伽焰口施食&#12299;方法&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_65.html&quot;&gt;&lt;span&gt;佛說妙色陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;阿彌陀經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;阿彌陀經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/04/blog-post_64.html&quot;&gt;&lt;span&gt;無量壽經(大阿彌陀經)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_39.html&quot;&gt;&lt;span&gt;佛說阿彌陀經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_23.html&quot;&gt;&lt;span&gt;藥師琉璃光如來本願功德經(加註解)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
         &lt;/li&gt;
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com&quot;&gt;&lt;span&gt;其他經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;其他經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;大般若波羅蜜多經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大般若波羅蜜多經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;初分...&#9658;&lt;/span&gt;&lt;/a&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;初分...&#9658;&lt;/span&gt;&lt;/a&gt;
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_51.html&quot;&gt;&lt;span&gt;初分序&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_12.html&quot;&gt;&lt;span&gt;緣起品第一...&#9658;&lt;/span&gt;&lt;/a&gt;
                                     &lt;ul&gt;
@@ -1677,519 +1635,702 @@ head.appendChild(script);
                                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_25.html&quot;&gt;&lt;span&gt;之六十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                                     &lt;/ul&gt;
                                 &lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_26.html&quot;&gt;&lt;span&gt;隨喜迴向品第三十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_36.html&quot;&gt;&lt;span&gt;讚般若品第三十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_61.html&quot;&gt;&lt;span&gt;謗般若品第三十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_27.html&quot;&gt;&lt;span&gt;難信解品第三十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_210.html&quot;&gt;&lt;span&gt;讚清淨品第三十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_543.html&quot;&gt;&lt;span&gt;著不著相品第三十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_801.html&quot;&gt;&lt;span&gt;說般若相品第三十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_127.html&quot;&gt;&lt;span&gt;波羅蜜多品第三十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_177.html&quot;&gt;&lt;span&gt;難聞功德品第三十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_420.html&quot;&gt;&lt;span&gt;魔事品第四十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_145.html&quot;&gt;&lt;span&gt;佛母品第四十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_454.html&quot;&gt;&lt;span&gt;不思議等品第四十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_829.html&quot;&gt;&lt;span&gt;辦事品第四十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_916.html&quot;&gt;&lt;span&gt;眾喻品第四十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_283.html&quot;&gt;&lt;span&gt;真善友品第四十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_754.html&quot;&gt;&lt;span&gt;趣智品第四十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_525.html&quot;&gt;&lt;span&gt;真如品第四十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_269.html&quot;&gt;&lt;span&gt;菩薩住品第四十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_908.html&quot;&gt;&lt;span&gt;不退轉品第四十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_423.html&quot;&gt;&lt;span&gt;巧方便品第五十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_539.html&quot;&gt;&lt;span&gt;願行品第五十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_817.html&quot;&gt;&lt;span&gt;殑伽天品第五十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_404.html&quot;&gt;&lt;span&gt;善學品第五十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_250.html&quot;&gt;&lt;span&gt;斷分別品第五十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_499.html&quot;&gt;&lt;span&gt;巧便學品第五十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_361.html&quot;&gt;&lt;span&gt;願喻品第五十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_135.html&quot;&gt;&lt;span&gt;堅等讚品第五十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_770.html&quot;&gt;&lt;span&gt;囑累品第五十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_925.html&quot;&gt;&lt;span&gt;無盡品第五十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_488.html&quot;&gt;&lt;span&gt;相引攝品第六十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_548.html&quot;&gt;&lt;span&gt;多問不二品第六十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_642.html&quot;&gt;&lt;span&gt;實說品第六十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_219.html&quot;&gt;&lt;span&gt;巧便行品第六十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_398.html&quot;&gt;&lt;span&gt;遍學道品第六十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_914.html&quot;&gt;&lt;span&gt;三漸次品第六十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_517.html&quot;&gt;&lt;span&gt;無相無得品第六十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_435.html&quot;&gt;&lt;span&gt;無雜法義品第六十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_278.html&quot;&gt;&lt;span&gt;諸功德相品第六十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_369.html&quot;&gt;&lt;span&gt;諸法平等品第六十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_272.html&quot;&gt;&lt;span&gt;不可動品第七十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_899.html&quot;&gt;&lt;span&gt;成熟有情品第七十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_241.html&quot;&gt;&lt;span&gt;嚴淨佛土品第七十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_789.html&quot;&gt;&lt;span&gt;淨土方便品第七十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_920.html&quot;&gt;&lt;span&gt;無性自性品第七十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_878.html&quot;&gt;&lt;span&gt;勝義瑜伽品第七十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_247.html&quot;&gt;&lt;span&gt;無動法性品第七十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_707.html&quot;&gt;&lt;span&gt;常啼菩薩品第七十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_955.html&quot;&gt;&lt;span&gt;法涌菩薩品第七十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_26.html&quot;&gt;&lt;span&gt;隨喜迴向品第三十一...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_26.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_40.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_56.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_3.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_72.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_36.html&quot;&gt;&lt;span&gt;讚般若品第三十二...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_36.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_68.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_48.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_39.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_64.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_23.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_94.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_88.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_66.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_52.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_61.html&quot;&gt;&lt;span&gt;謗般若品第三十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_27.html&quot;&gt;&lt;span&gt;難信解品第三十四...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_27.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_79.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_65.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_14.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_31.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_11.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_4.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_37.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_8.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_51.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_89.html&quot;&gt;&lt;span&gt;之十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_54.html&quot;&gt;&lt;span&gt;之十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_74.html&quot;&gt;&lt;span&gt;之十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_58.html&quot;&gt;&lt;span&gt;之十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_91.html&quot;&gt;&lt;span&gt;之十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_546.html&quot;&gt;&lt;span&gt;之十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_20.html&quot;&gt;&lt;span&gt;之十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_21.html&quot;&gt;&lt;span&gt;之十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_97.html&quot;&gt;&lt;span&gt;之十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_7.html&quot;&gt;&lt;span&gt;之二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_713.html&quot;&gt;&lt;span&gt;之二十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_84.html&quot;&gt;&lt;span&gt;之二十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_197.html&quot;&gt;&lt;span&gt;之二十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_330.html&quot;&gt;&lt;span&gt;之二十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_813.html&quot;&gt;&lt;span&gt;之二十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_472.html&quot;&gt;&lt;span&gt;之二十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_700.html&quot;&gt;&lt;span&gt;之二十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_779.html&quot;&gt;&lt;span&gt;之二十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_444.html&quot;&gt;&lt;span&gt;之二十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_587.html&quot;&gt;&lt;span&gt;之三十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_982.html&quot;&gt;&lt;span&gt;之三十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_676.html&quot;&gt;&lt;span&gt;之三十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_198.html&quot;&gt;&lt;span&gt;之三十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_919.html&quot;&gt;&lt;span&gt;之三十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_936.html&quot;&gt;&lt;span&gt;之三十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_807.html&quot;&gt;&lt;span&gt;之三十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_747.html&quot;&gt;&lt;span&gt;之三十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_349.html&quot;&gt;&lt;span&gt;之三十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_321.html&quot;&gt;&lt;span&gt;之三十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_413.html&quot;&gt;&lt;span&gt;之四十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_415.html&quot;&gt;&lt;span&gt;之四十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_645.html&quot;&gt;&lt;span&gt;之四十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_310.html&quot;&gt;&lt;span&gt;之四十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_613.html&quot;&gt;&lt;span&gt;之四十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_835.html&quot;&gt;&lt;span&gt;之四十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_178.html&quot;&gt;&lt;span&gt;之四十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_802.html&quot;&gt;&lt;span&gt;之四十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_206.html&quot;&gt;&lt;span&gt;之四十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_303.html&quot;&gt;&lt;span&gt;之四十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_651.html&quot;&gt;&lt;span&gt;之五十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_376.html&quot;&gt;&lt;span&gt;之五十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_792.html&quot;&gt;&lt;span&gt;之五十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_993.html&quot;&gt;&lt;span&gt;之五十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_131.html&quot;&gt;&lt;span&gt;之五十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_480.html&quot;&gt;&lt;span&gt;之五十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_424.html&quot;&gt;&lt;span&gt;之五十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_279.html&quot;&gt;&lt;span&gt;之五十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_503.html&quot;&gt;&lt;span&gt;之五十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_932.html&quot;&gt;&lt;span&gt;之五十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_688.html&quot;&gt;&lt;span&gt;之六十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_339.html&quot;&gt;&lt;span&gt;之六十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_293.html&quot;&gt;&lt;span&gt;之六十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_207.html&quot;&gt;&lt;span&gt;之六十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_668.html&quot;&gt;&lt;span&gt;之六十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_350.html&quot;&gt;&lt;span&gt;之六十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_516.html&quot;&gt;&lt;span&gt;之六十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_938.html&quot;&gt;&lt;span&gt;之六十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_592.html&quot;&gt;&lt;span&gt;之六十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_693.html&quot;&gt;&lt;span&gt;之六十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_328.html&quot;&gt;&lt;span&gt;之七十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_249.html&quot;&gt;&lt;span&gt;之七十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_425.html&quot;&gt;&lt;span&gt;之七十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_719.html&quot;&gt;&lt;span&gt;之七十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_843.html&quot;&gt;&lt;span&gt;之七十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_614.html&quot;&gt;&lt;span&gt;之七十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_680.html&quot;&gt;&lt;span&gt;之七十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_638.html&quot;&gt;&lt;span&gt;之七十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_352.html&quot;&gt;&lt;span&gt;之七十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_934.html&quot;&gt;&lt;span&gt;之七十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_194.html&quot;&gt;&lt;span&gt;之八十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_698.html&quot;&gt;&lt;span&gt;之八十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_462.html&quot;&gt;&lt;span&gt;之八十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_865.html&quot;&gt;&lt;span&gt;之八十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_553.html&quot;&gt;&lt;span&gt;之八十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_233.html&quot;&gt;&lt;span&gt;之八十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_449.html&quot;&gt;&lt;span&gt;之八十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_353.html&quot;&gt;&lt;span&gt;之八十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_379.html&quot;&gt;&lt;span&gt;之八十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_670.html&quot;&gt;&lt;span&gt;之八十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_945.html&quot;&gt;&lt;span&gt;之九十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_545.html&quot;&gt;&lt;span&gt;之九十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_864.html&quot;&gt;&lt;span&gt;之九十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_235.html&quot;&gt;&lt;span&gt;之九十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_626.html&quot;&gt;&lt;span&gt;之九十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_799.html&quot;&gt;&lt;span&gt;之九十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_701.html&quot;&gt;&lt;span&gt;之九十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_711.html&quot;&gt;&lt;span&gt;之九十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_236.html&quot;&gt;&lt;span&gt;之九十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_998.html&quot;&gt;&lt;span&gt;之九十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_160.html&quot;&gt;&lt;span&gt;之一百&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_663.html&quot;&gt;&lt;span&gt;之一百一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_956.html&quot;&gt;&lt;span&gt;之一百二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_150.html&quot;&gt;&lt;span&gt;之一百三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_210.html&quot;&gt;&lt;span&gt;讚清淨品第三十五...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_210.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_607.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_351.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_543.html&quot;&gt;&lt;span&gt;著不著相品第三十六...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_543.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_465.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_761.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_584.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_840.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_257.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_801.html&quot;&gt;&lt;span&gt;說般若相品第三十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_801.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_654.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_441.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_370.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_744.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_127.html&quot;&gt;&lt;span&gt;波羅蜜多品第三十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_127.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_674.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_177.html&quot;&gt;&lt;span&gt;難聞功德品第三十九...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_177.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_434.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_360.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_216.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_734.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_978.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_420.html&quot;&gt;&lt;span&gt;魔事品第四十...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_420.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_671.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_145.html&quot;&gt;&lt;span&gt;佛母品第四十一...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_145.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_322.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_573.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_575.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_454.html&quot;&gt;&lt;span&gt;不思議等品第四十二...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_454.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_679.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_536.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_829.html&quot;&gt;&lt;span&gt;辦事品第四十三...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_829.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_306.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_916.html&quot;&gt;&lt;span&gt;眾喻品第四十四...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_916.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_987.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_884.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_283.html&quot;&gt;&lt;span&gt;真善友品第四十五...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_283.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_838.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_875.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_926.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_754.html&quot;&gt;&lt;span&gt;趣智品第四十六...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_754.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_810.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_924.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_525.html&quot;&gt;&lt;span&gt;真如品第四十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_525.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_931.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_783.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_979.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_168.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_784.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_411.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_269.html&quot;&gt;&lt;span&gt;菩薩住品第四十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_269.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_652.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_908.html&quot;&gt;&lt;span&gt;不退轉品第四十九...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_908.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_806.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_697.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_423.html&quot;&gt;&lt;span&gt;巧方便品第五十...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_423.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_515.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_572.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_539.html&quot;&gt;&lt;span&gt;願行品第五十一...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_539.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_800.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_817.html&quot;&gt;&lt;span&gt;殑伽天品第五十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_404.html&quot;&gt;&lt;span&gt;善學品第五十三...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_404.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_922.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_718.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_270.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_566.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_250.html&quot;&gt;&lt;span&gt;斷分別品第五十四...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_250.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_727.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_477.html&quot;&gt;&lt;span&gt;巧便學品第五十五...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_477.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_499.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_675.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_631.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_484.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_361.html&quot;&gt;&lt;span&gt;願喻品第五十六...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_361.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_393.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_135.html&quot;&gt;&lt;span&gt;堅等讚品第五十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_135.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_451.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_551.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_364.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_171.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_770.html&quot;&gt;&lt;span&gt;囑累品第五十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_770.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_731.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_925.html&quot;&gt;&lt;span&gt;無盡品第五十九...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_925.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_211.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_488.html&quot;&gt;&lt;span&gt;相引攝品第六十...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_488.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_583.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_548.html&quot;&gt;&lt;span&gt;多問不二品第六十一...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_548.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_699.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_623.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_126.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_117.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_456.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_705.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_906.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_183.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_184.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_165.html&quot;&gt;&lt;span&gt;之十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_857.html&quot;&gt;&lt;span&gt;之十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_930.html&quot;&gt;&lt;span&gt;之十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_642.html&quot;&gt;&lt;span&gt;實說品第六十二...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_642.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_209.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_140.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_219.html&quot;&gt;&lt;span&gt;巧便行品第六十三...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_219.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_794.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_398.html&quot;&gt;&lt;span&gt;遍學道品第六十四...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_398.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_327.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_167.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_289.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_999.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_833.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_368.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_914.html&quot;&gt;&lt;span&gt;三漸次品第六十五...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_914.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_317.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_517.html&quot;&gt;&lt;span&gt;無相無得品第六十六...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_517.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_298.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_203.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_412.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_756.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_781.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_871.html&quot;&gt;&lt;span&gt;無雜法義品第六十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_871.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_435.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_278.html&quot;&gt;&lt;span&gt;諸功德相品第六十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_278.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_714.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_877.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_501.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_505.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_369.html&quot;&gt;&lt;span&gt;諸法平等品第六十九...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_369.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_830.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_803.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_406.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_272.html&quot;&gt;&lt;span&gt;不可動品第七十...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_272.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_137.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_903.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_188.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_157.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_899.html&quot;&gt;&lt;span&gt;成熟有情品第七十一...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_899.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_710.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_192.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_483.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_241.html&quot;&gt;&lt;span&gt;嚴淨佛土品第七十二...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_241.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_739.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_789.html&quot;&gt;&lt;span&gt;淨土方便品第七十三...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_789.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_104.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_920.html&quot;&gt;&lt;span&gt;無性自性品第七十四...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_920.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_494.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_878.html&quot;&gt;&lt;span&gt;勝義瑜伽品第七十五...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_878.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_748.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_247.html&quot;&gt;&lt;span&gt;無動法性品第七十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_707.html&quot;&gt;&lt;span&gt;常啼菩薩品第七十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_707.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_805.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_955.html&quot;&gt;&lt;span&gt;法涌菩薩品第七十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_955.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_274.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
                                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_438.html&quot;&gt;&lt;span&gt;結勸品第七十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第二分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第三分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第四分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第五分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第六分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第七分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第八分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第九分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十一分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十二分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十三分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十四分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十五分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_80.html&quot;&gt;&lt;span&gt;第十六分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第二分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第三分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第四分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第五分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第六分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第七分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第八分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第九分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十一分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十二分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十三分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十四分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十五分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;第十六分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/03/blog-post_12.html&quot;&gt;&lt;span&gt;大方廣佛華嚴經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大方廣佛華嚴經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_37.html&quot;&gt;&lt;span&gt;世主妙嚴品第一...&#9658;&lt;/span&gt;&lt;/a&gt;
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_37.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/2016.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_44.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_33.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_65.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_13.html&quot;&gt;&lt;span&gt;如來現相品第二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_43.html&quot;&gt;&lt;span&gt;普賢三昧品第三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_48.html&quot;&gt;&lt;span&gt;世界成就品第四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_73.html&quot;&gt;&lt;span&gt;華藏世界品第五...&#9658;&lt;/span&gt;&lt;/a&gt;
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_73.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_64.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_93.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_75.html&quot;&gt;&lt;span&gt;毘盧遮那品第六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_41.html&quot;&gt;&lt;span&gt;如來名號品第七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_92.html&quot;&gt;&lt;span&gt;四聖諦品第八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_74.html&quot;&gt;&lt;span&gt;光明覺品第九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_54.html&quot;&gt;&lt;span&gt;菩薩問明品第十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_15.html&quot;&gt;&lt;span&gt;淨行品第十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_76.html&quot;&gt;&lt;span&gt;賢首品第十二...&#9658;&lt;/span&gt;&lt;/a&gt;
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_76.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_25.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_96.html&quot;&gt;&lt;span&gt;昇須彌山頂品第十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_36.html&quot;&gt;&lt;span&gt;須彌頂上偈讚品第十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_45.html&quot;&gt;&lt;span&gt;十住品第十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_35.html&quot;&gt;&lt;span&gt;梵行品第十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_97.html&quot;&gt;&lt;span&gt;初發心功德品第十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_88.html&quot;&gt;&lt;span&gt;明法品第十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_79.html&quot;&gt;&lt;span&gt;昇夜摩天宮品第十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_24.html&quot;&gt;&lt;span&gt;夜摩宮中偈讚品第二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_47.html&quot;&gt;&lt;span&gt;十行品第二十一...&#9658;&lt;/span&gt;&lt;/a&gt;
-
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_47.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_39.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_68.html&quot;&gt;&lt;span&gt;十無盡藏品第二十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_85.html&quot;&gt;&lt;span&gt;昇兜率天宮品第二十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_26.html&quot;&gt;&lt;span&gt;兜率宮中偈讚品第二十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_72.html&quot;&gt;&lt;span&gt;十迴向品第二十五...&#9658;&lt;/span&gt;&lt;/a&gt;
-
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_72.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_8.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_27.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_95.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_67.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_56.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_1.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_94.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_84.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_3.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_91.html&quot;&gt;&lt;span&gt;之十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                             &lt;/ul&gt;
-
-
                         &lt;/li&gt;
-
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_30.html&quot;&gt;&lt;span&gt;十地品第二十六...&#9658;&lt;/span&gt;&lt;/a&gt;
-
                             &lt;ul&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_30.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_34.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_49.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_31.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_29.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_90.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_66.html&quot;&gt;&lt;span&gt;十定品第二十七...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_66.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_55.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_51.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_78.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_60.html&quot;&gt;&lt;span&gt;十通品第二十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_62.html&quot;&gt;&lt;span&gt;十忍品第二十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_42.html&quot;&gt;&lt;span&gt;阿僧祇品第三十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_81.html&quot;&gt;&lt;span&gt;壽量品第三十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_58.html&quot;&gt;&lt;span&gt;諸菩薩住處品第三十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_83.html&quot;&gt;&lt;span&gt;佛不思議法品第三十三...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_83.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_40.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_71.html&quot;&gt;&lt;span&gt;如來十身相海品第三十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_38.html&quot;&gt;&lt;span&gt;如來隨好光明功德品第三十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_50.html&quot;&gt;&lt;span&gt;普賢行品第三十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_59.html&quot;&gt;&lt;span&gt;如來出現品第三十七...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_59.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_63.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_99.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_82.html&quot;&gt;&lt;span&gt;離世間品第三十八...&#9658;&lt;/span&gt;&lt;/a&gt;
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_82.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_32.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_0.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_853.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_991.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_53.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_132.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_28.html&quot;&gt;&lt;span&gt;入法界品第三十九...&#9658;&lt;/span&gt;&lt;/a&gt;
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_28.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_617.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_80.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_18.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_235.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_385.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_57.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_331.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_295.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_825.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_276.html&quot;&gt;&lt;span&gt;之十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_709.html&quot;&gt;&lt;span&gt;之十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_662.html&quot;&gt;&lt;span&gt;之十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_933.html&quot;&gt;&lt;span&gt;之十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_207.html&quot;&gt;&lt;span&gt;之十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_862.html&quot;&gt;&lt;span&gt;之十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_134.html&quot;&gt;&lt;span&gt;之十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_155.html&quot;&gt;&lt;span&gt;之十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_441.html&quot;&gt;&lt;span&gt;之十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_368.html&quot;&gt;&lt;span&gt;之二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_122.html&quot;&gt;&lt;span&gt;之二十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                            &lt;/ul&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/03/blog-post_876.html&quot;&gt;&lt;span&gt;入不思議解脫境界普賢行願品&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                    &lt;/ul&gt;
-
-                &lt;/li&gt;
-
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_116.html&quot;&gt;&lt;span&gt;妙法蓮華經...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                    &lt;ul&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_150.html&quot;&gt;&lt;span&gt;序品第一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_349.html&quot;&gt;&lt;span&gt;方便品第二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_638.html&quot;&gt;&lt;span&gt;譬喻品第三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_493.html&quot;&gt;&lt;span&gt;信解品第四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_962.html&quot;&gt;&lt;span&gt;藥草喻品第五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_362.html&quot;&gt;&lt;span&gt;授記品第六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_628.html&quot;&gt;&lt;span&gt;化城喻品第七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_824.html&quot;&gt;&lt;span&gt;五百弟子受記品第八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_344.html&quot;&gt;&lt;span&gt;授學無學人記品第九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_106.html&quot;&gt;&lt;span&gt;法師品第十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_699.html&quot;&gt;&lt;span&gt;見寶塔品第十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_181.html&quot;&gt;&lt;span&gt;提婆達多品第十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_424.html&quot;&gt;&lt;span&gt;勸持品第十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_227.html&quot;&gt;&lt;span&gt;安樂行品第十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_257.html&quot;&gt;&lt;span&gt;從地踊出品第十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_152.html&quot;&gt;&lt;span&gt;如來壽量品第十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_278.html&quot;&gt;&lt;span&gt;分別功德品第十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_822.html&quot;&gt;&lt;span&gt;隨喜功德品第十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_86.html&quot;&gt;&lt;span&gt;法師功德品第十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_817.html&quot;&gt;&lt;span&gt;常不輕菩薩品第二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_827.html&quot;&gt;&lt;span&gt;如來神力品第二十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_280.html&quot;&gt;&lt;span&gt;囑累品第二十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_868.html&quot;&gt;&lt;span&gt;藥王菩薩本事品第二十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_620.html&quot;&gt;&lt;span&gt;妙音菩薩品第二十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_191.html&quot;&gt;&lt;span&gt;觀世音菩薩普門品第二十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_762.html&quot;&gt;&lt;span&gt;陀羅尼品第二十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_468.html&quot;&gt;&lt;span&gt;妙莊嚴王本事品第二十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_283.html&quot;&gt;&lt;span&gt;普賢菩薩勸發品第二十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                    &lt;/ul&gt;
-
-                &lt;/li&gt;
-
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/search/label/%E3%80%82%E5%A4%A7%E8%88%AC%E6%B6%85%E6%A7%83%E7%B6%93%20Maha%20parinirvana%20Sutra&quot;&gt;&lt;span&gt;大般涅槃經...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                    &lt;ul&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_5.html&quot;&gt;&lt;span&gt;大般涅槃經問題重重&#65292;正確版本到底是哪一本&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_87.html&quot;&gt;&lt;span&gt;佛般泥洹經(大般涅槃經正確本)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_69.html&quot;&gt;&lt;span&gt;大般涅槃經後分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_46.html&quot;&gt;&lt;span&gt;佛入涅槃密迹金剛力士哀戀經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                    &lt;/ul&gt;
-                &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/04/blog-post_8.html&quot;&gt;&lt;span&gt;地藏經...&#9658;&lt;/span&gt;&lt;/a&gt;
-
-                    &lt;ul&gt;
-
-                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_17.html&quot;&gt;&lt;span&gt;大乘大集地藏十輪經...&#9658;&lt;/span&gt;&lt;/a&gt;
-                            &lt;ul&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_43.html&quot;&gt;&lt;span&gt;序品第一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_34.html&quot;&gt;&lt;span&gt;十輪品第二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_19.html&quot;&gt;&lt;span&gt;無依行品第三之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_9.html&quot;&gt;&lt;span&gt;無依行品第三之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_47.html&quot;&gt;&lt;span&gt;無依行品第三之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_53.html&quot;&gt;&lt;span&gt;有依行品第四之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_84.html&quot;&gt;&lt;span&gt;有依行品第四之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_94.html&quot;&gt;&lt;span&gt;有依行品第四之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_13.html&quot;&gt;&lt;span&gt;懺悔品第五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_97.html&quot;&gt;&lt;span&gt;善業道品第六之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_96.html&quot;&gt;&lt;span&gt;善業道品第六之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_87.html&quot;&gt;&lt;span&gt;福田相品第七之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_68.html&quot;&gt;&lt;span&gt;福田相品第七之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_11.html&quot;&gt;&lt;span&gt;獲益囑累品第八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_17.html&quot;&gt;&lt;span&gt;後序&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                             &lt;/ul&gt;
                         &lt;/li&gt;
-
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_66.html&quot;&gt;&lt;span&gt;十定品第二十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_66.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_55.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_51.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_78.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_60.html&quot;&gt;&lt;span&gt;十通品第二十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_62.html&quot;&gt;&lt;span&gt;十忍品第二十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_42.html&quot;&gt;&lt;span&gt;阿僧祇品第三十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_81.html&quot;&gt;&lt;span&gt;壽量品第三十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_58.html&quot;&gt;&lt;span&gt;諸菩薩住處品第三十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_83.html&quot;&gt;&lt;span&gt;佛不思議法品第三十三...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_83.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_40.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_71.html&quot;&gt;&lt;span&gt;如來十身相海品第三十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_38.html&quot;&gt;&lt;span&gt;如來隨好光明功德品第三十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_50.html&quot;&gt;&lt;span&gt;普賢行品第三十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_59.html&quot;&gt;&lt;span&gt;如來出現品第三十七...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_59.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_63.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_99.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_82.html&quot;&gt;&lt;span&gt;離世間品第三十八...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_82.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_32.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_0.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_853.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_991.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_53.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_132.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_28.html&quot;&gt;&lt;span&gt;入法界品第三十九...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_28.html&quot;&gt;&lt;span&gt;之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_617.html&quot;&gt;&lt;span&gt;之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_80.html&quot;&gt;&lt;span&gt;之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_18.html&quot;&gt;&lt;span&gt;之四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_235.html&quot;&gt;&lt;span&gt;之五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_385.html&quot;&gt;&lt;span&gt;之六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_57.html&quot;&gt;&lt;span&gt;之七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_331.html&quot;&gt;&lt;span&gt;之八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_295.html&quot;&gt;&lt;span&gt;之九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_825.html&quot;&gt;&lt;span&gt;之十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_276.html&quot;&gt;&lt;span&gt;之十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_709.html&quot;&gt;&lt;span&gt;之十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_662.html&quot;&gt;&lt;span&gt;之十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_933.html&quot;&gt;&lt;span&gt;之十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_207.html&quot;&gt;&lt;span&gt;之十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_862.html&quot;&gt;&lt;span&gt;之十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_134.html&quot;&gt;&lt;span&gt;之十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_155.html&quot;&gt;&lt;span&gt;之十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_441.html&quot;&gt;&lt;span&gt;之十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_368.html&quot;&gt;&lt;span&gt;之二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_122.html&quot;&gt;&lt;span&gt;之二十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/03/blog-post_876.html&quot;&gt;&lt;span&gt;入不思議解脫境界普賢行願品&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;妙法蓮華經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_150.html&quot;&gt;&lt;span&gt;序品第一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_349.html&quot;&gt;&lt;span&gt;方便品第二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_638.html&quot;&gt;&lt;span&gt;譬喻品第三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_493.html&quot;&gt;&lt;span&gt;信解品第四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_962.html&quot;&gt;&lt;span&gt;藥草喻品第五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_362.html&quot;&gt;&lt;span&gt;授記品第六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_628.html&quot;&gt;&lt;span&gt;化城喻品第七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_824.html&quot;&gt;&lt;span&gt;五百弟子受記品第八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_344.html&quot;&gt;&lt;span&gt;授學無學人記品第九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_106.html&quot;&gt;&lt;span&gt;法師品第十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_699.html&quot;&gt;&lt;span&gt;見寶塔品第十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_181.html&quot;&gt;&lt;span&gt;提婆達多品第十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_424.html&quot;&gt;&lt;span&gt;勸持品第十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_227.html&quot;&gt;&lt;span&gt;安樂行品第十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_257.html&quot;&gt;&lt;span&gt;從地踊出品第十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_152.html&quot;&gt;&lt;span&gt;如來壽量品第十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_278.html&quot;&gt;&lt;span&gt;分別功德品第十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_822.html&quot;&gt;&lt;span&gt;隨喜功德品第十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_86.html&quot;&gt;&lt;span&gt;法師功德品第十九&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_817.html&quot;&gt;&lt;span&gt;常不輕菩薩品第二十&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_827.html&quot;&gt;&lt;span&gt;如來神力品第二十一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_280.html&quot;&gt;&lt;span&gt;囑累品第二十二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_868.html&quot;&gt;&lt;span&gt;藥王菩薩本事品第二十三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_620.html&quot;&gt;&lt;span&gt;妙音菩薩品第二十四&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_191.html&quot;&gt;&lt;span&gt;觀世音菩薩普門品第二十五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_762.html&quot;&gt;&lt;span&gt;陀羅尼品第二十六&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_468.html&quot;&gt;&lt;span&gt;妙莊嚴王本事品第二十七&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_283.html&quot;&gt;&lt;span&gt;普賢菩薩勸發品第二十八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大般涅槃經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_5.html&quot;&gt;&lt;span&gt;大般涅槃經問題重重&#65292;正確版本到底是哪一本&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_87.html&quot;&gt;&lt;span&gt;佛般泥洹經(大般涅槃經正確本)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_69.html&quot;&gt;&lt;span&gt;大般涅槃經後分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_46.html&quot;&gt;&lt;span&gt;佛入涅槃密迹金剛力士哀戀經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;地藏經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大乘大集地藏十輪經...&#9658;&lt;/span&gt;&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_43.html&quot;&gt;&lt;span&gt;序品第一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_34.html&quot;&gt;&lt;span&gt;十輪品第二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_19.html&quot;&gt;&lt;span&gt;無依行品第三之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_9.html&quot;&gt;&lt;span&gt;無依行品第三之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_47.html&quot;&gt;&lt;span&gt;無依行品第三之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_53.html&quot;&gt;&lt;span&gt;有依行品第四之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_84.html&quot;&gt;&lt;span&gt;有依行品第四之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_94.html&quot;&gt;&lt;span&gt;有依行品第四之三&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_13.html&quot;&gt;&lt;span&gt;懺悔品第五&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_97.html&quot;&gt;&lt;span&gt;善業道品第六之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_96.html&quot;&gt;&lt;span&gt;善業道品第六之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_87.html&quot;&gt;&lt;span&gt;福田相品第七之一&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_68.html&quot;&gt;&lt;span&gt;福田相品第七之二&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_11.html&quot;&gt;&lt;span&gt;獲益囑累品第八&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_17.html&quot;&gt;&lt;span&gt;後序&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_52.html&quot;&gt;&lt;span&gt;地藏菩薩本願經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文...&#9658;&lt;/span&gt;&lt;/a&gt;
-
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;八十八佛大懺悔文...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_7.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
-                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;瑜伽唯識...&#9658;&lt;/span&gt;&lt;/a&gt;
-
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;瑜伽唯識...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_4.html&quot;&gt;&lt;span&gt;大乘百法明門論&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                     &lt;/ul&gt;
                 &lt;/li&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_77.html&quot;&gt;&lt;span&gt;右繞佛塔功德經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_20.html&quot;&gt;&lt;span&gt;大方廣如來藏經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_90.html&quot;&gt;&lt;span&gt;佛說觀藥王藥上二菩薩經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
         &lt;/li&gt;
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_40.html&quot;&gt;&lt;span&gt;念佛一定得吃素?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/05/blog-post_464.html&quot;&gt;&lt;span&gt;超渡真正意義為何&#65311;誰需要超渡&#65311;要如何超渡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -2205,66 +2346,37 @@ head.appendChild(script);
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像要開光?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/led.html&quot;&gt;&lt;span&gt;佛前供養點燈&#65292;能不能用LED燈&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/03/blog-post_673.html&quot;&gt;&lt;span&gt;更多More...&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
-
         &lt;/li&gt;
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;佛剎寶地 &#9660;&lt;/span&gt;&lt;/a&gt;
-
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛剎寶地 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_5.html&quot;&gt;&lt;span&gt;噶居寺(藏傳佛教風格佛寺)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_14.html&quot;&gt;&lt;span&gt;靈嚴禪寺(嘉義最大佛寺)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post.html&quot;&gt;&lt;span&gt;妙崇寺(文殊師利菩薩道場)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_68.html&quot;&gt;&lt;span&gt;龍王金殿(罕見阿育王佛塔)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
-
         &lt;/li&gt;
-
-
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;聽經禪樂 &#9660;&lt;/span&gt;&lt;/a&gt;
-
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;聽經禪樂 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;敬請期待~&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
+                &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;敬請期待~&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
-
         &lt;/li&gt;
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;佛法清涼劑 &#9660;&lt;/span&gt;&lt;/a&gt;
-
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛法清涼劑 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;敬請期待~&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
+                &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;敬請期待~&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
-
         &lt;/li&gt;
-
-
-
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/&quot;&gt;&lt;span&gt;優質推薦 &#9660;&lt;/span&gt;&lt;/a&gt;
-
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;優質推薦 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-
                 &lt;li&gt;&lt;a href=&quot;http://natureintw.blogspot.tw/&quot;&gt;&lt;span&gt;那裘伊普羅勳&#12290;走遍台灣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;http://fifiplanet.blogspot.tw/&quot;&gt;&lt;span&gt;FIFI的星球&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;https://store.line.me/stickershop/product/1435229&quot;&gt;&lt;span&gt;Line貼圖&#12290;FIFI生活篇&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;https://store.line.me/stickershop/product/1429901&quot;&gt;&lt;span&gt;Line貼圖&#12290;FIFI&amp;LULU感情篇&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
             &lt;/ul&gt;
         &lt;/li&gt;
-
         &lt;li&gt;&lt;a href=&quot;http://natureintw.blogspot.tw/&quot;&gt;&lt;span&gt;那裘伊普羅勳&#12290;走遍台灣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-
-
-    &lt;/ul&gt;&lt;/div&gt;</b:widget-setting>
+    &lt;/ul&gt;
+&lt;/div&gt;</b:widget-setting>
                                         </b:widget-settings>
                                         <b:includable id='main'>
                                                 <!-- only display title if it's non-empty -->
