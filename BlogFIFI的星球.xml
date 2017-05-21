@@ -9,9 +9,19 @@
 <meta content='https://www.facebook.com/Fifiheavenlybody' property='article:author'/>
 
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+
+
+<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: &quot;ca-pub-1906469337822124&quot;,
+enable_page_level_ads: true
+});
+</script>
+
+
+
     <b:include data='blog' name='all-head-content'/>
-
-
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <title>
 <data:blog.pageName/> | <data:blog.title/>
@@ -1101,25 +1111,28 @@ color: #fff
 
 
 
-      <!--回到頂端(需要jquery)-->
-      <style>
+      <!-- 回到頂端(需要jquery)-->
+		<style>
         #goTop {
-        position: fixed;
-        bottom: 45px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
-        right: 7px; /* 與右方的距離 */
-        width: 50px; /* 按鈕原始寬度 */
-        height: 50px; /* 按鈕原始高度 */
-        opacity: .5; /* 按鈕原始透明度 */
-        z-index: 10;
-        cursor: pointer;
-        transition: all .5s; /* 動畫效果 持續期間 */
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
+			position: fixed;
+			bottom: 45px;      /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+			right: 10px;       /* 與右方的距離 */
+			opacity: .3;       /* 按鈕原始透明度 */
+			color:red;
+			z-index: 10;
+			cursor: pointer;
+			transition: all .5s; /* 動畫效果 持續期間 */
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
         }
-        #goTop:hover { /* 滑鼠經過按鈕時 */
-        opacity: 1; /* 透明度 */
-        width: 80px; /* 按鈕寬度 */
-        height: 80px; /* 按鈕高度 */
+		
+        #goTop:hover {         /* 滑鼠經過按鈕時 */
+			opacity: 0.5;      /* 透明度 */
+			color:blue;
+			transition: 0.2s;
+			-moz-transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s; 
         }
       </style>
 
@@ -2073,6 +2086,31 @@ head.appendChild(script);
         <b:include data='post' name='postQuickEdit'/>
       </span>
 
+<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
+                                                            <div class='social_buttons'>
+                                                                <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
+                                                                    <i class='social_logo fa fa-facebook'/>
+                                                                </a>
+                                                                <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
+                                                                    <i class='social_logo fa fa-google-plus'/>
+                                                                </a>
+                                                                <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
+                                                                    <i class='social_logo fa fa-weibo'/>
+                                                                </a>
+                                                                <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
+                                                                    <i class='social_logo fa fa-twitter'/>
+                                                                </a>
+                                                                <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
+                                                                    <i class='social_logo fa fa-pinterest-p'/>
+                                                                </a>
+                                                                <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
+                                                                    <i class='social_logo fa fa-whatsapp'/>
+                                                                </a>
+
+															</div>
+														</b:if>
+                                                        <!-- -->	
+
       <!-- share buttons -->
       <div class='post-share-buttons goog-inline-block'>
         <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
@@ -2097,38 +2135,6 @@ head.appendChild(script);
       </div>
 
       <div class='post-footer-line post-footer-line-3'>
-
-
-                                                                            <b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
-
-                                                                                <div class='social_buttons'>
-                                                                                    <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 FB 分享'>
-                                                                                        <i class='social_logo fa fa-facebook'/>
-
-                                                                                    </a>
-                                                                                    <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Google+ 分享'>
-                                                                                        <i class='social_logo fa fa-google-plus'/>
-
-                                                                                    </a>
-                                                                                    <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Weibo 分享'>
-                                                                                        <i class='social_logo fa fa-weibo'/>
-                                                                                    </a>
-                                                                                    <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 twitter 分享'>
-                                                                                        <i class='social_logo fa fa-twitter'/>
-                                                                                    </a>
-                                                                                    <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-                                                                                        <i class='social_logo fa fa-pinterest-p'/>
-                                                                                    </a>
-
-                                                                                    <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Line 分享'>
-                                                                                        <i class='social_logo fa fa-whatsapp'/>
-                                                                                    </a>
-
-                                                                                </div>
-                                                                                <!-- -->
-                                                                            </b:if>
-
-
       <span class='post-location'>
         <b:if cond='data:top.showLocation and data:post.location'>
           <data:postLocationLabel/>
@@ -2532,7 +2538,7 @@ head.appendChild(script);
                 noImage : "https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/IMG_1818.jpg", //無縮圖的替代圖片
                 comment : 0, // 若不顯示留言數量, 請改為 0
                 excludeLabel : ["。大般若經 The Maha Prajna Paramita", "。華嚴經 The Avatamsaka Sutra"], // 排除的標籤字串, 請放在雙引號 "" 之內, 每個字串用小寫逗號 "," 隔開, 最後一個字串後面與右括弧之間不可有逗號
-                location : ".post-footer-line-3", // 擺放位置
+                location : ".post-body", // 擺放位置
                 //]]>
                 postUrl : &quot;<data:blog.canonicalUrl/>&quot;
                 };
@@ -2543,7 +2549,7 @@ head.appendChild(script);
 
 
         <!-- Go Top 按鈕+動畫 start -->
-        <img id='goTop' src='http://4.bp.blogspot.com/-28LaVG5DtBo/VQ_XOQosQQI/AAAAAAAALY4/T4uKguB0Ttk/s100/up-button.png' title='回到頂端 Back to Top'/>
+        <a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-chevron-circle-up'/></a>
         <script>
             $.extend($.easing, {
             easeOutExpo: function (x, t, b, c, d) {
