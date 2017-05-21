@@ -590,82 +590,103 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 .mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
   border-$startSide: 1px solid $(tabs.separator.color);
 }
+/* CSS For related posts widget推薦文章----------- */
+		#related-posts {
+		float:left;
+		width:100%;
+		}
 
+		#related-posts sl{
+		margin:0 !important;
+		padding:0 !important;
+		}
 
-/* CSS For related post widget----------- */
-#related-posts {
-float:left;
-width:101%;
-}
+		/* 標題的樣式 */
+		#related-posts h4{
+		margin:0px 0px 0px;
+		font:18px Oswald;
+		color:#696868;
+		text-transform:uppercase
+		}
 
-#related-posts sl{
-margin:0 !important;
-padding:0 !important;
-}
+		/* 邊框的樣式 */
+		.related-posts-list ci{
+		background-color:#fff;
+		box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);   /* 外框陰影H座標V座標blue陰影color顏色 */
+		width:29.5%;              /* 外框寬度佔百分比 */
+		float:left;               /* 外框靠左邊對齊排列 */
+		position:relative;        /* 相對位置 */
+		margin:0 1% 1% 0%;        /* 外框的外面空白上左下右距離多少 */
+		padding:1% 1% 6% 1%;      /* 照片外圍留白多少 */
+		}
 
-/* related posts推薦文章標題的樣式 */
-#related-posts h4{
-margin:10px 0px 10px;
-font:18px Oswald;
-color:#696868;
-text-transform:uppercase
-}
+		.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
 
-/* 邊框的樣式 */
-.related-posts-list ci{
-background-color:#fff;
-box-shadow:0 0 40px rgba(180, 180, 180, 0.7);   /* 外框陰影 */
-width:29.5%;               /* 外框寬度佔百分比 */
-float:left;
-position:relative;        /* 位置樣式 */
-margin:0 2% 2% 0%;        /* 外框的外面空白上下左右距離多少 */
-padding:1%;               /* 留白 */
-}
+		/* 內容文字的樣式 */
+		#related-posts a{
+		color:#3C42F4;
+		font:400 16px 'Oswald',sans-serif;
+		text-decoration:none;               /* 鏈結文字的底線 */
+		}
 
-.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
+		#related-posts sl ci p{
+		position:absolute;       /* 位置可重疊 */
+		margin-bottom:15px;      /* 文字下面固定留邊大小 */
+		padding-top:110px;        /* 文字上面留邊大小 */
+		margin-left:3px;         /* 文字離左邊框留邊距離 */
+		}
 
-/* 內容文字的樣式 */
-#related-posts a{
-color:#3C42F4;
-font:400 16px 'Oswald',sans-serif;
-text-decoration:none;               /* 文字標線 */
-}
+		/* 圖片樣式 */
+		#related-posts .related_img{
+		height:120px;          /* 圖片高 */
+		width:230px;           /* 圖片寬 */
+		object-fit:cover;      /* 維持原比例填滿 */
+		}
+		
+		.related-title{
+		text-align:center;
+		padding:5px 0px;
+		}
 
-#related-posts sl ci p{
-margin-bottom:0px;      /* 下邊框留邊大小 */
-padding-top:10px;     /* 文字上面留邊大小 */
-margin-left:3px;      /* 文字離左邊框留邊距離 */
-
-}
-
-/* 圖片樣式 */
-#related-posts .related_img{
-height:120px;          /* 圖片高 */
-width:230px;           /* 圖片寬 */
-object-fit:cover;
-
-}
-
-.related-title{
-text-align:center;
-padding:5px 0px;
-}
-
-.rthumb{
-float:left;
-margin-top:2px;      /* 圖片離上邊框留邊距離 */
-margin-left:5px;      /* 圖片離左邊框留邊距離 */
-margin-right:0px;}   /* 圖片離右邊文字留邊距離 */
-/* CSS For related post widget-----END------ */
-
-
-
-]]></b:skin>
+		.rthumb{
+		float:left;
+		margin-top:2px;       /* 圖片離上邊框留邊距離 */
+		margin-left:5px;      /* 圖片離左邊框留邊距離 */
+		margin-right:0px;}    /* 圖片離右邊文字留邊距離 */
+		
+		/* 行動版的樣式 */
+		@media screen and (max-width: 680px) {
+			/* 邊框的樣式 */
+			.related-posts-list ci{
+			background-color:#fff;
+			box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);   /* 外框陰影H座標V座標blue陰影color顏色 */
+			width:95%;              /* 外框寬度佔百分比 */
+			margin:0 1% 1% 1%;        /* 外框的外面空白上左下右距離多少 */
+			padding:1% 1% 1% 1%;               /* 照片外圍留白多少 */
+			}
+			
+			#related-posts a{
+			font:400 20px 'Oswald',sans-serif;
+			}
+			
+			#related-posts sl ci p{
+			padding-top:5px;        /* 文字上面留邊大小 */
+			margin-left:150px;         /* 文字離左邊框留邊距離 */
+			}
+		
+			#related-posts .related_img{
+			height:130px;           /* 圖片高 */
+			width:130px;            /* 圖片寬 */
+			}
+		}
+		
+		
+		/* CSS For related post widget-----END------ */]]></b:skin>
 
     <b:template-skin>
       <b:variable default='960px' name='content.width' type='length' value='1200px'/>
-      <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
-      <b:variable default='310px' name='main.column.right.width' type='length' value='320px'/>
+      <b:variable default='0' name='main.column.left.width' type='length' value='320px'/>
+      <b:variable default='310px' name='main.column.right.width' type='length' value='0px'/>
 
       <![CDATA[
       body {
@@ -1002,25 +1023,34 @@ margin-right:0px;}   /* 圖片離右邊文字留邊距離 */
 		<!-- 回到頂端(需要jquery)-->
 		<style>
         #goTop {
+			display: inline-block;
+            text-decoration: none;
+            color: #fff;                 /* 文字內容顏色 */
+            padding: 5px;                /* 文字離邊框空下多少距離 */
+            transition: all .2s;
+            border-radius: 8px;          /* 方框圓角 */
 			position: fixed;
-			bottom: 45px;      /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
-			right: 10px;       /* 與右方的距離 */
-			opacity: .3;       /* 按鈕原始透明度 */
-			color:red;
-			z-index: 10;
+			bottom: 0px;             /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+			left: 800px;             /* 與左方的距離 */
+			opacity: .3;             /* 按鈕透明度 */
+			z-index: 9999;
 			cursor: pointer;
-			transition: all .5s; /* 動畫效果 持續期間 */
-			-webkit-transition: all .5s;
-			-moz-transition: all .5s;
+			transition: all .5s;    /* 動畫效果 持續期間 */
+            padding: 2px 12px 2px 12px;   /* 文字旁邊留白多少&#65292;上右下左 */
+            line-height: 28px;
+			background-color: #999999;
         }
 		
         #goTop:hover {         /* 滑鼠經過按鈕時 */
-			opacity: 0.5;      /* 透明度 */
+			opacity: 0.6;      /* 透明度 */
 			color:blue;
 			transition: 0.2s;
-			-moz-transition: 0.5s;
-			-webkit-transition: 0.5s;
-			-o-transition: 0.5s; 
+			-moz-transition: 0.2s;
+			-webkit-transition: 0.2s;
+			-o-transition: 0.2s; 
+			-ms-transform: translateY(-4px);       /* 滑鼠移過方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
         }
       </style>
 
@@ -2461,7 +2491,7 @@ head.appendChild(script);
         <div class='column-left-inner'>
           <aside>
           <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num' value='0'/>
+            <macro:param default='0' name='num' value='2'/>
             <macro:param default='sidebar-left' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -2474,7 +2504,7 @@ head.appendChild(script);
         <div class='column-right-inner'>
           <aside>
           <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num' value='2'/>
+            <macro:param default='2' name='num' value='0'/>
             <macro:param default='sidebar-right' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -2556,16 +2586,16 @@ head.appendChild(script);
   </script>
 
 
-        <!-- Go Top 按鈕+動畫 start -->
-        <a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-chevron-circle-up'/></a>
+        <!-- Go Top 按鈕+動畫 start-->
+		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-angle-double-up'/></a>
         <script>
             $.extend($.easing, {
-            easeOutExpo: function (x, t, b, c, d) {
-            return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
-            }
+				easeOutExpo: function (x, t, b, c, d) {
+					return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+				}
             });
-            $(&quot;#goTop&quot;).click(function(){
-            $(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
+            $(&quot;#goTop&quot;).click(function(){ 
+				$(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
             });
         </script>
         <!-- Go Top 按鈕+動畫 end -->
@@ -2636,7 +2666,7 @@ head.appendChild(script);
   </macro:if>
 </macro:includable>
 
-<b:section-contents id='sidebar-right-1'>
+<b:section-contents id='sidebar-left-1'>
   <b:widget id='HTML6' locked='false' title='' type='HTML'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=fifiplanet&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
@@ -2983,7 +3013,7 @@ function setTab(name,cursel,n){
   </style>
 </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
+</b:section-contents><b:section-contents id='sidebar-left-2-1'/><b:section-contents id='sidebar-left-2-2'/><b:section-contents id='sidebar-left-3'>
   <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
     <b:widget-settings>
       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
