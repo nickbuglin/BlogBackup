@@ -10,7 +10,18 @@
 
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
-    <title><data:blog.pageTitle/></title>
+
+
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+<title>
+<data:blog.pageName/> | <data:blog.title/>
+</title>
+<b:else/>
+<title>
+<data:blog.pageTitle/>
+</title>
+</b:if>
+
 
     <b:skin><![CDATA[/*-----------------------------------------------
 
@@ -1084,7 +1095,7 @@ color: #fff
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3dSense+all+is+void+%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3dSense+all+is+void+%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -1265,7 +1276,8 @@ head.appendChild(script);
     <div class='fauxborder-left tabs-fauxborder-left'>
     <div class='fauxborder-right tabs-fauxborder-right'/>
     <div class='region-inner tabs-inner'>
-      <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
+      <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'/>
+      <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'>
         <b:widget id='HTML4' locked='false' title='' type='HTML'>
           <b:widget-settings>
             <b:widget-setting name='content'>&lt;div id=&quot;dropMenu&quot;&gt;
@@ -1987,6 +1999,9 @@ head.appendChild(script);
 
     &lt;li&gt;&lt;a href=&quot;http://line.me/S/sticker/1414794&quot;&gt;&lt;span&gt;Line貼圖&#12290;可愛兔FIFI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 
+    &lt;li&gt;&lt;a href=&quot;http://fifiplanet.blogspot.tw/&quot;&gt;&lt;span&gt;FIFI的星球&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+
   &lt;/ul&gt;
   &lt;/li&gt;
   
@@ -2008,7 +2023,6 @@ head.appendChild(script);
 </b:includable>
         </b:widget>
       </b:section>
-      <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'/>
     </div>
     </div>
     <div class='tabs-cap-bottom cap-bottom'>
@@ -3023,6 +3037,23 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
+            <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+              <b:widget-settings>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+                <b:widget-setting name='style.layout'>728x90</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+            </b:widget>
           </b:section>
         </div>
         </div>
@@ -3078,7 +3109,7 @@ head.appendChild(script);
     <div class='fauxborder-right footer-fauxborder-right'/>
     <div class='region-inner footer-inner'>
       <macro:include id='footer-sections' name='sections'>
-        <macro:param default='2' name='num'/>
+        <macro:param default='2' name='num' value='3'/>
         <macro:param default='footer' name='idPrefix'/>
         <macro:param default='foot' name='class'/>
         <macro:param default='false' name='includeBottom'/>
@@ -3221,7 +3252,7 @@ document.documentElement.firstChild.appendChild(script);
 
 &lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
 &lt;input class=&#39;emailInput&#39; name=&#39;email&#39; placeholder=&#39;輸入 EMAIL&#39; type=&#39;text&#39;/&gt;
-&lt;input name=&#39;uri&#39; type=&#39;hidden&#39; value=&#39;WfuBlog&#39;/&gt;
+&lt;input name=&#39;uri&#39; type=&#39;hidden&#39; value=&#39;SenseAllIsVoid&#39;/&gt;
 &lt;input name=&#39;loc&#39; type=&#39;hidden&#39; value=&#39;zh_TW&#39;/&gt;
 &lt;input class=&#39;emailSubmit&#39; type=&#39;submit&#39; value=&#39;訂閱&#39;/&gt;
 &lt;/form&gt;
@@ -3229,7 +3260,9 @@ document.documentElement.firstChild.appendChild(script);
 
 &lt;iframe src=&quot;https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYesYogaBuddha&amp;tabs=timeline&amp;width=273&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId&quot; width=&quot;273&quot; height=&quot;70&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&quot;https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E9%2582%25A3%25E8%25A3%2598%25E4%25BC%258A%25E6%2599%25AE%25E7%25BE%2585%25E5%258B%25B3-Nature-Exploration-in-Taiwan-244719916000245%2F&amp;tabs=timeline&amp;width=273&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId&quot; width=&quot;273&quot; height=&quot;70&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</b:widget-setting>
+&lt;iframe src=&quot;https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E9%2582%25A3%25E8%25A3%2598%25E4%25BC%258A%25E6%2599%25AE%25E7%25BE%2585%25E5%258B%25B3-Nature-Exploration-in-Taiwan-244719916000245%2F&amp;tabs=timeline&amp;width=273&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId&quot; width=&quot;273&quot; height=&quot;70&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFifiheavenlybody%2F&amp;tabs=timeline&amp;width=273&amp;height=70&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId&quot; width=&quot;273&quot; height=&quot;70&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -3634,4 +3667,4 @@ function setTab(name,cursel,n){
   </div>
 </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+</b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/><b:section-contents id='footer-2-3'/></html>
