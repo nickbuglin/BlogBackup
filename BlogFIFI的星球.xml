@@ -3,7 +3,6 @@
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 
 <head>
-
 <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>
 <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>
 <meta content='https://www.facebook.com/Fifiheavenlybody' property='article:author'/>
@@ -604,7 +603,7 @@ margin:0 !important;
 padding:0 !important;
 }
 
-/* 推薦文章標題的樣式 */
+/* related posts推薦文章標題的樣式 */
 #related-posts h4{
 margin:10px 0px 10px;
 font:18px Oswald;
@@ -616,11 +615,11 @@ text-transform:uppercase
 .related-posts-list ci{
 background-color:#fff;
 box-shadow:0 0 40px rgba(180, 180, 180, 0.7);   /* 外框陰影 */
-width:29.5%;                /* 外框寬度佔百分比 */
+width:29.5%;               /* 外框寬度佔百分比 */
 float:left;
 position:relative;        /* 位置樣式 */
-margin:0 2% 2% 0;         /* 外框的外面空白上下左右距離多少 */
-padding:1%;
+margin:0 2% 2% 0%;        /* 外框的外面空白上下左右距離多少 */
+padding:1%;               /* 留白 */
 }
 
 .related-posts-list ci:nth-child(3n){margin-right:0 !important;}
@@ -633,17 +632,18 @@ text-decoration:none;               /* 文字標線 */
 }
 
 #related-posts sl ci p{
-margin-bottom:0;      /* 下邊框留邊大小 */
+margin-bottom:0px;      /* 下邊框留邊大小 */
 padding-top:10px;     /* 文字上面留邊大小 */
-margin-top:-5px;      /* 文字離上邊框留邊距離 */
+margin-left:3px;      /* 文字離左邊框留邊距離 */
 
 }
 
 /* 圖片樣式 */
 #related-posts .related_img{
-height:85px;          /* 圖片長 */
-width:85px;           /* 圖片寬 */
+height:120px;          /* 圖片高 */
+width:230px;           /* 圖片寬 */
 object-fit:cover;
+
 }
 
 .related-title{
@@ -654,7 +654,8 @@ padding:5px 0px;
 .rthumb{
 float:left;
 margin-top:2px;      /* 圖片離上邊框留邊距離 */
-margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
+margin-left:5px;      /* 圖片離左邊框留邊距離 */
+margin-right:0px;}   /* 圖片離右邊文字留邊距離 */
 /* CSS For related post widget-----END------ */
 
 
@@ -750,7 +751,7 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
         </style>
 
 
-        <!--下拉式導覽選單-->
+       <!--下拉式導覽選單-->
         <style>
             #dropMenu ul, #dropMenu li, #dropMenu span, #dropMenu a {
             margin: 0;
@@ -765,12 +766,12 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             }
 
             #dropMenu a {
-            color: #ffffff; /*文字顏色*/
+            color: #ffffff;                  /*文字顏色*/
             display: inline-block;
             font-family: &#39;Lucida Grande&#39;, &#39;Lucida Sans Unicode&#39;, Helvetica, Arial, Verdana, sans-serif;
-            font-size: 14px; /*文字大小*/
+            font-size: 14px;                 /*文字大小*/
             min-width: 35px;
-            text-align: center; /*文字位置*/
+            text-align: center;              /*文字位置*/
             text-decoration: none;
             /*text-shadow: 0 -1px 0 #eeeeee; /*文字陰影顏色*/
             }
@@ -789,31 +790,35 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
 
             /* 按鈕原本色樣  */
             #dropMenu &gt; ul &gt; li a {
-            border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
-            border-top: 0px solid #d2d2d2;  /* 上面線寬 */
-            border-right: 2px solid #d2d2d2; /* 按鈕間隔寬 */
-            line-height: 34px; /* 按鈕高度 */
-            padding: 0 16px;  /* 文字兩旁留白多少 */
+            border-bottom: 2px solid #d2d2d2;       /* 下底線寬 */
+            border-top: 0px solid #d2d2d2;          /* 上面線寬 */
+            border-right: 2px solid #d2d2d2;        /* 按鈕間隔寬 */
+            line-height: 36px;                      /* 按鈕高度 */
+            padding: 0 16px;                        /* 文字兩旁留白多少 */
             filter: none;
+			border-radius: 10px 10px 10px 10px;         /* 四角圓弧度 */
+            -moz-border-radius: 10px 10px 10px 10px;    /* 四角圓弧度 */
+            -webkit-border-radius: 10px 10px 10px 10px; /* 四角圓弧度 */
             }
 
-            /* 滑鼠移過去的按鈕色樣  */
+            /* 滑鼠移過最上層文字樣式  */
             #dropMenu &gt; ul &gt; li a:hover {
-            color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
+            color:#af0322;                /* 滑鼠移過去文字顏色 */
+			font-size:130%;               /* 滑鼠移過去文字放大 */
             }
 
             /* 最後一個按鈕邊緣圓弧度 */
             #dropMenu &gt; ul &gt; li:last-child a {
-            border-radius: 10px 10px 0 0;
-            -moz-border-radius: 10px 10px 0 0;
-            -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
             }
 
             /* 第一個按鈕邊緣圓弧度 */
             #dropMenu &gt; ul &gt; li:first-child a {
-            border-radius: 10px 10px 0 0;
-            -moz-border-radius: 10px 10px 0 0;
-            -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
             }
 
             #dropMenu &gt; ul &gt; .has-sub:hover &gt; ul {
@@ -840,21 +845,29 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
             #dropMenu .has-sub ul li {
             text-align: center;
             }
+			
+			/* 子選單文字動畫 */
+            #dropMenu .has-sub ul li a:hover {
+            color:#af0322;                /* 滑鼠移過去文字顏色 */
+			font-size:120%;               /* 滑鼠移過去文字放大 */
+            }
 
             /* 子選單按鈕樣式 */
             #dropMenu .has-sub ul li a {
             border-radius: 10px 10px 10px 10px;          /* 子選單按鈕圓弧度 */
             -moz-border-radius: 10px 10px 10px 10px;     /* 子選單按鈕圓弧度 */
-            -webkit-border-radius: 10px 10px 10px 10px; /* 子選單按鈕圓弧度 */
+            -webkit-border-radius: 10px 10px 10px 10px;  /* 子選單按鈕圓弧度 */
             border-top: 0 none;
             border-left: 1px solid #d2d2d2;
             width: 170px;
             display: block;
             font-size: 14px;
-            line-height: 110%;  /* 文字高度 */
-            padding: 8px 10px;  /* 文字上下留空白 左右 */
+            line-height: 110%;                  /* 文字高度 */
+            padding: 10px 10px;                  /* 文字上下留空白 左右 */
             text-align: left;
             }
+			
+		
         </style>
 
 
@@ -1103,7 +1116,6 @@ margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
 		</b:if>
 		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
 
-  
 	  
 	  
 </head>
@@ -2077,31 +2089,6 @@ head.appendChild(script);
         <b:include data='post' name='postQuickEdit'/>
       </span>
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
-                                                            <div class='social_buttons'>
-                                                                <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
-                                                                    <i class='social_logo fa fa-facebook'/>
-                                                                </a>
-                                                                <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
-                                                                    <i class='social_logo fa fa-google-plus'/>
-                                                                </a>
-                                                                <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
-                                                                    <i class='social_logo fa fa-weibo'/>
-                                                                </a>
-                                                                <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
-                                                                    <i class='social_logo fa fa-twitter'/>
-                                                                </a>
-                                                                <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-                                                                    <i class='social_logo fa fa-pinterest-p'/>
-                                                                </a>
-                                                                <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
-                                                                    <i class='social_logo fa fa-whatsapp'/>
-                                                                </a>
-
-															</div>
-														</b:if>
-                                                        <!-- -->	
-
       <!-- share buttons -->
       <div class='post-share-buttons goog-inline-block'>
         <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
@@ -2126,6 +2113,33 @@ head.appendChild(script);
       </div>
 
       <div class='post-footer-line post-footer-line-3'>
+	  
+	  
+	<div id='social_but'>
+	<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
+																				<div class='social_buttons'>
+																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
+																						<i class='social_logo fa fa-facebook'/>
+																					</a>
+																					<a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
+																						<i class='social_logo fa fa-google-plus'/>
+																					</a>
+																					<a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
+																						<i class='social_logo fa fa-weibo'/>
+																					</a>
+																					<a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
+																						<i class='social_logo fa fa-twitter'/>
+																					</a>
+																					<a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
+																						<i class='social_logo fa fa-pinterest-p'/>
+																					</a>
+																					<a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
+																						<i class='fa fa-commenting-o'/>
+																					</a>
+																				</div>
+																			</b:if>
+	</div>
+	<!-- -->	  
 	  
 	  
 	  
@@ -2557,6 +2571,30 @@ head.appendChild(script);
         <!-- Go Top 按鈕+動畫 end -->
 
 
+		
+		
+		<!-- 讓工具浮動固定在底部 (需要jquery) -->
+		<script type='text/javascript'> 
+		$(function() {
+			var ks_widget_top = $(&#39;#social_but&#39;).offset().top - $(window).height() + 70;
+			var ks_sticky_widgets = function(){
+				var ks_current_top = $(window).scrollTop(); 
+					
+				if (ks_widget_top &gt; ks_current_top) { 
+					$(&#39;#social_but&#39;).css({ &#39;position&#39;: &#39;fixed&#39;, &#39;bottom&#39;:0, &#39;z-index&#39;:9999 });
+				} else {
+					$(&#39;#social_but&#39;).css({ &#39;position&#39;: &#39;relative&#39;}); 
+				}   
+			};
+			ks_sticky_widgets();
+			  $(window).scroll(function() {
+				 ks_sticky_widgets();
+			});
+		});</script>
+		
+		
+		
+		
 </body>
 
 <macro:includable id='sections' var='col'>
