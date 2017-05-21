@@ -35,7 +35,7 @@ URL:      www.blogger.com
    ====================
    <Variable name="keycolor" description="Main Color" type="color" default="#1a222a" value="#1a222a"/>
    <Variable name="body.background" description="Body Background" type="background"
-       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="$(color) none no-repeat scroll center center"/>
+       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="$(color) url(http://4.bp.blogspot.com/-WtTm2RTjm6M/WRcVUyWLcII/AAAAAAAAr0g/KEkPKvF6pG4UlOYvMiA2B4Kq2yUbeWn4wCK4B/s0/blog%25E8%2583%258C%25E6%2599%25AF%25E5%259C%2596_FIFI_20170513.jpg) no-repeat fixed top center"/>
 
    <Group description="Page Text" selector="body">
      <Variable name="body.font" description="Font" type="font"
@@ -44,7 +44,7 @@ URL:      www.blogger.com
    </Group>
 
    <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#296695" value="#df5b59"/>
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#296695" value="#ffffff"/>
      <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="transparent"/>
      <Variable name="post.background.color" description="Post Background" type="color" default="#ffffff" value="#ffffff"/>
    </Group>
@@ -151,8 +151,8 @@ URL:      www.blogger.com
    <Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
        default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
 
-   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left" value="left"/>
-   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right" value="right"/>
+   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
 */
 
 /* Content
@@ -662,96 +662,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 
     <b:include data='blog' name='google-analytics'/>
 
-
-
-<script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'/>
-<style>
-/*隨機文章V2*/
-.rndPost2_caption {
-font-size: 16px;
-font-weight: bold;
-line-height: 20px;
-text-align: left;
-margin: 10px 0;
-}
-#rndPost2_main {
-position: relative;
-margin: auto;
-}
-#rndPost2_main,
-#rndPost2_main *,
-.rndPost2_left,
-.rndPost2_right {
-box-sizing: border-box;
-}
-.rndPost2_left {
-float: left;
-}
-.rndPost2_right {
-float: right;
-}
-.rndPost2_left,
-.rndPost2_right {
-width: 35px;
-margin: 0;
-padding: 5px;
-text-align: center;
-cursor: pointer;
-opacity: .6;
-transition: all .7s;
--webkit-transition: all .7s;
--moz-transition: all .7s;
-}
-.rndPost2_left:hover,
-.rndPost2_right:hover {
-opacity: 1;
-}
-.rndPost2_left img,
-.rndPost2_right img {
-width: 25px;
-}
-.rndPost2_post {
-display: inline-block;
-padding: 5px;
-font-size: 12px;
-}
-.rndPost2_post a {
-display: block;
-position: relative;
-opacity: .8;
-transition: all .7s;
--webkit-transition: all .7s;
--moz-transition: all .7s;
-}
-.rndPost2_post a:hover {
-opacity: 1;
-}
-.rndPost2_post img {
-display: block;
-max-width: 100%;
-padding: 5px;
-background: #FFF;
-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
--moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
-box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
-}
-.rndPost2_title {
-position: absolute;
-bottom: 5px;
-left: 5px;
-right: 5px;
-padding: 5px;
-z-index: 5;
-background-color: rgba(0, 0, 0, 0.5);
-color: #fff;
-text-align: left;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
-}
-</style>
-
-
    
 <script type='text/javascript'>
       //<![CDATA[ 
@@ -960,22 +870,22 @@ text-align: left;
 
 &#65279;<style type='text/css'>  /* 畫底線功能 */
 b1{
-background: url(https://lh3.googleusercontent.com/-qtQaJ-DjYhM/WPK9j69rIlI/AAAAAAAAquE/9Y9pc8QXF_8cgL17PicpMrIgIteNIf17gCHM/s144/blue.png) repeat no-repeat bottom;
+background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
 line-height: 22px;
 }
  
 g1{
-background: url(https://lh3.googleusercontent.com/-crr2X-fOddg/WPK2AdqSx5I/AAAAAAAAqr4/KFaJn9lTWwsFkkax0Yt8jQFoVRgs7s_tQCHM/s144/Green.png) repeat no-repeat bottom;
+background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
 line-height: 22px;
 }
  
 r1{
-background: url(https://lh3.googleusercontent.com/-2XRcH6ZogvA/WPK2AT9gIJI/AAAAAAAAqr4/1IWNLOqBXBcnD-LizfCmc74vQ7YKe4A-QCHM/s144/Pink.png) repeat no-repeat bottom;
+background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
 line-height: 22px;
 }
 
 y1{
-background: url(https://lh3.googleusercontent.com/-WG-YKiLIeO4/WPK6t-PsHZI/AAAAAAAAqtE/4E_dr3cvpJoOSf20Kaa8fUVFz0ED-AFNwCHM/s144/Yellow.png) repeat no-repeat bottom;
+background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
 line-height: 22px;
 }
 
@@ -1012,37 +922,6 @@ document.createElement(&quot;y1&quot;)
 
 
 
-
-<style>
-/* Feedly 訂閱人數 */
-.feedly_btn { /* 整個區塊 */
-position: relative;
-display: inline-block;
-margin: 10px 10px 0px 0px;
-}
-.feedly_btn img { /* 按鈕圖片 */
-width: 90px;
-height: 35px;
-}
-.feedly_count { /* 訂閱人數 */
-position: absolute;
-top: -12px;
-right: -10px;
-padding: 2px 6px;
-color: white;
-font-family: arial, sans-serif;
-font-size: 12px;
-background-color: #d60000;
-border-radius: 15px;
-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
-text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-line-height: 12px;
-border: 2px solid white;
-z-index: 2;
-}
-</style>
-
-
 <style>
 /*email訂閱*/
 #emailForm input {
@@ -1067,8 +946,182 @@ color: #fff
 
 
 
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'/>
+        <style>
+            /* 隨機文章 */
+            .rndPost_caption { /* 標題文字 */
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: left;
+            margin-top: 10px;
+            }
+            .rndPost_allPost { /* 隨機文章區塊 */
+            display: table-row;
+            }
+            .rndPost_post { /* 個別文章區塊 */
+            padding: 5px;
+            display: table-cell;
+            transition: background .7s;
+            -webkit-transition: background .7s;
+            -moz-transition: background .7s;
+            }
+            .rndPost_post:hover {
+            background: #f5f5f5;
+            text-decoration: none;
+            }
+            .rndPost_post:hover .rndPost_picFrame {
+            border: 1px solid transparent;
+            }
+            .rndPost_post:hover .rndPost_pic {
+            opacity: 0.5;
+            }
+            .rndPost_post:hover .rndPost_comm {
+            opacity: 1;
+            }
+            .rndPost_picFrame { /* 圖片外框 */
+            padding: 2px;
+            border: 1px solid #ddd;
+            position: relative;
+            transition: border .7s;
+            -webkit-transition: border .7s;
+            -moz-transition: border .7s;
+            }
+            .rndPost_pic { /* 圖片 */
+            border-radius: 5px;
+            display: block;
+            opacity: 1;
+            transition: opacity .7s;
+            -webkit-transition: opacity .7s;
+            -moz-transition: opacity .7s;
+            }
+            .rndPost_comm {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: #222;
+            text-shadow: 1px 1px 2px #bbb;
+            font-size: 11px;
+            opacity: 0;
+            transition: opacity .7s;
+            -webkit-transition: opacity .7s;
+            -moz-transition: opacity .7s;
+            }
+            .rndPost_comm img {
+            width: 12px;
+            height: auto;
+            vertical-align: -3px;
+            }
+            .rndPost_title { /* 文章標題 */
+            font-size: 13px;
+            font-weight: bold;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: color .7s;
+            -webkit-transition: color .7s;
+            -moz-transition: color .7s;
+            }
+        </style>
 
 
+
+
+<!--扁平化社群分享按鈕-->
+        <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
+        <style>
+            .social_buttons {
+            display: inline-block;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            }
+
+            .social_buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;      /* 文字內容顏色 */
+            padding: 5px;    /* 文字離邊框&#65292;空下多少距離 */
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            border-radius: 8px;  /* 方框圓角 */
+            }
+
+            .social_buttons a:hover {
+            -ms-transform: translateY(-4px);       /* 滑鼠移過&#65292;方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過&#65292;方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過&#65292;方框移動多少距離 */
+            }
+
+            .social_buttons i {
+            width: 40px;         /* 文字離左右邊框&#65292;空下多少距離 */
+            height: 40px;        /* 文字離上下邊框&#65292;空下多少距離 */
+            font-size: 32px;     /* 文字大小 */
+            text-align: center;  /* 文字位置 */
+
+            }
+
+            .social_buttons i:before {
+            margin: auto;
+            line-height: 40px;  /* 文字離上下邊框&#65292;空下多少距離 */
+            vertical-align: middle;
+            }
+
+            .social_fb {
+            background-color: rgb(59, 89, 152);
+            }
+
+            .social_weibo {
+            background-color: rgb(245, 202, 89);
+            }
+
+            .social_gplus {
+            background-color: rgb(220, 78, 65);
+            }
+
+            .social_twitter {
+            background-color: rgb(85, 172, 238);
+            }
+
+            .social_pinterest {
+            background-color: rgb(190, 30, 30);
+            }
+
+            .social_line {
+            background-color: rgb(70, 190, 30);
+            }
+
+            .social_text {
+            font-size: 12px;
+            padding: 0 15px 20 5px;
+            line-height: 32px;
+            }
+        </style>
+
+
+
+      <!--回到頂端(需要jquery)-->
+      <style>
+        #goTop {
+        position: fixed;
+        bottom: 45px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+        right: 7px; /* 與右方的距離 */
+        width: 50px; /* 按鈕原始寬度 */
+        height: 50px; /* 按鈕原始高度 */
+        opacity: .5; /* 按鈕原始透明度 */
+        z-index: 10;
+        cursor: pointer;
+        transition: all .5s; /* 動畫效果 持續期間 */
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        }
+        #goTop:hover { /* 滑鼠經過按鈕時 */
+        opacity: 1; /* 透明度 */
+        width: 80px; /* 按鈕寬度 */
+        height: 80px; /* 按鈕高度 */
+        }
+      </style>
 
 </head>
 
@@ -1182,13 +1235,13 @@ head.appendChild(script);
       <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
         <b:widget id='Header1' locked='false' title='FIFI的星球 (標頭)' type='Header'>
           <b:widget-settings>
-            <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-BKHEdh2oFUw/WPsv_N-rNRI/AAAAAAAAq7Y/OoSnGOB-3Csal9OCoHppy-dDbp8BEuIggCK4B/s1600/hugme2.jpg</b:widget-setting>
-            <b:widget-setting name='displayHeight'>520</b:widget-setting>
+            <b:widget-setting name='displayUrl'/>
+            <b:widget-setting name='displayHeight'>0</b:widget-setting>
             <b:widget-setting name='sectionWidth'>752</b:widget-setting>
-            <b:widget-setting name='useImage'>true</b:widget-setting>
+            <b:widget-setting name='useImage'>false</b:widget-setting>
             <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-            <b:widget-setting name='imagePlacement'>BEFORE_DESCRIPTION</b:widget-setting>
-            <b:widget-setting name='displayWidth'>1200</b:widget-setting>
+            <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+            <b:widget-setting name='displayWidth'>0</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
 
@@ -1251,11 +1304,9 @@ head.appendChild(script);
   </div>
 </b:includable>
           <b:includable id='title'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+  <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
     <data:title/>
-  <b:else/>
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-  </b:if>
+  </b:tag>
 </b:includable>
         </b:widget>
       </b:section>
@@ -1289,13 +1340,12 @@ head.appendChild(script);
 
 &lt;li&gt;&lt;a href=&quot;https://plus.google.com/100309883729481599711&quot;&gt;&lt;span&gt;Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href=&quot;http://line.me/S/sticker/1414794&quot;&gt;&lt;span&gt;FIFI Line貼圖 Part.1&lt;/span&gt;&lt;/a&gt;
- 
-  
-&lt;li&gt;&lt;a href=&quot;https://fifiplanet.blogspot.tw/&quot;&gt;&lt;span&gt;FIFI Line貼圖 Part.2(即將上架)&lt;/span&gt;&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://store.line.me/stickershop/product/1435229&quot;&gt;&lt;span&gt;FIFI Line貼圖-Fifi Daily&lt;/span&gt;&lt;/a&gt;
+   
+&lt;li&gt;&lt;a href=&quot;https://store.line.me/stickershop/product/1429901&quot;&gt;&lt;span&gt;FIFI Line貼圖-Fifi&amp;Lulu 感情篇&lt;/span&gt;&lt;/a&gt;
 
   
-&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;網址&quot;&gt;&lt;span&gt;優質推薦 &#9660;&lt;/span&gt;&lt;/a&gt;
+&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;https://www.facebook.com/&quot;&gt;&lt;span&gt;優質推薦 &#9660;&lt;/span&gt;&lt;/a&gt;
 	&lt;ul&gt;
 		&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/&quot;&gt;&lt;span&gt;本來無一物&#12290;學遍佛法&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;http://natureintw.blogspot.tw/&quot;&gt;&lt;span&gt;那裘伊普羅勳&#12290;走遍台灣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1397,7 +1447,7 @@ head.appendChild(script);
               <b:widget-settings>
                 <b:widget-setting name='showDateHeader'>true</b:widget-setting>
                 <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
-                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                 <b:widget-setting name='authorLabel'>By</b:widget-setting>
                 <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                 <b:widget-setting name='style.urlcolor'>#999999</b:widget-setting>
@@ -1406,14 +1456,14 @@ head.appendChild(script);
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='style.layout'>728x90</b:widget-setting>
                 <b:widget-setting name='showLabels'>true</b:widget-setting>
                 <b:widget-setting name='showLocation'>false</b:widget-setting>
                 <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                 <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                 <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
                 <b:widget-setting name='showReactions'>false</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='top'>
@@ -2047,6 +2097,38 @@ head.appendChild(script);
       </div>
 
       <div class='post-footer-line post-footer-line-3'>
+
+
+                                                                            <b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
+
+                                                                                <div class='social_buttons'>
+                                                                                    <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 FB 分享'>
+                                                                                        <i class='social_logo fa fa-facebook'/>
+
+                                                                                    </a>
+                                                                                    <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Google+ 分享'>
+                                                                                        <i class='social_logo fa fa-google-plus'/>
+
+                                                                                    </a>
+                                                                                    <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Weibo 分享'>
+                                                                                        <i class='social_logo fa fa-weibo'/>
+                                                                                    </a>
+                                                                                    <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 twitter 分享'>
+                                                                                        <i class='social_logo fa fa-twitter'/>
+                                                                                    </a>
+                                                                                    <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
+                                                                                        <i class='social_logo fa fa-pinterest-p'/>
+                                                                                    </a>
+
+                                                                                    <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=500,width=800&quot;); return false;' target='_blank' title='用 Line 分享'>
+                                                                                        <i class='social_logo fa fa-whatsapp'/>
+                                                                                    </a>
+
+                                                                                </div>
+                                                                                <!-- -->
+                                                                            </b:if>
+
+
       <span class='post-location'>
         <b:if cond='data:top.showLocation and data:post.location'>
           <data:postLocationLabel/>
@@ -2334,14 +2416,6 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-              <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-            </b:widget>
           </b:section>
         </div>
         </div>
@@ -2406,7 +2480,7 @@ head.appendChild(script);
       <b:section class='foot' id='footer-3' name='Footer' showaddelement='no'>
         <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
           <b:widget-settings>
-            <b:widget-setting name='copyright'>&#169; 2017 Sense all is void 本來無一物 All rights reserved.</b:widget-setting>
+            <b:widget-setting name='copyright'>&#169; 2017 Fay All rights reserved</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
     <div class='widget-content' style='text-align: center;'>
@@ -2446,49 +2520,41 @@ head.appendChild(script);
 
 
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script>
-//<![CDATA[
-var rndPost2 = {
-totalSlide: 10, // 全部輪播的文章數量
-showSlide: 3, // 一次輪播的文章數量
-width: 1, // 縮圖寬度比例
-height: 0.618, // 縮圖高度比例
-autoplay: true, // 是否自動輪播
-autoplayTimeout: 4, // 幾秒切換輪播
-caption: "隨機文章推薦 :", // 大標題字樣
-noImage: "https://lh3.googleusercontent.com/-i2B5KM9XjlM/WNkL-jBMgyI/AAAAAAAAp0s/ENKSN3Ls3n8dRW0hN3W2IC8vpCNNmGMHgCHM/s144/IMG_1818.jpg", //無縮圖的替代圖片
-leftArrow: "https://2.bp.blogspot.com/-s76E9q3dpb8/VyiLZIrmRNI/AAAAAAAANzk/F3yKhGVL-oIgUxK6yu0IoFNLyihE4WIZgCLcB/s1600/left-arrow.png", // 左箭頭圖案
-rightArrow: "https://1.bp.blogspot.com/-J7XTkRWjDNA/VyiLZHRcL3I/AAAAAAAANzo/FZVtVTEn6QE-DeBgt59-97VeAM3xURdwACLcB/s1600/right-arrow.png", // 右箭頭圖案
-excludeLabel: ["站務", "休閒"], // 排除的標籤字串
-location: ".post-footer-line-3", // 擺放位置
-//]]>
-postUrl: &quot;<data:blog.canonicalUrl/>&quot;
-};
-//<![CDATA[
-rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=function(){var titleSet=rndPost2.titleSet,urlSet=rndPost2.urlSet,picSet=rndPost2.picSet,showSlide=rndPost2.showSlide,l=rndPost2.urlSet.length,width=rndPost2.width,height=rndPost2.height,arrowWidth=$(".rndPost2_left").outerWidth(),$left=$(".rndPost2_left"),$right=$(".rndPost2_right"),$main=$("#rndPost2_main"),leftArrow=rndPost2.leftArrow,rightArrow=rndPost2.rightArrow,html="",info="",totalWidth,arrowLineheight,eachWidth,eachHeight,pic,size,i;for(leftArrow=leftArrow.indexOf("http")>-1?"<img src='"+leftArrow+"'/>":leftArrow,rightArrow=rightArrow.indexOf("http")>-1?"<img src='"+rightArrow+"'/>":rightArrow,totalWidth=$(rndPost2.location).width()-2*arrowWidth,eachWidth=Math.floor(totalWidth/showSlide),eachHeight=Math.round(eachWidth*height/width),size="w"+2*eachWidth+"-h"+2*eachHeight+"-n",i=0;l>i;i++)pic=picSet[i].replace("http:","https:").replace("s72-c",size),html+="<div class='rndPost2_post' title='"+titleSet[i]+"'>",html+="<a href='"+urlSet[i]+"' target='_blank'><img src='"+pic+"'/>",html+="<div class='rndPost2_title'>"+titleSet[i]+"</div>",html+="</a></div>";var _0x9a6e=["3=\"<a p='y://D.I.O/R/S/T-b-c-d-e.1' g='h' i='j-k: l; m: #o; 4-q: r, s-t; 4-u: v; w: x; 12: 0; z-A: B;' C='\u96a8\u6a5f\u6587\u7ae0 5 + \u8f2a\u64ad\\n\u7a0b\u5f0f\u8a2d\u8a08\uff1aE F'>\u24e6 G H 5</a>\";$2.1(1).J();$2.K({L:M,N:6,P:Q,7:8.7,9:8.9*U,V:6});$2.W(X).Y().Z(\".10-11\").f(3);","|","split","|html|main|info|font|V2|true|autoplay|rndPost2|autoplayTimeout|||||slider|prepend|target|_blank|style|text|decoration|none|color||ccc|href|family|Arial|sans|serif|size|11px|position|absolute|http|line|height|25px|title||||||blog|hide|owlCarousel|items|showSlide|loop|com|nav|false|2016|05|blogger|1000|autoplayHoverPause|width|totalWidth|show|children|owl|controls|right","","fromCharCode","replace","\\w+","\\b","g"];eval(function(a,b,c,d,e,f){if(e=function(a){return(b>a?_0x9a6e[4]:e(parseInt(a/b)))+((a%=b)>35?String[_0x9a6e[5]](a+29):a.toString(36))},!_0x9a6e[4][_0x9a6e[6]](/^/,String)){for(;c--;)f[e(c)]=d[c]||e(c);d=[function(a){return f[a]}],e=function(){return _0x9a6e[7]},c=1}for(;c--;)d[c]&&(a=a[_0x9a6e[6]](new RegExp(_0x9a6e[8]+e(c)+_0x9a6e[8],_0x9a6e[9]),d[c]));return a}(_0x9a6e[0],62,65,_0x9a6e[3][_0x9a6e[2]](_0x9a6e[1]),0,{})),arrowLineheight=eachHeight+10+"px",$left.html(leftArrow).css("line-height",arrowLineheight),$right.html(rightArrow).css("line-height",arrowLineheight),$left.click(function(){$main.trigger("prev.owl.carousel")}),$right.click(function(){$main.trigger("next.owl.carousel")})},rndPost2.getPost=function(){var a="/feeds/posts/summary?alt=json-in-script&max-results=0&callback=?",b="";b+="<div class='rndPost2_caption'>"+rndPost2.caption+"</div>",b+="<div class='owl_arrow owl-prev rndPost2_left'></div>",b+="<div class='owl_arrow owl-next rndPost2_right'></div>",b+="<div class='owl-carousel' id='rndPost2_main'>",$(rndPost2.location).append(b),$("#rndPost2_main").html("<span id='rp2_host' class='item-control blog-admin'></span>"),$.getJSON(a,function(a){var n,b=rndPost2.totalSlide,c=parseInt(a.feed.openSearch$totalResults.$t),d=c>b?b:c-1,e=0,f=0,g=rndPost2.excludeLabel,h=[],i=[],j=rndPost2.titleSet,k=rndPost2.urlSet,l=rndPost2.picSet,m=function(){var a=Math.ceil(Math.random()*c),b="/feeds/posts/summary?alt=json-in-script&start-index="+a+"&max-results=1&callback=?";return h.indexOf(a)>-1?void m():(h.push(a),void $.getJSON(b,function(b){var r,s,t,u,v,w,h=b.feed.entry[0],n=h.title.$t,o=h.link,p=g.length,q=/(\/\w\d+(-\w\d.*)*)\/([^\/]+)$/;if(h.category)for(r=h.category,s=r.length,t=0;s>t;t++)for(u=0;p>u;u++)if(r[t].term.search(g[u])>-1)return f++,void(c-f==e?rndPost2.showPost():m());for(s=h.link.length,t=0;s>t;t++)if("alternate"==o[t].rel){v=o[t].href;break}w=h.media$thumbnail?h.media$thumbnail.url:rndPost2.noImage,w.indexOf("youtube")<0&&w.indexOf("flickr")<0&&(w=w.replace(q,"/s72-c/$3")),i.indexOf(a)<0&&v!=rndPost2.postUrl?(i.push(a),j.push(n),k.push(v),l.push(w),e++,e==d&&rndPost2.showPost(),c-f==e&&rndPost2.showPost()):m()}))};for(n=0;d>n;n++)m()})},rndPost2.init=function(){var a="<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css'></link>";a+="<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css'></link>",$("head").append(a),$.getScript("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js",function(){rndPost2.getPost()})},rndPost2.init();
-//]]>
-</script>
-</b:if>
-<!-- Designed by WFU BLOG-->
+        <!-- 隨機文章 start -->
+        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+            <script>
+                //<![CDATA[
+                var rndPost = {
+                show : 4, // 隨機文章的數量
+                width : 1, // 縮圖寬度比例
+                height : 0.618, // 縮圖高度比例
+                caption : "隨機推薦文章:", // 大標題字樣
+                noImage : "https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/IMG_1818.jpg", //無縮圖的替代圖片
+                comment : 0, // 若不顯示留言數量, 請改為 0
+                excludeLabel : ["。大般若經 The Maha Prajna Paramita", "。華嚴經 The Avatamsaka Sutra"], // 排除的標籤字串, 請放在雙引號 "" 之內, 每個字串用小寫逗號 "," 隔開, 最後一個字串後面與右括弧之間不可有逗號
+                location : ".post-footer-line-3", // 擺放位置
+                //]]>
+                postUrl : &quot;<data:blog.canonicalUrl/>&quot;
+                };
+                jQuery.getScript(&quot;https://dl.getdropbox.com/s/xcz6q5e5nt5yhpv/rndPost-min-150506.js&quot;);
+            </script>
+        </b:if>
+        <!-- 隨機文章 end-->
 
 
-
-<!-- Feedly 訂閱人數 start -->
-<script>
-//<![CDATA[
-var feedlyCount = {
-rssFeed: "http://feeds.feedburner.com/fifiplanet", // 填入 RSS feed 網址
-feedlyImg: "http://3.bp.blogspot.com/-rxSbp9t_nCA/U70xOv43lkI/AAAAAAAAJzQ/UvyfvA0685s/s0/feedly_subscription.png" // 可自訂 Feedly 按鈕圖片
-};
-(function () {
-var url = "https://dl.getdropbox.com/s/kdg2efk9ydio4qb/feedly-count.js?dl=1",
-script = document.createElement("script");
-script.src = url;
-document.documentElement.firstChild.appendChild(script);
-} )();
-//]]>
-</script>
+        <!-- Go Top 按鈕+動畫 start -->
+        <img id='goTop' src='http://4.bp.blogspot.com/-28LaVG5DtBo/VQ_XOQosQQI/AAAAAAAALY4/T4uKguB0Ttk/s100/up-button.png' title='回到頂端 Back to Top'/>
+        <script>
+            $.extend($.easing, {
+            easeOutExpo: function (x, t, b, c, d) {
+            return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+            }
+            });
+            $(&quot;#goTop&quot;).click(function(){
+            $(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
+            });
+        </script>
+        <!-- Go Top 按鈕+動畫 end -->
 
 
 </body>
@@ -2535,10 +2601,7 @@ document.documentElement.firstChild.appendChild(script);
 <b:section-contents id='sidebar-right-1'>
   <b:widget id='HTML6' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;span class=&quot;feedly_btn&quot; title=&quot;使用Feedly訂閱&quot;&gt;&lt;/span&gt;
-
-
-&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=fifiplanet&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
+      <b:widget-setting name='content'>&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=fifiplanet&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
 &lt;input class=&#39;emailInput&#39; name=&#39;email&#39; placeholder=&#39;輸入 EMAIL&#39; type=&#39;text&#39;/&gt;
 &lt;input name=&#39;uri&#39; type=&#39;hidden&#39; value=&#39;fifiplanet&#39;/&gt;
 &lt;input name=&#39;loc&#39; type=&#39;hidden&#39; value=&#39;zh_TW&#39;/&gt;
@@ -2570,6 +2633,7 @@ document.documentElement.firstChild.appendChild(script);
     <div class='widget-content'>
       <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
         <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
           <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
             <tbody>
               <tr>
@@ -2731,7 +2795,16 @@ function setTab(name,cursel,n){
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+    <b:widget-settings>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <div class='widget-content'>
     <data:adCode/>
@@ -2741,7 +2814,7 @@ function setTab(name,cursel,n){
   </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='熱門文章' type='PopularPosts'>
     <b:widget-settings>
-      <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+      <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
       <b:widget-setting name='showThumbnails'>true</b:widget-setting>
       <b:widget-setting name='showSnippets'>true</b:widget-setting>
       <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
@@ -2783,14 +2856,6 @@ function setTab(name,cursel,n){
       </li>
       </b:loop>
     </ul>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense4' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
     <b:include name='quickedit'/>
   </div>
 </b:includable>
@@ -2881,7 +2946,16 @@ function setTab(name,cursel,n){
 </b:includable>
   </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
-  <b:widget id='AdSense3' locked='false' title='' type='AdSense'>
+  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+    <b:widget-settings>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+      <b:widget-setting name='style.layout'>300x1050</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <div class='widget-content'>
     <data:adCode/>
