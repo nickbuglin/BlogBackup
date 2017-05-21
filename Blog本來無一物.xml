@@ -741,7 +741,7 @@ text-overflow: ellipsis;
 </style>
 
 
-
+   
 <script type='text/javascript'>
       //<![CDATA[ 
       <!-- Script functions for Related Posts: RelatedLabels(), RemoveDuplicatedPosts(), contains(), ShowRelatedPosts()--> 
@@ -855,53 +855,10 @@ border: none!important;
 float: left;
 }
 
-/*
-#dropMenu &gt; ul &gt; li.active &gt; a {
-background: #d9d9d9 url(http://2.bp.blogspot.com/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left bottom;
-background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
-background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
-filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#d9d9d9&#39;, endColorstr=&#39;#bfbfbf&#39;, GradientType=0);
-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
--moz-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
--webkit-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
-filter: none;
-}
-*/
-
-/*
-#dropMenu &gt; ul &gt; li.active a:hover {
-background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
-background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
-background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
-filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#d9d9d9&#39;, endColorstr=&#39;#bfbfbf&#39;, GradientType=0);
-filter: none;
-}
-*/
-
 
 /* 按鈕原本色樣  */
 #dropMenu &gt; ul &gt; li a {
-/*box-shadow: inset 0 0 0 5px #ffffff;
--moz-box-shadow: inset 0 0 0 1px #ffffff;
--webkit-box-shadow: inset 0 0 0 1px #ffffff;  /* 按鈕的陰影 */
 
-/*background: #bfbfbf url(http://2.bp.blogspot.com/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left top;
-background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #e5e5e5), color-stop(51%, #d7d7d7), color-stop(100%, #ededed));
-background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
-background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
-background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
-background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%); /* 按鈕下半截漸層顏色 */
-
-/*filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#ededed&#39;, GradientType=0);
-*/
 
 border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
 border-top: 0px solid #d2d2d2;  /* 上面線寬 */
@@ -915,17 +872,6 @@ filter: none;
 /* 滑鼠移過去的按鈕色樣  */
 #dropMenu &gt; ul &gt; li a:hover {
 
-/*
-background: #ffffff url(http://2.bp.blogspotcom/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left bottom;
-background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(50%, #bfbfbf), color-stop(51%, #b0b0b0), color-stop(100%, #c7c7c7));
-background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
-background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
-background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
-background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
-filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#ededed&#39;, GradientType=0);
-filter: none;
-*/
 color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
 
 }
@@ -995,7 +941,49 @@ text-align: left;
 
 
 
+
+
+
+
+
+
+&#65279;<style type='text/css'>
+b1{
+background: url(https://lh3.googleusercontent.com/-qtQaJ-DjYhM/WPK9j69rIlI/AAAAAAAAquE/9Y9pc8QXF_8cgL17PicpMrIgIteNIf17gCHM/s144/blue.png) repeat no-repeat bottom;
+line-height: 22px;
+}
+ 
+g1{
+background: url(https://lh3.googleusercontent.com/-crr2X-fOddg/WPK2AdqSx5I/AAAAAAAAqr4/KFaJn9lTWwsFkkax0Yt8jQFoVRgs7s_tQCHM/s144/Green.png) repeat no-repeat bottom;
+line-height: 22px;
+}
+ 
+r1{
+background: url(https://lh3.googleusercontent.com/-2XRcH6ZogvA/WPK2AT9gIJI/AAAAAAAAqr4/1IWNLOqBXBcnD-LizfCmc74vQ7YKe4A-QCHM/s144/Pink.png) repeat no-repeat bottom;
+line-height: 22px;
+}
+
+y1{
+background: url(https://lh3.googleusercontent.com/-WG-YKiLIeO4/WPK6t-PsHZI/AAAAAAAAqtE/4E_dr3cvpJoOSf20Kaa8fUVFz0ED-AFNwCHM/s144/Yellow.png) repeat no-repeat bottom;
+line-height: 22px;
+}
+
+</style>
+ 
+<script type='text/javascript'>
+document.createElement(&quot;b1&quot;)
+document.createElement(&quot;g1&quot;)
+document.createElement(&quot;r1&quot;)
+document.createElement(&quot;y1&quot;)
+</script>
+
+
+
+
   </head>
+
+
+
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
 
@@ -2760,7 +2748,7 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
 </macro:includable>
 
 <b:section-contents id='sidebar-right-1'>
-  <b:widget id='Subscribe1' locked='false' title='訂閱我們' type='Subscribe'>
+  <b:widget id='Subscribe1' locked='false' title='訂閱' type='Subscribe'>
     <b:includable id='main'>
   <div style='white-space:nowrap'>
     <b:if cond='data:title != &quot;&quot;'>
@@ -2848,9 +2836,256 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
     <b:include name='quickedit'/>
   </b:includable>
   </b:widget>
-  <b:widget id='Text1' locked='false' title='本來無一物的功德迴向' type='Text'>
+  <b:widget id='Text1' locked='false' title='本來無一物的功德迴向' type='Text' version='1'>
     <b:widget-settings>
       <b:widget-setting name='content'><![CDATA[<span style="font-weight: normal;color:#cc0000;">我此普賢殊勝行，無邊勝福皆迴向，普願沉溺諸眾生，速往無量光佛剎。願以此整理、校對、修正、發佈佛學內容的一切功德，上報四重恩，下濟三途苦，迴向給一切見聞或聽聞我所做佛學等一字一句資料的一切有情，願諸有情擺脫障難、卸除病痛、遠離厄運、隨順心願、廣結佛緣、速成菩提。</span><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;">如果您閱讀過本站任何經文內容後，也想功德迴向，或不知道如何迴向，請參考下面這篇文章：<a href="http://yogabuddha.blogspot.com/2017/03/blog-post_16.html#04" style="font-size: 100%;"><b>要如何迴向？</b></a></div><div style="font-weight: normal;"><br /></div><div style="font-weight: normal;"><br /></div>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+
+
+<style type='text/css'>
+#Subscribe1 {display: none;}
+#BlogSearch1 {display: none;}
+#Text1 {display: none;}
+</style>
+
+
+
+
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML5' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&#65279;&lt;style type=&#39;text/css&#39;&gt; 
+.Menubox_over {
+color: #333;
+font: bold 14px arial;
+border-top: 1px solid #777; 
+border-left: 1px solid #777;
+border-right: 1px solid #777;
+border-bottom: 3px solid #fffff5;
+border-bottom: 2px solid #fffff5\9;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+padding: 2px 5px 1px 5px;
+cursor: pointer;
+background-color: #fffff5;
+} 
+ 
+.Menubox_out {
+color: #333;
+font: bold 14px arial;
+border-top: 1px solid #777; 
+border-left: 1px solid #777;
+border-right: 1px solid #777;
+border-bottom: 1px solid #777;
+border-bottom: 0px solid #777\9;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+padding-top: 2px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 2px;
+padding-bottom: 0px\9;
+cursor: pointer;
+background-color: #ddd;
+} 
+&lt;/style&gt; 
+ 
+&lt;div style=&quot;margin-top: 5px; border-bottom: 2px solid #777;&quot;&gt;
+&amp;#12288;&lt;span class=&quot;Menubox_over&quot; id=&#39;one1&#39; onclick=&#39;setTab(&quot;one&quot;,1,3)&#39;  title=&#39;顯示 1st 工具&#39;&gt;訂閱我們&lt;/span&gt;&amp;nbsp;
+&lt;span class=&quot;Menubox_out&quot; id=&#39;one2&#39; onclick=&#39;setTab(&quot;one&quot;,2,3)&#39; title=&#39;顯示 2nd 工具&#39;&gt;搜尋佛學&lt;/span&gt;&amp;nbsp;
+&lt;span class=&quot;Menubox_out&quot; id=&#39;one3&#39; onclick=&#39;setTab(&quot;one&quot;,3,3)&#39; title=&#39;顯示 3rd 工具&#39;&gt;功德迴向&lt;/span&gt; 
+&lt;/div&gt;&lt;p/&gt;
+ 
+&lt;div id=&#39;con_one_1&#39;&gt; 
+
+  &lt;b:widget id=&#39;Subscribe1&#39; locked=&#39;false&#39; title=&#39;訂閱&#39; type=&#39;Subscribe&#39;&gt;
+    &lt;b:includable id=&#39;main&#39;&gt;
+  &lt;div style=&#39;white-space:nowrap&#39;&gt;
+    &lt;b:if cond=&#39;data:title != &amp;quot;&amp;quot;&#39;&gt;
+      &lt;h2 class=&#39;title&#39;&gt;&lt;data:title/&gt;&lt;/data:title&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class=&#39;widget-content&#39;&gt;
+      &lt;b:loop values=&#39;data:feeds&#39; var=&#39;feed&#39;&gt;
+        &lt;div expr:class=&#39;&amp;quot;subscribe-wrapper subscribe-type-&amp;quot; + data:feed.type&#39;&gt;
+
+          &lt;div expr:class=&#39;&amp;quot;subscribe expanded subscribe-type-&amp;quot; + data:feed.type&#39; expr:id=&#39;&amp;quot;SW_READER_LIST_&amp;quot; + data:widgetId + data:feed.type&#39; style=&#39;display:none;&#39;&gt;
+            &lt;div class=&#39;top&#39;&gt;
+              &lt;span class=&#39;inner&#39; expr:onclick=&#39;&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;&#39;&gt;
+                &lt;img class=&#39;subscribe-dropdown-arrow&#39; expr:src=&#39;data:arrowDropdownImg&#39;/&gt;
+                &lt;img align=&#39;absmiddle&#39; alt=&#39;&#39; border=&#39;0&#39; class=&#39;feed-icon&#39; expr:src=&#39;data:feedIconImg&#39;/&gt;
+                &lt;data:feed.title/&gt;
+              &lt;/data:feed.title&gt;&lt;/span&gt;
+
+              &lt;div class=&#39;feed-reader-links&#39;&gt;
+                &lt;a class=&#39;feed-reader-link&#39; expr:href=&#39;&amp;quot;https://www.netvibes.com/subscribe.php?url=&amp;quot; + data:feed.encodedUrl&#39; target=&#39;_blank&#39;&gt;
+                  &lt;img expr:src=&#39;data:imagePathBase + &amp;quot;subscribe-netvibes.png&amp;quot;&#39;/&gt;
+                &lt;/a&gt;
+                &lt;a class=&#39;feed-reader-link&#39; expr:href=&#39;&amp;quot;https://add.my.yahoo.com/content?url=&amp;quot; + data:feed.encodedUrl&#39; target=&#39;_blank&#39;&gt;
+                  &lt;img expr:src=&#39;data:imagePathBase + &amp;quot;subscribe-yahoo.png&amp;quot;&#39;/&gt;
+                &lt;/a&gt;
+                &lt;a class=&#39;feed-reader-link&#39; expr:href=&#39;data:feed.url&#39; target=&#39;_blank&#39;&gt;
+                  &lt;img align=&#39;absmiddle&#39; class=&#39;feed-icon&#39; expr:src=&#39;data:feedIconImg&#39;/&gt;
+                  Atom
+                &lt;/a&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&#39;bottom&#39;/&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&#39;subscribe&#39; expr:id=&#39;&amp;quot;SW_READER_LIST_CLOSED_&amp;quot; + data:widgetId +data:feed.type&#39; expr:onclick=&#39;&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;&#39;&gt;
+            &lt;div class=&#39;top&#39;&gt;
+               &lt;span class=&#39;inner&#39;&gt;
+                 &lt;img class=&#39;subscribe-dropdown-arrow&#39; expr:src=&#39;data:arrowDropdownImg&#39;/&gt;
+                 &lt;span expr:onclick=&#39;&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;&#39;&gt;
+                   &lt;img align=&#39;absmiddle&#39; alt=&#39;&#39; border=&#39;0&#39; class=&#39;feed-icon&#39; expr:src=&#39;data:feedIconImg&#39;/&gt;
+                   &lt;data:feed.title/&gt;
+                 &lt;/data:feed.title&gt;&lt;/span&gt;
+               &lt;/span&gt;
+             &lt;/div&gt;
+            &lt;div class=&#39;bottom&#39;/&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;&lt;/b:loop&gt;
+
+      &lt;div style=&#39;clear:both&#39;/&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;b:include name=&#39;quickedit&#39;/&gt;
+&lt;/b:include&gt;&lt;/div&gt;&lt;/b:includable&gt;
+  &lt;/b:widget&gt;
+
+
+&lt;/div&gt; 
+ 
+&lt;div id=&#39;con_one_2&#39; style=&#39;display:none&#39;&gt;  
+  &lt;b:widget id=&#39;BlogSearch1&#39; locked=&#39;false&#39; title=&#39;搜尋我們的佛學資料&#39; type=&#39;BlogSearch&#39;&gt;
+    &lt;b:includable id=&#39;main&#39;&gt;
+    &lt;!-- only display title if it&#39;s non-empty --&gt;
+    &lt;b:if cond=&#39;data:title != &amp;quot;&amp;quot;&#39;&gt;
+      &lt;h2 class=&#39;title&#39;&gt;&lt;data:title/&gt;&lt;/data:title&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class=&#39;widget-content&#39;&gt;
+      &lt;div expr:id=&#39;data:widget.instanceId + &amp;quot;_form&amp;quot;&#39;&gt;
+        &lt;form class=&#39;gsc-search-box&#39; expr:action=&#39;data:blog.searchUrl&#39;&gt;
+          &lt;table cellpadding=&#39;0&#39; cellspacing=&#39;0&#39; class=&#39;gsc-search-box&#39;&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td class=&#39;gsc-input&#39;&gt;
+                  &lt;input autocomplete=&#39;off&#39; class=&#39;gsc-input&#39; expr:value=&#39;data:view.isSearch ? data:view.search.query.escaped : &amp;quot;&amp;quot;&#39; name=&#39;q&#39; size=&#39;10&#39; title=&#39;search&#39; type=&#39;text&#39;/&gt;
+                &lt;/td&gt;
+                &lt;td class=&#39;gsc-search-button&#39;&gt;
+                  &lt;input class=&#39;gsc-search-button&#39; expr:value=&#39;data:messages.search&#39; title=&#39;search&#39; type=&#39;submit&#39;/&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;b:include name=&#39;quickedit&#39;/&gt;
+  &lt;/b:include&gt;&lt;/b:includable&gt;
+  &lt;/b:widget&gt;
+    
+    
+    &lt;/div&gt; 
+ 
+&lt;div id=&#39;con_one_3&#39; style=&#39;display:none&#39;&gt;  
+
+  &lt;b:widget id=&#39;BlogSearch1&#39; locked=&#39;false&#39; title=&#39;搜尋我們的佛學資料&#39; type=&#39;BlogSearch&#39;&gt;
+    &lt;b:includable id=&#39;main&#39;&gt;
+    &lt;!-- only display title if it&#39;s non-empty --&gt;
+    &lt;b:if cond=&#39;data:title != &amp;quot;&amp;quot;&#39;&gt;
+      &lt;h2 class=&#39;title&#39;&gt;&lt;data:title/&gt;&lt;/data:title&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class=&#39;widget-content&#39;&gt;
+      &lt;div expr:id=&#39;data:widget.instanceId + &amp;quot;_form&amp;quot;&#39;&gt;
+        &lt;form class=&#39;gsc-search-box&#39; expr:action=&#39;data:blog.searchUrl&#39;&gt;
+          &lt;table cellpadding=&#39;0&#39; cellspacing=&#39;0&#39; class=&#39;gsc-search-box&#39;&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td class=&#39;gsc-input&#39;&gt;
+                  &lt;input autocomplete=&#39;off&#39; class=&#39;gsc-input&#39; expr:value=&#39;data:view.isSearch ? data:view.search.query.escaped : &amp;quot;&amp;quot;&#39; name=&#39;q&#39; size=&#39;10&#39; title=&#39;search&#39; type=&#39;text&#39;/&gt;
+                &lt;/td&gt;
+                &lt;td class=&#39;gsc-search-button&#39;&gt;
+                  &lt;input class=&#39;gsc-search-button&#39; expr:value=&#39;data:messages.search&#39; title=&#39;search&#39; type=&#39;submit&#39;/&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;b:include name=&#39;quickedit&#39;/&gt;
+  &lt;/b:include&gt;&lt;/b:includable&gt;
+  &lt;/b:widget&gt;
+  &lt;b:widget id=&#39;Text1&#39; locked=&#39;false&#39; title=&#39;本來無一物的功德迴向&#39; type=&#39;Text&#39; version=&#39;1&#39;&gt;
+    &lt;b:widget-settings&gt;
+      &lt;b:widget-setting name=&#39;content&#39;&gt;我此普賢殊勝行&#65292;無邊勝福皆迴向&#65292;普願沉溺諸眾生&#65292;速往無量光佛剎&#12290;願以此整理&#12289;校對&#12289;修正&#12289;發佈佛學內容的一切功德&#65292;上報四重恩&#65292;下濟三途苦&#65292;迴向給一切見聞或聽聞我所做佛學等一字一句資料的一切有情&#65292;願諸有情擺脫障難&#12289;卸除病痛&#12289;遠離厄運&#12289;隨順心願&#12289;廣結佛緣&#12289;速成菩提&#12290;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;如果您閱讀過本站任何經文內容後&#65292;也想功德迴向&#65292;或不知道如何迴向&#65292;請參考下面這篇文章&#65306;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html#04&quot; style=&quot;font-size: 100%;&quot;&gt;&lt;b&gt;要如何迴向&#65311;&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;]]&gt;&lt;/b:widget-setting&gt;
+    &lt;/b:widget-settings&gt;
+    &lt;b:includable id=&#39;main&#39;&gt;
+  &lt;!-- only display title if it&#39;s non-empty --&gt;
+  &lt;b:if cond=&#39;data:title != &amp;quot;&amp;quot;&#39;&gt;
+    &lt;h2 class=&#39;title&#39;&gt;&lt;data:title/&gt;&lt;/data:title&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class=&#39;widget-content&#39;&gt;
+    &lt;data:content/&gt;
+  &lt;/data:content&gt;&lt;/div&gt;
+
+  &lt;b:include name=&#39;quickedit&#39;/&gt;
+&lt;/b:include&gt;&lt;/b:includable&gt;
+  &lt;/b:widget&gt;
+
+
+&lt;/div&gt; 
+ 
+&lt;script&gt; 
+function setTab(name,cursel,n){ 
+  for(var i=1; i&lt;=n; i++){ 
+    var menu = document.getElementById(name + i); 
+    var con = document.getElementById(&quot;con_&quot; + name + &quot;_&quot; + i); 
+    menu.className = (i == cursel) ? &quot;Menubox_over&quot; : &quot;Menubox_out&quot;; 
+    con.style.display = (i == cursel) ? &quot;block&quot; : &quot;none&quot;; 
+  } 
+} 
+
+(function() {
+  var a = document.getElementById(&quot;Subscribe1&quot;),
+      b = document.getElementById(&quot;BlogSearch1&quot;),
+      c = document.getElementById(&quot;Text1&quot;),
+      x = document.getElementById(&quot;con_one_1&quot;),
+      y = document.getElementById(&quot;con_one_2&quot;),
+      z = document.getElementById(&quot;con_one_3&quot;);
+ 
+  x.innerHTML = a.innerHTML;
+  y.innerHTML = b.innerHTML;
+  z.innerHTML = c.innerHTML;
+ 
+  a.parentNode.removeChild(a);
+  b.parentNode.removeChild(b);
+  c.parentNode.removeChild(c);
+} )();
+
+&lt;/script&gt;&lt;/p&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2931,7 +3166,7 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   </b:widget>
   <b:widget id='HTML2' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<iframe width="270" height="180" src="https://www.youtube.com/embed/wlcpBJWvZpw" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<iframe width="250" height="150" src="https://www.youtube.com/embed/wlcpBJWvZpw" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2947,7 +3182,7 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   </b:widget>
   <b:widget id='HTML3' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<iframe width="270" height="180" src="https://www.youtube.com/embed/DGZCHHLPlkU" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<iframe width="250" height="150" src="https://www.youtube.com/embed/DGZCHHLPlkU" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
