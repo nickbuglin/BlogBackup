@@ -608,6 +608,75 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 .mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
   border-$startSide: 1px solid $(tabs.separator.color);
 }
+
+
+/* CSS For related post widget----------- */
+#related-posts {
+float:left;
+width:101%;
+}
+
+#related-posts sl{
+margin:0 !important;
+padding:0 !important;
+}
+
+/* 推薦文章標題的樣式 */
+#related-posts h4{
+margin:10px 0px 10px;
+font:18px Oswald;
+color:#696868;
+text-transform:uppercase
+}
+
+/* 邊框的樣式 */
+.related-posts-list ci{
+background-color:#fff;
+box-shadow:0 0 40px rgba(180, 180, 180, 0.7);   /* 外框陰影 */
+width:29.5%;                /* 外框寬度佔百分比 */
+float:left;
+position:relative;        /* 位置樣式 */
+margin:0 2% 2% 0;         /* 外框的外面空白上下左右距離多少 */
+padding:1%;
+}
+
+.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
+
+/* 內容文字的樣式 */
+#related-posts a{
+color:#3C42F4;
+font:400 16px 'Oswald',sans-serif;
+text-decoration:none;               /* 文字標線 */
+}
+
+#related-posts sl ci p{
+margin-bottom:0;      /* 下邊框留邊大小 */
+padding-top:10px;     /* 文字上面留邊大小 */
+margin-top:-5px;      /* 文字離上邊框留邊距離 */
+
+}
+
+/* 圖片樣式 */
+#related-posts .related_img{
+height:85px;          /* 圖片長 */
+width:85px;           /* 圖片寬 */
+object-fit:cover;
+}
+
+.related-title{
+text-align:center;
+padding:5px 0px;
+}
+
+.rthumb{
+float:left;
+margin-top:2px;      /* 圖片離上邊框留邊距離 */
+margin-button:0px;   /* 圖片離下邊框留邊距離 */
+margin-left:0px;     /* 圖片離左邊框留邊距離 */
+margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
+/* CSS For related post widget-----END------ */
+
+
 ]]></b:skin>
 
         <b:template-skin>
@@ -825,6 +894,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             color: #fff
             }
         </style>
+		
 
         <!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
@@ -839,7 +909,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             display: inline-block;
             text-decoration: none;
             color: #fff;      /* 文字內容顏色 */
-            padding: 5px;    /* 文字離邊框&#65292;空下多少距離 */
+            padding: 5px;    /* 文字離邊框空下多少距離 */
             transition: all .2s;
             -webkit-transition: all .2s;
             -moz-transition: all .2s;
@@ -847,14 +917,14 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             }
 
             .social_buttons a:hover {
-            -ms-transform: translateY(-4px);       /* 滑鼠移過&#65292;方框移動多少距離 */
-            -webkit-transform: translateY(-4px);   /* 滑鼠移過&#65292;方框移動多少距離 */
-            transform: translateY(-4px);           /* 滑鼠移過&#65292;方框移動多少距離 */
+            -ms-transform: translateY(-4px);       /* 滑鼠移過方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
             }
 
             .social_buttons i {
-            width: 40px;         /* 文字離左右邊框&#65292;空下多少距離 */
-            height: 40px;        /* 文字離上下邊框&#65292;空下多少距離 */
+            width: 40px;         /* 文字離左右邊框空下多少距離 */
+            height: 40px;        /* 文字離上下邊框空下多少距離 */
             font-size: 32px;     /* 文字大小 */
             text-align: center;  /* 文字位置 */
 
@@ -862,7 +932,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 
             .social_buttons i:before {
             margin: auto;
-            line-height: 40px;  /* 文字離上下邊框&#65292;空下多少距離 */
+            line-height: 40px;  /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
 
@@ -897,111 +967,8 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             }
         </style>
 
-
-        <!--隨機推薦文章-->
-        <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'/>
-        <style>
-            .rndPost_caption { /* 標題文字 */
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 20px;
-            text-align: left;
-            margin-top: 10px;
-            }
-            .rndPost_allPost { /* 隨機文章區塊 */
-            display: table-row;
-            }
-            .rndPost_post { /* 個別文章區塊 */
-            padding: 5px;
-            display: table-cell;
-            transition: background .7s;
-            -webkit-transition: background .7s;
-            -moz-transition: background .7s;
-            }
-            .rndPost_post:hover {
-            background: #f5f5f5;
-            text-decoration: none;
-            }
-            .rndPost_post:hover .rndPost_picFrame {
-            border: 1px solid transparent;
-            }
-            .rndPost_post:hover .rndPost_pic {
-            opacity: 0.5;
-            }
-            .rndPost_post:hover .rndPost_comm {
-            opacity: 1;
-            }
-            .rndPost_picFrame { /* 圖片外框 */
-            padding: 2px;
-            border: 1px solid #ddd;
-            position: relative;
-            transition: border .7s;
-            -webkit-transition: border .7s;
-            -moz-transition: border .7s;
-            }
-            .rndPost_pic { /* 圖片 */
-            border-radius: 5px;
-            display: block;
-            opacity: 1;
-            transition: opacity .7s;
-            -webkit-transition: opacity .7s;
-            -moz-transition: opacity .7s;
-            }
-            .rndPost_comm {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            color: #222;
-            text-shadow: 1px 1px 2px #bbb;
-            font-size: 11px;
-            opacity: 0;
-            transition: opacity .7s;
-            -webkit-transition: opacity .7s;
-            -moz-transition: opacity .7s;
-            }
-            .rndPost_comm img {
-            width: 12px;
-            height: auto;
-            vertical-align: -3px;
-            }
-            .rndPost_title { /* 文章標題 */
-            font-size: 13px;
-            font-weight: bold;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            transition: color .7s;
-            -webkit-transition: color .7s;
-            -moz-transition: color .7s;
-            }
-        </style>
-
-
-      <!--回到頂端(需要jquery)-->
-      <style>
-        #goTop {
-        position: fixed;
-        bottom: 45px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
-        right: 7px; /* 與右方的距離 */
-        width: 50px; /* 按鈕原始寬度 */
-        height: 50px; /* 按鈕原始高度 */
-        opacity: .5; /* 按鈕原始透明度 */
-        z-index: 10;
-        cursor: pointer;
-        transition: all .5s; /* 動畫效果 持續期間 */
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        }
-        #goTop:hover { /* 滑鼠經過按鈕時 */
-        opacity: 1; /* 透明度 */
-        width: 80px; /* 按鈕寬度 */
-        height: 80px; /* 按鈕高度 */
-        }
-      </style>
-
-
-        <!--畫底線功能-->
+		
+		<!--畫底線功能-->
         <style type='text/css'>
             b1{
             background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
@@ -1031,6 +998,127 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             document.createElement(&quot;r1&quot;)
             document.createElement(&quot;y1&quot;)
         </script>
+
+
+		<script src='//code.jquery.com/jquery-2.1.4.min.js'/>
+		<!-- 回到頂端(需要jquery)-->
+		<style>
+        #goTop {
+			position: fixed;
+			bottom: 45px;      /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+			right: 10px;       /* 與右方的距離 */
+			opacity: .3;       /* 按鈕原始透明度 */
+			color:red;
+			z-index: 10;
+			cursor: pointer;
+			transition: all .5s; /* 動畫效果 持續期間 */
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+        }
+		
+        #goTop:hover {         /* 滑鼠經過按鈕時 */
+			opacity: 0.5;      /* 透明度 */
+			color:blue;
+			transition: 0.2s;
+			-moz-transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s; 
+        }
+      </style>
+	  
+	  
+
+		<!-- Related Posts widget with Thumbnails Code Before Head Start-->
+		<b:if cond='data:blog.pageType == &quot;item&quot;'>
+			<script type='text/javascript'>
+				//<![CDATA[
+				var borelatedTitles = new Array();
+				var rboTitlesNum = 0;
+				var relatedUrls = new Array();
+				var thumburl = new Array();
+
+				function related_results_labels_thumbs(json) {
+					for (var i = 0; i < json.feed.entry.length; i++) {
+						var entry = json.feed.entry[i];
+						borelatedTitles[rboTitlesNum] = entry.title.$t;
+						try {
+							thumburl[rboTitlesNum] = entry.gform_foot.url
+						} catch (error) {
+							s = entry.content.$t;
+							a = s.indexOf("<img");
+							b = s.indexOf("src=\"", a);
+							c = s.indexOf("\"", b + 5);
+							d = s.substr(b + 5, c - b - 5);
+							if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+								thumburl[rboTitlesNum] = d
+							} else thumburl[rboTitlesNum] = 'https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/s144/IMG_1818.jpg'
+						}
+						if (borelatedTitles[rboTitlesNum].length > 35) borelatedTitles[rboTitlesNum] = borelatedTitles[rboTitlesNum].substring(0, 45) + "...";
+						for (var k = 0; k < entry.link.length; k++) {
+							if (entry.link[k].rel == 'alternate') {
+								relatedUrls[rboTitlesNum] = entry.link[k].href;
+								rboTitlesNum++
+							}
+						}
+					}
+				}
+
+				function removeDuplicate_thumbs() {
+					var tmp = new Array(0);
+					var tmp2 = new Array(0);
+					var tmp3 = new Array(0);
+					for (var i = 0; i < relatedUrls.length; i++) {
+						if (!contains_thumbs(tmp, relatedUrls[i])) {
+							tmp.length += 1;
+							tmp[tmp.length - 1] = relatedUrls[i];
+							tmp2.length += 1;
+							tmp3.length += 1;
+							tmp2[tmp2.length - 1] = borelatedTitles[i];
+							tmp3[tmp3.length - 1] = thumburl[i]
+						}
+					}
+					borelatedTitles = tmp2;
+					relatedUrls = tmp;
+					thumburl = tmp3
+				}
+
+				function contains_thumbs(a, e) {
+					for (var j = 0; j < a.length; j++)
+						if (a[j] == e) return true;
+					return false
+				}
+
+				function printRelatedLabel_thumbs() {
+					for (var i = 0; i < relatedUrls.length; i++) {
+						if ((relatedUrls[i] == findcurrentposturl) || (!(borelatedTitles[i]))) {
+							relatedUrls.splice(i, 1);
+							borelatedTitles.splice(i, 1);
+							thumburl.splice(i, 1);
+							i--
+						}
+					}
+					var r = Math.floor((borelatedTitles.length - 1) * Math.random());
+					var i = 0;
+					if (borelatedTitles.length > 0) document.write('<h4><span>' + titleofrelatedpost + '</span></h4>');
+					document.write('<sl class="related-posts-list">');
+					while (i < borelatedTitles.length && i < 20 && i < maxpost) {
+						document.write('<ci><a href="' + relatedUrls[r] + '"><span class="rthumb"><img class="related_img" src="' + thumburl[r] + '"/></span><p><span class="related-title">' + borelatedTitles[r] + '</span></p></a></ci>');
+						if (r < borelatedTitles.length - 1) {
+							r++
+						} else {
+							r = 0
+						}
+						i++
+					}
+					document.write('</sl>');
+					relatedUrls.splice(0, relatedUrls.length);
+					thumburl.splice(0, thumburl.length);
+					borelatedTitles.splice(0, borelatedTitles.length)
+				} //]]>
+			</script>
+		</b:if>
+		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
+
 
 
     </head>
@@ -2470,6 +2558,7 @@ head.appendChild(script);
                                                           <b:widget-setting name='showDateHeader'>true</b:widget-setting>
                                                           <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
                                                           <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                                                          <b:widget-setting name='authorLabel'>By</b:widget-setting>
                                                           <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                                                           <b:widget-setting name='style.urlcolor'>#ff3300</b:widget-setting>
                                                           <b:widget-setting name='showAuthor'>false</b:widget-setting>
@@ -2625,6 +2714,9 @@ head.appendChild(script);
                                                                 </b:if>
                                                             </b:includable>
                                                         <b:includable id='comments' var='post'>
+														
+			
+														
                                                                 <div class='comments' id='comments'>
                                                                     <a name='comments'/>
                                                                     <b:if cond='data:post.allowComments'>
@@ -2934,9 +3026,31 @@ head.appendChild(script);
                                                                                             <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
                                                                                         </b:if>
                                                                                     </div>
-
                                                                                 </div>
                                                                             </div>
+
+																		
+
+																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
+																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
+																			<div id='related-posts'>
+																				<b:loop values='data:post.labels' var='label'>
+																				<b:if cond='data:label.isLast != &quot;true&quot;'>
+																				</b:if>
+																					<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=7&quot;' type='text/javascript'/>
+																				</b:loop>
+																				<script type='text/javascript'>
+																					var findcurrentposturl=&quot;<data:post.url/>&quot;;
+																					var maxpost=6;
+																					var titleofrelatedpost=&quot;<b>推薦文章</b>&quot;;
+																					removeDuplicate_thumbs();
+																					printRelatedLabel_thumbs();
+																				</script>
+																			</div>
+																		</b:if>
+																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Ends-->
+																		
+																		
 
                                                                             <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
                                                                         </div>
@@ -3002,8 +3116,9 @@ head.appendChild(script);
                                                                             <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'><data:post.jumpText/></a>
                                                                         </div>
                                                                     </b:if>
+																																		
                                                                     <div class='post-footer'>
-                                                                        <div class='post-footer-line post-footer-line-1'>
+                                                                        <div class='post-footer-line post-footer-line-1'>																				
                                                                             <span class='post-author vcard'>
                                                                                 <b:if cond='data:top.showAuthor'>
                                                                                     <data:top.authorLabel/>
@@ -3067,14 +3182,44 @@ head.appendChild(script);
                                                                                 <!-- quickedit pencil -->
                                                                                 <b:include data='post' name='postQuickEdit'/>
                                                                             </span>
+																			
+																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
+                                                            <div class='social_buttons'>
+                                                                <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
+                                                                    <i class='social_logo fa fa-facebook'/>
+                                                                </a>
+                                                                <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
+                                                                    <i class='social_logo fa fa-google-plus'/>
+                                                                </a>
+                                                                <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
+                                                                    <i class='social_logo fa fa-weibo'/>
+                                                                </a>
+                                                                <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
+                                                                    <i class='social_logo fa fa-twitter'/>
+                                                                </a>
+                                                                <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
+                                                                    <i class='social_logo fa fa-pinterest-p'/>
+                                                                </a>
+                                                                <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
+                                                                    <i class='social_logo fa fa-whatsapp'/>
+                                                                </a>
+
+															</div>
+														</b:if>
+                                                        <!-- -->	
+																			
+																			
+																			
+																			
 
                                                                             <!-- share buttons -->
                                                                             <div class='post-share-buttons goog-inline-block'>
                                                                                 <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
                                                                             </div>
-
+																			
+																			
                                                                         </div>
-
+																		
                                                                         <div class='post-footer-line post-footer-line-2'>
                                                                             <span class='post-labels'>
                                                                                 <b:if cond='data:top.showPostLabels and data:post.labels'>
@@ -3084,41 +3229,35 @@ head.appendChild(script);
                                                                                     </b:loop>
                                                                                 </b:if>
                                                                             </span>
+																			
                                                                         </div>
 
                                                                         <div class='post-footer-line post-footer-line-3'> <!--文章底&#65292;留言前處-->
 
-
-                                                                            <b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
-
-                                                                                <div class='social_buttons'>
-                                                                                    <a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
-                                                                                        <i class='social_logo fa fa-facebook'/>
-
-                                                                                    </a>
-                                                                                    <a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
-                                                                                        <i class='social_logo fa fa-google-plus'/>
-
-                                                                                    </a>
-                                                                                    <a class='social_weibo' expr:href='&quot;http://service.weibo.com/share/share.php?title=&quot;+ data:blog.pageName + &quot; @&quot; + data:blog.title + &quot;%0D%0A&quot; + data:blog.canonicalUrl + &quot;&amp;url=&quot; + data:post.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Weibo 分享'>
-                                                                                        <i class='social_logo fa fa-weibo'/>
-                                                                                    </a>
-                                                                                    <a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
-                                                                                        <i class='social_logo fa fa-twitter'/>
-                                                                                    </a>
-                                                                                    <a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-                                                                                        <i class='social_logo fa fa-pinterest-p'/>
-                                                                                    </a>
-
-                                                                                    <a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
-                                                                                        <i class='social_logo fa fa-whatsapp'/>
-                                                                                    </a>
-
-                                                                                </div>
-                                                                                <!-- -->
-                                                                            </b:if>
-
-
+																		
+																		
+																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
+																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
+																			<div id='related-posts'>
+																				<b:loop values='data:post.labels' var='label'>
+																				<b:if cond='data:label.isLast != &quot;true&quot;'>
+																				</b:if>
+																				<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=7&quot;' type='text/javascript'/>
+																				</b:loop>
+																				<script type='text/javascript'>
+																				var findcurrentposturl=&quot;<data:post.url/>&quot;;
+																				var maxpost=6;
+																				var titleofrelatedpost=&quot;<b>推薦文章</b>&quot;;
+																				removeDuplicate_thumbs();
+																				printRelatedLabel_thumbs();
+																				</script>
+																			</div>
+																		</b:if>
+																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Ends-->
+																		
+																		
+																		
+																		
                                                                             <span class='post-location'>
                                                                                 <b:if cond='data:top.showLocation and data:post.location'>
                                                                                     <data:postLocationLabel/>
@@ -3390,6 +3529,7 @@ head.appendChild(script);
                                                                 </script>
                                                             </b:includable>
                                                         <b:includable id='threaded_comments' var='post'>
+														
                                                                 <div class='comments' id='comments'>
                                                                     <a name='comments'/>
                                                                     <h4><data:post.commentLabelFull/>:</h4>
@@ -3423,6 +3563,24 @@ head.appendChild(script);
                                                                     </div>
                                                                 </div>
                                                             </b:includable>
+                                                      </b:widget>
+                                                      <b:widget id='HTML3' locked='false' title='' type='HTML' version='1'>
+                                                        <b:widget-settings>
+                                                          <b:widget-setting name='content'>&lt;iframe width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://www.youtube.com/embed/4eK2_wKzx70&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;400&quot; height=&quot;250&quot; src=&quot;https://www.youtube.com/embed/EB7aRA4zksI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</b:widget-setting>
+                                                        </b:widget-settings>
+                                                        <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                    <data:content/>
+                </div>
+
+                <b:include name='quickedit'/>
+            </b:includable>
                                                       </b:widget>
                                                     </b:section>
                                                 </div>
@@ -3512,30 +3670,9 @@ head.appendChild(script);
         </script>
 
 
-        <!-- 隨機文章 start -->
-        <b:if cond='data:blog.pageType == &quot;item&quot;'>
-            <script>
-                //<![CDATA[
-                var rndPost = {
-                show : 4, // 隨機文章的數量
-                width : 1, // 縮圖寬度比例
-                height : 0.618, // 縮圖高度比例
-                caption : "隨機推薦文章:", // 大標題字樣
-                noImage : "https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/IMG_1818.jpg", //無縮圖的替代圖片
-                comment : 0, // 若不顯示留言數量, 請改為 0
-                excludeLabel : ["。大般若經 The Maha Prajna Paramita","。妙法蓮華經 The Lotus Sutra", "。華嚴經 The Avatamsaka Sutra"], // 排除的標籤字串, 請放在雙引號 "" 之內, 每個字串用小寫逗號 "," 隔開, 最後一個字串後面與右括弧之間不可有逗號
-                location : ".post-footer-line-3", // 擺放位置
-                //]]>
-                postUrl : &quot;<data:blog.canonicalUrl/>&quot;
-                };
-                jQuery.getScript(&quot;https://dl.getdropbox.com/s/xcz6q5e5nt5yhpv/rndPost-min-150506.js&quot;);
-            </script>
-        </b:if>
-        <!-- 隨機文章 end-->
 
-
-        <!-- Go Top 按鈕+動畫 start -->
-        <img id='goTop' src='http://4.bp.blogspot.com/-28LaVG5DtBo/VQ_XOQosQQI/AAAAAAAALY4/T4uKguB0Ttk/s100/up-button.png' title='回到頂端 Back to Top'/>
+        <!-- Go Top 按鈕+動畫 start-->
+		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-chevron-circle-up'/></a>
         <script>
             $.extend($.easing, {
             easeOutExpo: function (x, t, b, c, d) {
@@ -3547,6 +3684,8 @@ head.appendChild(script);
             });
         </script>
         <!-- Go Top 按鈕+動畫 end -->
+		
+		
 
 
 
@@ -3860,42 +3999,10 @@ head.appendChild(script);
                 </div>
             </b:includable>
   </b:widget>
-  <b:widget id='HTML2' locked='false' title='' type='HTML' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<iframe width="250" height="150" src="https://www.youtube.com/embed/4eK2_wKzx70" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-                <!-- only display title if it's non-empty -->
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                </b:if>
-                <div class='widget-content'>
-                    <data:content/>
-                </div>
-
-                <b:include name='quickedit'/>
-            </b:includable>
-  </b:widget>
-  <b:widget id='HTML3' locked='false' title='' type='HTML' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<iframe width="250" height="150" src="https://www.youtube.com/embed/DGZCHHLPlkU" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-                <!-- only display title if it's non-empty -->
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                </b:if>
-                <div class='widget-content'>
-                    <data:content/>
-                </div>
-
-                <b:include name='quickedit'/>
-            </b:includable>
-  </b:widget>
   <b:widget id='Label4' locked='false' title='文章總覽' type='Label' version='1'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='display'>CLOUD</b:widget-setting>
       <b:widget-setting name='selectedLabelsList'/>
       <b:widget-setting name='showType'>ALL</b:widget-setting>
       <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
@@ -3938,45 +4045,6 @@ head.appendChild(script);
                 </div>
             </b:includable>
   </b:widget>
-  <b:widget id='FeaturedPost1' locked='false' title='精選文章' type='FeaturedPost' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='showSnippet'>true</b:widget-setting>
-      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-      <b:widget-setting name='postId'>612245025109537081</b:widget-setting>
-      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-                <!-- Only display title if it's non-empty -->
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                </b:if>
-                <b:include name='content'/>
-
-                <b:include name='quickedit'/>
-            </b:includable>
-    <b:includable id='content'>
-                <div class='post-summary'>
-                    <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
-                        <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
-                    </b:if>
-                    <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
-                        <p>
-                            <data:postSummary/>
-                        </p>
-                    </b:if>
-                    <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
-                        <img class='image' expr:src='data:postFirstImage'/>
-                    </b:if>
-                </div>
-
-                <style type='text/css'>
-                    .image {
-                        width: 100%;
-                    }
-                </style>
-            </b:includable>
-  </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
   <b:widget id='AdSense3' locked='false' title='' type='AdSense' version='1'>
     <b:widget-settings>
@@ -3998,7 +4066,7 @@ head.appendChild(script);
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'>
   <b:widget id='HTML1' locked='false' title='關於本來無一物' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<span style="font-family:&quot;;">　　本來無一物的起因是因為一位癌症離世的友人來夢中跟我道別，但我卻半年後才知道這位友人已經離世，傷心之餘展開了一連串的探尋友人行動，當然找不到...。後來想說，也許深入佛法能找到友人去了哪? 於是開始讀遍群經，踏上佛學之路。 </span><div><span style="font-family:&quot;;"><span style="font-family:&quot;;">　　Google電子書</span></span><span style="font-size: 100%;">的</span><span style="font-size: 100%;">佛經</span><span style="font-size: 100%;">，原本用意只是要方便自己出門在外可以研讀佛經，沒想到受到這麼多人愛戴，跟著下載研讀。</span></div><div><div><span style="font-family:&quot;;">　　考據校對佛經咒，原本用意只是要修正出最正確的佛經咒，希望自己持誦後能給亡者或孤魂野鬼等最正確最大的幫助，讓祂們得以盡快解脫，沒想到好多人隨喜讚嘆，跟著修正持念更正確的佛咒。</span></div><div><span style="font-family:&quot;;"><span =""   style="font-family:&quot;;font-size:100%;">　　當今</span>佛學有許多錯誤、相掙、矛盾、後人竄改的內容，甚至有許多法師根本沒讀過該本經書，就大言不慚口若懸河地解說起該本經書內容。</span><span =""   style="font-family:&quot;;font-size:100%;">末學也只能感嘆，末法時期了，妖魔鬼怪，附佛外道橫生，到處胡說八道，怪不得學佛者眾，成道者如鳳毛麟角。</span></div></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<span style="font-family:&quot;;">　　本來無一物的起因是因為一位癌症離世的友人來夢中跟我道別，但我卻半年後才知道這位友人已經離世，傷心之餘展開了一連串的探尋友人行動，當然找不到...。後來想說，也許深入佛法能找到友人去了哪? 於是開始讀遍群經，踏上佛學之路。 </span><div><span style="font-family:&quot;;"><span style="font-family:&quot;;">　　Google電子書</span></span><span =""  style="font-size:100%;">的</span><span =""  style="font-size:100%;">佛經</span><span =""  style="font-size:100%;">，原本用意只是要方便自己出門在外可以研讀佛經，沒想到受到這麼多人愛戴，跟著下載研讀。</span></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
             <!-- only display title if it's non-empty -->
@@ -4012,4 +4080,21 @@ head.appendChild(script);
             <b:include name='quickedit'/>
         </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='footer-2-2'/><b:section-contents id='footer-2-3'/></html>
+</b:section-contents><b:section-contents id='footer-2-2'>
+  <b:widget id='HTML2' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[考據校對佛經咒，原本用意只是要修正出最正確的佛經咒，希望自己持誦後能給亡者或孤魂野鬼等最正確最大的幫助，讓祂們得以盡快解脫，沒想到好多人隨喜讚嘆，跟著修正持念更正確的佛咒。<br />　　當今佛學有許多錯誤、相掙、矛盾、後人竄改的內容，甚至有許多法師根本沒讀過該本經書，就大言不慚口若懸河地解說起該本經書內容。末學也只能感嘆，末法時期了，妖魔鬼怪，附佛外道橫生，到處胡說八道，怪不得學佛者眾，成道者如鳳毛麟角。]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section-contents><b:section-contents id='footer-2-3'/></html>
