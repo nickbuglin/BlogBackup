@@ -6,6 +6,7 @@
   <head>
 <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>
 <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>
+<meta content='https://www.facebook.com/YesYogaBuddha' property='article:author'/>
 
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
@@ -740,6 +741,260 @@ text-overflow: ellipsis;
 </style>
 
 
+
+<script type='text/javascript'>
+      //<![CDATA[ 
+      <!-- Script functions for Related Posts: RelatedLabels(), RemoveDuplicatedPosts(), contains(), ShowRelatedPosts()--> 
+                                                             var relatedPostsNum = 0; 
+                                                             var relatedTitles = new Array(); 
+      var relatedUrls = new Array(); 
+      var relatedDates = new Array(); 
+      function RelatedLabels(json) { 
+        for (var i = 0; i < json.feed.entry.length; i++) {
+          var entry = json.feed.entry[i]; 
+          relatedTitles[relatedPostsNum] = entry.title.$t;
+          relatedDates[relatedPostsNum] = entry.published.$t.substr(0,10); 
+          for (var j = 0; j < entry.link.length; j++) { 
+            if (entry.link[j].rel == 'alternate') { 
+              relatedUrls[relatedPostsNum] = entry.link[j].href; 
+              relatedPostsNum++; 
+              break; 
+            } 
+          } 
+        } 
+      } 
+      function RemoveDuplicatedPosts(PostUrl) { 
+        var tmpUrls = new Array(0); 
+        var tmpTitles = new Array(0); 
+        var tmpDates = new Array(0); 
+        function contains(a, e) { 
+          for(var j = 0; j < a.length; j++) 
+            if (a[j]==e) 
+              return true; 
+          return false; 
+        } 
+        for(var i = 0; i < relatedUrls.length; i++) { 
+          if(!contains(tmpUrls, relatedUrls[i]) && PostUrl != relatedUrls[i]) { 
+            tmpUrls.length += 1; 
+            tmpUrls[tmpUrls.length - 1] = relatedUrls[i]; 
+            tmpTitles.length += 1; 
+            tmpTitles[tmpTitles.length - 1] = relatedTitles[i]; 
+            tmpDates.length += 1; 
+            tmpDates[tmpDates.length - 1] = relatedDates[i]; 
+          } 
+        } 
+        relatedTitles = tmpTitles; 
+        relatedUrls = tmpUrls; 
+        relatedDates = tmpDates; 
+      } 
+      function ShowRelatedPosts(PostUrl) { 
+        RemoveDuplicatedPosts(PostUrl); 
+        var r = Math.floor((relatedTitles.length - 1) * Math.random()); 
+        var i = 0; 
+        if (relatedTitles.length > 0) { 
+          document.write('延伸閱讀： <ul>'); 
+          while (i < relatedTitles.length && i < 5) { 
+            document.write('<li><a href="' + relatedUrls[r] + '">' + relatedTitles[r] + '</a> - ' + relatedDates[r] + '</li>'); 
+            if (r < relatedTitles.length - 1) 
+              r++; 
+            else 
+              r = 0; 
+            i++; 
+          } 
+          document.write('</ul>'); 
+        } 
+      } 
+      //]]> 
+    </script>
+
+
+
+
+
+
+
+<style>
+/*下拉選單 start*/
+
+#dropMenu ul, #dropMenu li, #dropMenu span, #dropMenu a {
+margin: 0;
+padding: 0;
+position: relative;
+}
+
+
+#dropMenu:after, #dropMenu ul:after {
+content: &#39;&#39;;
+display: block;
+clear: both;
+}
+
+
+#dropMenu a {
+color: #ffffff; /*文字顏色*/
+display: inline-block;
+font-family: &#39;Lucida Grande&#39;, &#39;Lucida Sans Unicode&#39;, Helvetica, Arial, Verdana, sans-serif;
+font-size: 14px; /*文字大小*/
+min-width: 35px;
+text-align: center; /*文字位置*/
+text-decoration: none;
+/*text-shadow: 0 -1px 0 #eeeeee; /*文字陰影顏色*/
+}
+
+
+#dropMenu ul {
+list-style: none;
+background: none!important;
+overflow: visible!important;
+z-index: 10;
+border: none!important;
+}
+
+
+#dropMenu &gt; ul &gt; li {
+float: left;
+}
+
+/*
+#dropMenu &gt; ul &gt; li.active &gt; a {
+background: #d9d9d9 url(http://2.bp.blogspot.com/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left bottom;
+background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#d9d9d9&#39;, endColorstr=&#39;#bfbfbf&#39;, GradientType=0);
+box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+-moz-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+-webkit-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+filter: none;
+}
+*/
+
+/*
+#dropMenu &gt; ul &gt; li.active a:hover {
+background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#d9d9d9&#39;, endColorstr=&#39;#bfbfbf&#39;, GradientType=0);
+filter: none;
+}
+*/
+
+
+/* 按鈕原本色樣  */
+#dropMenu &gt; ul &gt; li a {
+/*box-shadow: inset 0 0 0 5px #ffffff;
+-moz-box-shadow: inset 0 0 0 1px #ffffff;
+-webkit-box-shadow: inset 0 0 0 1px #ffffff;  /* 按鈕的陰影 */
+
+/*background: #bfbfbf url(http://2.bp.blogspot.com/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left top;
+background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #e5e5e5), color-stop(51%, #d7d7d7), color-stop(100%, #ededed));
+background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%); /* 按鈕下半截漸層顏色 */
+
+/*filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#ededed&#39;, GradientType=0);
+*/
+
+border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
+border-top: 0px solid #d2d2d2;  /* 上面線寬 */
+border-right: 2px solid #d2d2d2; /* 按鈕間隔寬 */
+line-height: 34px; /* 按鈕高度 */
+padding: 0 16px;  /* 文字兩旁留白多少 */
+filter: none;
+}
+
+
+/* 滑鼠移過去的按鈕色樣  */
+#dropMenu &gt; ul &gt; li a:hover {
+
+/*
+background: #ffffff url(http://2.bp.blogspotcom/-o_z6JrMNzkg/VRPtCtXxTNI/AAAAAAAALZw/bag3Q6eUhSY/s1600/grad_light.png) repeat-x left bottom;
+background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(50%, #bfbfbf), color-stop(51%, #b0b0b0), color-stop(100%, #c7c7c7));
+background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+filter: progid:dximagetransform.microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#ededed&#39;, GradientType=0);
+filter: none;
+*/
+color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
+
+}
+
+
+
+/* 最後一個按鈕邊緣圓弧度 */
+#dropMenu &gt; ul &gt; li:last-child a {
+border-radius: 10px 10px 0 0;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+}
+
+/* 第一個按鈕邊緣圓弧度 */
+#dropMenu &gt; ul &gt; li:first-child a {
+border-radius: 10px 10px 0 0;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+}
+
+
+
+#dropMenu &gt; ul &gt; .has-sub:hover &gt; ul {
+display: block;
+}
+
+
+#dropMenu .has-sub ul {
+display: none;
+position: absolute;
+left: -1px;
+min-width: 100%;
+text-align: center;
+}
+
+/* 第三層選單按鈕位置 */
+#dropMenu li .has-sub:hover &gt; ul {
+display: block;
+position: absolute;
+top: 0; 
+left: 100%;
+}
+
+/* 子選單文字位置 */
+#dropMenu .has-sub ul li {
+text-align: center;
+}
+
+
+/* 子選單按鈕樣式 */
+#dropMenu .has-sub ul li a {
+border-radius: 10px 10px 10px 10px;          /* 子選單按鈕圓弧度 */
+-moz-border-radius: 10px 10px 10px 10px;     /* 子選單按鈕圓弧度 */
+-webkit-border-radius: 10px 10px 10px 10px; /* 子選單按鈕圓弧度 */
+border-top: 0 none;
+border-left: 1px solid #d2d2d2;
+width: 170px;
+display: block;
+font-size: 14px;
+line-height: 120%;
+padding: 9px 10px;
+text-align: left;
+
+}
+/* 下拉選單 end*/
+</style>
+
+
+
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -959,39 +1214,343 @@ head.appendChild(script);
     <div class='fauxborder-right tabs-fauxborder-right'/>
     <div class='region-inner tabs-inner'>
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
-        <b:widget id='PageList1' locked='false' title='網頁' type='PageList'>
+        <b:widget id='HTML4' locked='false' title='' type='HTML'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{'link0': {'href': 'http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9', 'title': 'Youtube', 'position': 0}, 'link1': {'href': 'https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411', 'title': 'FB粉絲專頁', 'position': 1}, 'link2': {'href': 'https://plus.google.com/111149140642619080523', 'title': 'Google+', 'position': 2}, 'link3': {'href': 'https://play.google.com/store/books/author?id\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9', 'title': 'Google圖書免費佛經', 'position': 3}}]]></b:widget-setting>
-            <b:widget-setting name='homeTitle'>首頁</b:widget-setting>
+            <b:widget-setting name='content'>&lt;div id=&quot;dropMenu&quot;&gt;
+
+ &lt;ul&gt;
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;網址&quot;&gt;&lt;span&gt;學佛相關資源 &#9660;&lt;/span&gt;&lt;/a&gt;
+   
+    &lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411&quot;&gt;&lt;span&gt;FB 粉絲專頁&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Youtube頻道&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;https://plus.google.com/111149140642619080523&quot;&gt;&lt;span&gt;Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Google圖書免費佛經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+  &lt;/li&gt;
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
+
+   &lt;ul&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_10.html&quot;&gt;&lt;span&gt;人非人到底是何意思&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html&quot;&gt;&lt;span&gt;功德要如何迴向&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_11.html&quot;&gt;&lt;span&gt;法界&#65311;法界藏&#65311;如來藏&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_61.html&quot;&gt;&lt;span&gt;為何要繞佛或繞塔&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_2.html&quot;&gt;&lt;span&gt;淺釋何謂&#12300;法&#12301;&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_47.html&quot;&gt;&lt;span&gt;學佛要專入哪個法門&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_77.html&quot;&gt;&lt;span&gt;七如來到底為何?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_49.html&quot;&gt;&lt;span&gt;重要!不要再燒經文咒文了!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_40.html&quot;&gt;&lt;span&gt;念佛一定得吃素?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_95.html&quot;&gt;&lt;span&gt;一生念阿彌陀佛就能成佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像要開光?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/search/label/%E2%80%BB%E4%BD%9B%E5%AD%B8%E5%85%A5%E9%96%80%20Buddhism%20entry&quot;&gt;&lt;span&gt;更多More...&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+   &lt;/ul&gt;
+
+  &lt;/li&gt;
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;常見經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
+
+   &lt;ul&gt;
+
+     &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;首楞嚴咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_83.html&quot;&gt;&lt;span&gt;&quot;楞嚴咒&quot;還是&quot;首楞嚴咒&quot;&#65311;傻傻分不清楚&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_8.html&quot;&gt;&lt;span&gt;首楞嚴經到底是真的還是假的&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_4.html&quot;&gt;&lt;span&gt;首楞嚴咒導引與介紹&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_71.html&quot;&gt;&lt;span&gt;首楞嚴咒梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_23.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_94.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書(純梵音雙面列印版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_10.html&quot;&gt;&lt;span&gt;佛頂大白傘蓋陀羅尼經(加註解)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+      &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;佛頂尊勝咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_67.html&quot;&gt;&lt;span&gt;佛頂尊勝咒導引與介紹&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_290.html&quot;&gt;&lt;span&gt;尊勝咒與文殊師利菩薩&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post.html&quot;&gt;&lt;span&gt;佛頂尊勝咒梵文結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_1.html&quot;&gt;&lt;span&gt;佛頂尊勝咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_926.html&quot;&gt;&lt;span&gt;最勝佛頂陀羅尼淨除業障呪經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_350.html&quot;&gt;&lt;span&gt;佛說一切如來烏瑟膩沙最勝總持經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+     &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;大悲咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_899.html&quot;&gt;&lt;span&gt;大悲咒梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_802.html&quot;&gt;&lt;span&gt;大悲咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_216.html&quot;&gt;&lt;span&gt;金剛頂瑜伽青頸大悲王觀自在念誦儀軌(節錄)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_648.html&quot;&gt;&lt;span&gt;青頸觀自在菩薩心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_813.html&quot;&gt;&lt;span&gt;千手千眼觀世音菩薩大悲心陀羅尼&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_225.html&quot;&gt;&lt;span&gt;千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;準提咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_23.html&quot;&gt;&lt;span&gt;准提咒梵文版本&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_533.html&quot;&gt;&lt;span&gt;佛說七俱胝佛母心大准提陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                           
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+          &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;一切如來心祕密全身舍利寶篋印陀羅尼...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_206.html&quot;&gt;&lt;span&gt;問題重重的印刷流通版&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_568.html&quot;&gt;&lt;span&gt;不要再拿&quot;五輪塔&quot;當作舍利塔供養!!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_697.html&quot;&gt;&lt;span&gt;梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_580.html&quot;&gt;&lt;span&gt;梵文仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_599.html&quot;&gt;&lt;span&gt;一切如來正法祕密篋印心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_863.html&quot;&gt;&lt;span&gt;一切如來心祕密全身舍利寶篋印陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     
+     	&lt;/ul&gt;
+        
+                  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;百字明咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_14.html&quot;&gt;&lt;span&gt;百字明咒導引介紹&#12289;功德與釋疑&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_45.html&quot;&gt;&lt;span&gt;梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_15.html&quot;&gt;&lt;span&gt;梵文繁體仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    
+     	&lt;/ul&gt;
+    
+     &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;心經...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_9.html&quot;&gt;&lt;span&gt;心經各版本結集&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_4.html&quot;&gt;&lt;span&gt;書寫&#12289;抄經&#12289;練字字帖&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                           
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;金剛經...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_98.html&quot;&gt;&lt;span&gt;&#12300;著衣持鉢&#65292;入舍衛大城乞食&#12301;智慧在哪裡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_19.html&quot;&gt;&lt;span&gt;能斷金剛般若波羅蜜多經(玄奘版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_17.html&quot;&gt;&lt;span&gt;金剛般若波羅蜜經(鳩摩羅什版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                           
+     	&lt;/ul&gt;
+
+    &lt;/li&gt;
+    
+       &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;施食施法...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+     	&lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_36.html&quot;&gt;&lt;span&gt;施食餓鬼導引介紹與釋疑&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_86.html&quot;&gt;&lt;span&gt;佛說救拔熖口餓鬼陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_28.html&quot;&gt;&lt;span&gt;怎麼施食最如法&#65311;最簡易方法&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_25.html&quot;&gt;&lt;span&gt;怎麼施食最如法&#65311;節錄&#12298;瑜伽焰口施食&#12299;方法&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_65.html&quot;&gt;&lt;span&gt;佛說妙色陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                           
+     	&lt;/ul&gt;
+
+      &lt;/li&gt;
+
+
+   &lt;/li&gt;&lt;/li&gt;&lt;/ul&gt;
+
+  &lt;/li&gt;
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;其他經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
+
+     &lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/search/label/%E3%80%82%E8%8F%AF%E5%9A%B4%E7%B6%93%20The%20Avatamsaka%20Sutra&quot;&gt;&lt;span&gt;華嚴經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_116.html&quot;&gt;&lt;span&gt;妙法蓮華經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+
+      &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/search/label/%E3%80%82%E5%A4%A7%E8%88%AC%E6%B6%85%E6%A7%83%E7%B6%93%20Maha%20parinirvana%20Sutra&quot;&gt;&lt;span&gt;大般涅槃經...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+       &lt;ul&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_5.html&quot;&gt;&lt;span&gt;大般涅槃經問題重重&#65292;正確版本到底是哪一本&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_87.html&quot;&gt;&lt;span&gt;佛般泥洹經(大般涅槃經正確本)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_69.html&quot;&gt;&lt;span&gt;大般涅槃經後分&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_46.html&quot;&gt;&lt;span&gt;佛入涅槃密迹金剛力士哀戀經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    
+     &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/search/label/%E3%80%82%E5%9C%B0%E8%97%8F%E7%B6%93%20The%20Ksitigarbha%20sutra&quot;&gt;&lt;span&gt;地藏經...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+       &lt;ul&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_17.html&quot;&gt;&lt;span&gt;大乘大集地藏十輪經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_52.html&quot;&gt;&lt;span&gt;地藏菩薩本願經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;/ul&gt;
+    &lt;/li&gt;    
+    
+    &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+       &lt;ul&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_7.html&quot;&gt;&lt;span&gt;八十八佛大懺悔文仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;/ul&gt;
+    &lt;/li&gt;    
+    
+    &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_6.html&quot;&gt;&lt;span&gt;唯識學...&#9658;&lt;/span&gt;&lt;/a&gt;
+
+       &lt;ul&gt;
+
+          &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_4.html&quot;&gt;&lt;span&gt;大乘百法明門論&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/li&gt;    
+    
+    
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_77.html&quot;&gt;&lt;span&gt;右繞佛塔功德經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    
+    &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_20.html&quot;&gt;&lt;span&gt;大方廣如來藏經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+   
+    
+  &lt;/ul&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;台灣特色景點 &#9660;&lt;/span&gt;&lt;/a&gt;
+
+     &lt;ul&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_5.html&quot;&gt;&lt;span&gt;噶居寺(藏傳佛教風格佛寺)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_14.html&quot;&gt;&lt;span&gt;靈嚴禪寺(嘉義最大佛寺)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post.html&quot;&gt;&lt;span&gt;妙崇寺(文殊師利菩薩道場)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_68.html&quot;&gt;&lt;span&gt;龍王金殿(罕見阿育王佛塔)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_21.html&quot;&gt;&lt;span&gt;奇美博物館(超熱門&#65292;不用解釋)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ 
+    &lt;/ul&gt;
+
+    &lt;/li&gt;
+
+
+
+  
+
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛曲禪樂&lt;/span&gt;&lt;/a&gt;
+  
+   &lt;ul&gt;
+
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;敬請期待~&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+  
+  &lt;/li&gt;
+  
+
+  
+  &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;網址&quot;&gt;&lt;span&gt;優質推薦&lt;/span&gt;&lt;/a&gt;
+  
+   &lt;ul&gt;
+
+    &lt;li&gt;&lt;a href=&quot;http://line.me/S/sticker/1414794&quot;&gt;&lt;span&gt;Line貼圖&#12290;可愛兔FIFI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href=&quot;http://line.me/S/sticker/1414794&quot;&gt;&lt;span&gt;Line貼圖&#12290;可愛兔FIFI&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+
+&lt;/ul&gt;&lt;/div&gt;</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
   <div class='widget-content'>
-    <b:if cond='data:mobile'>
-      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
-        <b:loop values='data:links' var='link'>
-          <b:if cond='data:link.isCurrentPage'>
-            <option expr:value='data:link.href' selected='selected'><data:link.title/></option>
-          <b:else/>
-            <option expr:value='data:link.href'><data:link.title/></option>
-          </b:if>
-        </b:loop>
-      </select>
-      <span class='pagelist-arrow'>&amp;#9660;</span>
-
-    <b:else/>
-      <ul>
-        <b:loop values='data:links' var='link'>
-          <b:if cond='data:link.isCurrentPage'>
-            <li class='selected'><a expr:href='data:link.href'><data:link.title/></a></li>
-          <b:else/>
-            <li><a expr:href='data:link.href'><data:link.title/></a></li>
-          </b:if>
-        </b:loop>
-      </ul>
-    </b:if>
-    <b:include name='quickedit'/>
+    <data:content/>
   </div>
+
+  <b:include name='quickedit'/>
 </b:includable>
         </b:widget>
       </b:section>
@@ -1497,6 +2056,31 @@ head.appendChild(script);
 
           <div class='post-footer'>
             <div class='post-footer-line post-footer-line-1'>
+
+
+
+<span class='post-labels'>
+<b:if cond='data:top.showPostLabels and data:post.labels'>
+<data:postLabelsLabel/>
+<b:loop values='data:post.labels' var='label'>
+<a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=RelatedLabels&amp;max-results=10&quot;' type='text/javascript'/>
+</b:if>          
+</b:loop>
+</b:if>
+</span>
+<div style='font-size: 17px;'>
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+<script type='text/javascript'> 
+    ShowRelatedPosts(&#39;<data:post.url/>&#39;); 
+</script> 
+</b:if>
+</div>
+
+
+
+
               <span class='post-author vcard'>
                 <b:if cond='data:top.showAuthor'>
                   <b:if cond='data:post.authorProfileUrl'>
@@ -1988,11 +2572,11 @@ head.appendChild(script);
             <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
               <b:widget-settings>
                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='style.textcolor'>#cccccc</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
                 <b:widget-setting name='style.layout'>728x90</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='style.urlcolor'>#99ccee</b:widget-setting>
-                <b:widget-setting name='style.linkcolor'>#aaaaaa</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -2176,23 +2760,6 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
 </macro:includable>
 
 <b:section-contents id='sidebar-right-1'>
-  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-    <b:widget-settings>
-      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
-      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
-      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
-      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
   <b:widget id='Subscribe1' locked='false' title='訂閱我們' type='Subscribe'>
     <b:includable id='main'>
   <div style='white-space:nowrap'>
@@ -2297,6 +2864,23 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
+  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+    <b:widget-settings>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='熱門文章' type='PopularPosts'>
     <b:widget-settings>
       <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
@@ -2347,7 +2931,23 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   </b:widget>
   <b:widget id='HTML2' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<iframe width="250" height="180" src="https://www.youtube.com/embed/wlcpBJWvZpw" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<iframe width="270" height="180" src="https://www.youtube.com/embed/wlcpBJWvZpw" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML3' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<iframe width="270" height="180" src="https://www.youtube.com/embed/DGZCHHLPlkU" frameborder="0" allowfullscreen></iframe>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2378,13 +2978,13 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label4' locked='false' title='分類目錄' type='Label'>
+  <b:widget id='Label4' locked='false' title='文章總覽' type='Label'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
       <b:widget-setting name='display'>LIST</b:widget-setting>
       <b:widget-setting name='selectedLabelsList'/>
       <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
@@ -2465,7 +3065,7 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
   </b:widget>
   <b:widget id='HTML1' locked='false' title='FB粉絲專頁' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div class="fb-page" data-href="https://www.facebook.com/YesYogaBuddha/" data-tabs="timeline" data-width="270" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/YesYogaBuddha/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/YesYogaBuddha/">本來無一物 Sense all is void</a></blockquote></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYesYogaBuddha&tabs=timeline&width=270&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2483,7 +3083,7 @@ rndPost2.titleSet=[],rndPost2.urlSet=[],rndPost2.picSet=[],rndPost2.showPost=fun
     <b:widget-settings>
       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
       <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
-      <b:widget-setting name='style.layout'>250x250</b:widget-setting>
+      <b:widget-setting name='style.layout'>300x1050</b:widget-setting>
       <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
       <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
       <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
