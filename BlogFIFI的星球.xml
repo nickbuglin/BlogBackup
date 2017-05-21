@@ -7,8 +7,8 @@
 <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>
 <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>
 <meta content='https://www.facebook.com/Fifiheavenlybody' property='article:author'/>
+<meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
 
-    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
 
 
 <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
@@ -21,8 +21,8 @@ enable_page_level_ads: true
 
 
 
-    <b:include data='blog' name='all-head-content'/>
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
 <title>
 <data:blog.pageName/> | <data:blog.title/>
 </title>
@@ -591,6 +591,74 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 .mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
   border-$startSide: 1px solid $(tabs.separator.color);
 }
+
+
+/* CSS For related post widget----------- */
+#related-posts {
+float:left;
+width:101%;
+}
+
+#related-posts sl{
+margin:0 !important;
+padding:0 !important;
+}
+
+/* 推薦文章標題的樣式 */
+#related-posts h4{
+margin:10px 0px 10px;
+font:18px Oswald;
+color:#696868;
+text-transform:uppercase
+}
+
+/* 邊框的樣式 */
+.related-posts-list ci{
+background-color:#fff;
+box-shadow:0 0 40px rgba(180, 180, 180, 0.7);   /* 外框陰影 */
+width:29.5%;                /* 外框寬度佔百分比 */
+float:left;
+position:relative;        /* 位置樣式 */
+margin:0 2% 2% 0;         /* 外框的外面空白上下左右距離多少 */
+padding:1%;
+}
+
+.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
+
+/* 內容文字的樣式 */
+#related-posts a{
+color:#3C42F4;
+font:400 16px 'Oswald',sans-serif;
+text-decoration:none;               /* 文字標線 */
+}
+
+#related-posts sl ci p{
+margin-bottom:0;      /* 下邊框留邊大小 */
+padding-top:10px;     /* 文字上面留邊大小 */
+margin-top:-5px;      /* 文字離上邊框留邊距離 */
+
+}
+
+/* 圖片樣式 */
+#related-posts .related_img{
+height:85px;          /* 圖片長 */
+width:85px;           /* 圖片寬 */
+object-fit:cover;
+}
+
+.related-title{
+text-align:center;
+padding:5px 0px;
+}
+
+.rthumb{
+float:left;
+margin-top:2px;      /* 圖片離上邊框留邊距離 */
+margin-right:10px;}   /* 圖片離右邊文字留邊距離 */
+/* CSS For related post widget-----END------ */
+
+
+
 ]]></b:skin>
 
     <b:template-skin>
@@ -673,372 +741,147 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
     <b:include data='blog' name='google-analytics'/>
 
    
-<script type='text/javascript'>
-      //<![CDATA[ 
-      <!-- Script functions for Related Posts: RelatedLabels(), RemoveDuplicatedPosts(), contains(), ShowRelatedPosts()--> 
-                                                             var relatedPostsNum = 0; 
-                                                             var relatedTitles = new Array(); 
-      var relatedUrls = new Array(); 
-      var relatedDates = new Array(); 
-      function RelatedLabels(json) { 
-        for (var i = 0; i < json.feed.entry.length; i++) {
-          var entry = json.feed.entry[i]; 
-          relatedTitles[relatedPostsNum] = entry.title.$t;
-          relatedDates[relatedPostsNum] = entry.published.$t.substr(0,10); 
-          for (var j = 0; j < entry.link.length; j++) { 
-            if (entry.link[j].rel == 'alternate') { 
-              relatedUrls[relatedPostsNum] = entry.link[j].href; 
-              relatedPostsNum++; 
-              break; 
-            } 
-          } 
-        } 
-      } 
-      function RemoveDuplicatedPosts(PostUrl) { 
-        var tmpUrls = new Array(0); 
-        var tmpTitles = new Array(0); 
-        var tmpDates = new Array(0); 
-        function contains(a, e) { 
-          for(var j = 0; j < a.length; j++) 
-            if (a[j]==e) 
-              return true; 
-          return false; 
-        } 
-        for(var i = 0; i < relatedUrls.length; i++) { 
-          if(!contains(tmpUrls, relatedUrls[i]) && PostUrl != relatedUrls[i]) { 
-            tmpUrls.length += 1; 
-            tmpUrls[tmpUrls.length - 1] = relatedUrls[i]; 
-            tmpTitles.length += 1; 
-            tmpTitles[tmpTitles.length - 1] = relatedTitles[i]; 
-            tmpDates.length += 1; 
-            tmpDates[tmpDates.length - 1] = relatedDates[i]; 
-          } 
-        } 
-        relatedTitles = tmpTitles; 
-        relatedUrls = tmpUrls; 
-        relatedDates = tmpDates; 
-      } 
-      function ShowRelatedPosts(PostUrl) { 
-        RemoveDuplicatedPosts(PostUrl); 
-        var r = Math.floor((relatedTitles.length - 1) * Math.random()); 
-        var i = 0; 
-        if (relatedTitles.length > 0) { 
-          document.write('延伸閱讀： <ul>'); 
-          while (i < relatedTitles.length && i < 5) { 
-            document.write('<li><a href="' + relatedUrls[r] + '">' + relatedTitles[r] + '</a> - ' + relatedDates[r] + '</li>'); 
-            if (r < relatedTitles.length - 1) 
-              r++; 
-            else 
-              r = 0; 
-            i++; 
-          } 
-          document.write('</ul>'); 
-        } 
-      } 
-      //]]> 
-    </script>
 
+        <!--Tab標籤頁&#65292;關掉原本的工具-->
+        <style type='text/css'>
+            #HTML6 {display: none;}
+            #BlogSearch1 {display: none;}
+            #Text1 {display: none;}
+        </style>
 
 
-
-
-
-
-<style>
-/*下拉選單 start*/
-
-#dropMenu ul, #dropMenu li, #dropMenu span, #dropMenu a {
-margin: 0;
-padding: 0;
-position: relative;
-}
-
-
-#dropMenu:after, #dropMenu ul:after {
-content: &#39;&#39;;
-display: block;
-clear: both;
-}
-
-
-#dropMenu a {
-color: #ffffff; /*文字顏色*/
-display: inline-block;
-font-family: &#39;Lucida Grande&#39;, &#39;Lucida Sans Unicode&#39;, Helvetica, Arial, Verdana, sans-serif;
-font-size: 14px; /*文字大小*/
-min-width: 35px;
-text-align: center; /*文字位置*/
-text-decoration: none;
-/*text-shadow: 0 -1px 0 #eeeeee; /*文字陰影顏色*/
-}
-
-
-#dropMenu ul {
-list-style: none;
-background: none!important;
-overflow: visible!important;
-z-index: 10;
-border: none!important;
-}
-
-
-#dropMenu &gt; ul &gt; li {
-float: left;
-}
-
-
-/* 按鈕原本色樣  */
-#dropMenu &gt; ul &gt; li a {
-border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
-border-top: 0px solid #d2d2d2;  /* 上面線寬 */
-border-right: 2px solid #d2d2d2; /* 按鈕間隔寬 */
-line-height: 34px; /* 按鈕高度 */
-padding: 0 16px;  /* 文字兩旁留白多少 */
-filter: none;
-}
-
-
-/* 滑鼠移過去的按鈕色樣  */
-#dropMenu &gt; ul &gt; li a:hover {
-
-color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
-
-}
-
-
-
-/* 最後一個按鈕邊緣圓弧度 */
-#dropMenu &gt; ul &gt; li:last-child a {
-border-radius: 10px 10px 0 0;
--moz-border-radius: 10px 10px 0 0;
--webkit-border-radius: 10px 10px 0 0;
-}
-
-/* 第一個按鈕邊緣圓弧度 */
-#dropMenu &gt; ul &gt; li:first-child a {
-border-radius: 10px 10px 0 0;
--moz-border-radius: 10px 10px 0 0;
--webkit-border-radius: 10px 10px 0 0;
-}
-
-
-
-#dropMenu &gt; ul &gt; .has-sub:hover &gt; ul {
-display: block;
-
-}
-
-
-#dropMenu .has-sub ul {
-display: none;
-position: absolute;
-left: -1px;
-min-width: 100%;
-text-align: center;
-}
-
-/* 第三層選單按鈕位置 */
-#dropMenu li .has-sub:hover &gt; ul {
-display: block;
-position: absolute;
-top: 0; 
-left: 100%;
-}
-
-/* 子選單文字位置 */
-#dropMenu .has-sub ul li {
-text-align: center;
-}
-
-
-/* 子選單按鈕樣式 */
-#dropMenu .has-sub ul li a {
-border-radius: 10px 10px 10px 10px;          /* 子選單按鈕圓弧度 */
--moz-border-radius: 10px 10px 10px 10px;     /* 子選單按鈕圓弧度 */
--webkit-border-radius: 10px 10px 10px 10px; /* 子選單按鈕圓弧度 */
-border-top: 0 none;
-border-left: 1px solid #d2d2d2;
-width: 170px;
-display: block;
-font-size: 14px;
-line-height: 110%;  /* 文字高度 */
-padding: 8px 10px;  /* 文字上下留空白 左右 */
-text-align: left;
-
-}
-/* 下拉選單 end*/
-</style>
-
-
-
-
-
-
-
-
-
-
-&#65279;<style type='text/css'>  /* 畫底線功能 */
-b1{
-background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
-line-height: 22px;
-}
- 
-g1{
-background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
-line-height: 22px;
-}
- 
-r1{
-background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
-line-height: 22px;
-}
-
-y1{
-background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
-line-height: 22px;
-}
-
-</style>
- 
-<script type='text/javascript'>
-document.createElement(&quot;b1&quot;)
-document.createElement(&quot;g1&quot;)
-document.createElement(&quot;r1&quot;)
-document.createElement(&quot;y1&quot;)
-</script>
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-96445277-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-</script>
-
-
-
-
-<style type='text/css'>
-#HTML6 {display: none;}
-#BlogSearch1 {display: none;}
-#Text1 {display: none;}
-</style>
-
-
-
-<style>
-/*email訂閱*/
-#emailForm input {
-font-size: 16px;  /*文字大小*/
-border: 2px solid #ffffff;
-padding: 5px 5px;  /*輸入框的內框大小*/
-height: 35px;
-box-sizing: border-box
-}
-.emailInput {
-width: 65%;
-background: #fff
-}
-.emailSubmit {
-width: 35%;
-float: right;
-cursor: pointer;
-background: #8C2D17;
-color: #fff
-}
-</style>
-
-
-
-        <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'/>
+        <!--下拉式導覽選單-->
         <style>
-            /* 隨機文章 */
-            .rndPost_caption { /* 標題文字 */
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 20px;
-            text-align: left;
-            margin-top: 10px;
-            }
-            .rndPost_allPost { /* 隨機文章區塊 */
-            display: table-row;
-            }
-            .rndPost_post { /* 個別文章區塊 */
-            padding: 5px;
-            display: table-cell;
-            transition: background .7s;
-            -webkit-transition: background .7s;
-            -moz-transition: background .7s;
-            }
-            .rndPost_post:hover {
-            background: #f5f5f5;
-            text-decoration: none;
-            }
-            .rndPost_post:hover .rndPost_picFrame {
-            border: 1px solid transparent;
-            }
-            .rndPost_post:hover .rndPost_pic {
-            opacity: 0.5;
-            }
-            .rndPost_post:hover .rndPost_comm {
-            opacity: 1;
-            }
-            .rndPost_picFrame { /* 圖片外框 */
-            padding: 2px;
-            border: 1px solid #ddd;
+            #dropMenu ul, #dropMenu li, #dropMenu span, #dropMenu a {
+            margin: 0;
+            padding: 0;
             position: relative;
-            transition: border .7s;
-            -webkit-transition: border .7s;
-            -moz-transition: border .7s;
             }
-            .rndPost_pic { /* 圖片 */
-            border-radius: 5px;
+
+            #dropMenu:after, #dropMenu ul:after {
+            content: &#39;&#39;;
             display: block;
-            opacity: 1;
-            transition: opacity .7s;
-            -webkit-transition: opacity .7s;
-            -moz-transition: opacity .7s;
+            clear: both;
             }
-            .rndPost_comm {
+
+            #dropMenu a {
+            color: #ffffff; /*文字顏色*/
+            display: inline-block;
+            font-family: &#39;Lucida Grande&#39;, &#39;Lucida Sans Unicode&#39;, Helvetica, Arial, Verdana, sans-serif;
+            font-size: 14px; /*文字大小*/
+            min-width: 35px;
+            text-align: center; /*文字位置*/
+            text-decoration: none;
+            /*text-shadow: 0 -1px 0 #eeeeee; /*文字陰影顏色*/
+            }
+
+            #dropMenu ul {
+            list-style: none;
+            background: none!important;
+            overflow: visible!important;
+            z-index: 10;
+            border: none!important;
+            }
+
+            #dropMenu &gt; ul &gt; li {
+            float: left;
+            }
+
+            /* 按鈕原本色樣  */
+            #dropMenu &gt; ul &gt; li a {
+            border-bottom: 2px solid #d2d2d2; /* 下底線寬 */
+            border-top: 0px solid #d2d2d2;  /* 上面線寬 */
+            border-right: 2px solid #d2d2d2; /* 按鈕間隔寬 */
+            line-height: 34px; /* 按鈕高度 */
+            padding: 0 16px;  /* 文字兩旁留白多少 */
+            filter: none;
+            }
+
+            /* 滑鼠移過去的按鈕色樣  */
+            #dropMenu &gt; ul &gt; li a:hover {
+            color:#af0322 /* 滑鼠移過去&#65292;文字顏色 */
+            }
+
+            /* 最後一個按鈕邊緣圓弧度 */
+            #dropMenu &gt; ul &gt; li:last-child a {
+            border-radius: 10px 10px 0 0;
+            -moz-border-radius: 10px 10px 0 0;
+            -webkit-border-radius: 10px 10px 0 0;
+            }
+
+            /* 第一個按鈕邊緣圓弧度 */
+            #dropMenu &gt; ul &gt; li:first-child a {
+            border-radius: 10px 10px 0 0;
+            -moz-border-radius: 10px 10px 0 0;
+            -webkit-border-radius: 10px 10px 0 0;
+            }
+
+            #dropMenu &gt; ul &gt; .has-sub:hover &gt; ul {
+            display: block;
+            }
+
+            #dropMenu .has-sub ul {
+            display: none;
             position: absolute;
-            right: 10px;
-            bottom: 10px;
-            color: #222;
-            text-shadow: 1px 1px 2px #bbb;
-            font-size: 11px;
-            opacity: 0;
-            transition: opacity .7s;
-            -webkit-transition: opacity .7s;
-            -moz-transition: opacity .7s;
+            left: -1px;
+            min-width: 100%;
+            text-align: center;
             }
-            .rndPost_comm img {
-            width: 12px;
-            height: auto;
-            vertical-align: -3px;
+
+            /* 第三層選單按鈕位置 */
+            #dropMenu li .has-sub:hover &gt; ul {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
             }
-            .rndPost_title { /* 文章標題 */
-            font-size: 13px;
-            font-weight: bold;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            transition: color .7s;
-            -webkit-transition: color .7s;
-            -moz-transition: color .7s;
+
+            /* 子選單文字位置 */
+            #dropMenu .has-sub ul li {
+            text-align: center;
+            }
+
+            /* 子選單按鈕樣式 */
+            #dropMenu .has-sub ul li a {
+            border-radius: 10px 10px 10px 10px;          /* 子選單按鈕圓弧度 */
+            -moz-border-radius: 10px 10px 10px 10px;     /* 子選單按鈕圓弧度 */
+            -webkit-border-radius: 10px 10px 10px 10px; /* 子選單按鈕圓弧度 */
+            border-top: 0 none;
+            border-left: 1px solid #d2d2d2;
+            width: 170px;
+            display: block;
+            font-size: 14px;
+            line-height: 110%;  /* 文字高度 */
+            padding: 8px 10px;  /* 文字上下留空白 左右 */
+            text-align: left;
             }
         </style>
 
 
+        <!--email訂閱工具-->
+        <style>
+            #emailForm input {
+            font-size: 16px;  /*文字大小*/
+            border: 2px solid #ffffff;
+            padding: 5px 5px;  /*輸入框的內框大小*/
+            height: 35px;
+            box-sizing: border-box
+            }
+            .emailInput {
+            width: 65%;
+            background: #fff
+            }
+            .emailSubmit {
+            width: 35%;
+            float: right;
+            cursor: pointer;
+            background: #8C2D17;
+            color: #fff
+            }
+        </style>
+		
 
-
-<!--扁平化社群分享按鈕-->
+        <!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
         <style>
             .social_buttons {
@@ -1051,7 +894,7 @@ color: #fff
             display: inline-block;
             text-decoration: none;
             color: #fff;      /* 文字內容顏色 */
-            padding: 5px;    /* 文字離邊框&#65292;空下多少距離 */
+            padding: 5px;    /* 文字離邊框空下多少距離 */
             transition: all .2s;
             -webkit-transition: all .2s;
             -moz-transition: all .2s;
@@ -1059,14 +902,14 @@ color: #fff
             }
 
             .social_buttons a:hover {
-            -ms-transform: translateY(-4px);       /* 滑鼠移過&#65292;方框移動多少距離 */
-            -webkit-transform: translateY(-4px);   /* 滑鼠移過&#65292;方框移動多少距離 */
-            transform: translateY(-4px);           /* 滑鼠移過&#65292;方框移動多少距離 */
+            -ms-transform: translateY(-4px);       /* 滑鼠移過方框移動多少距離 */
+            -webkit-transform: translateY(-4px);   /* 滑鼠移過方框移動多少距離 */
+            transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
             }
 
             .social_buttons i {
-            width: 40px;         /* 文字離左右邊框&#65292;空下多少距離 */
-            height: 40px;        /* 文字離上下邊框&#65292;空下多少距離 */
+            width: 40px;         /* 文字離左右邊框空下多少距離 */
+            height: 40px;        /* 文字離上下邊框空下多少距離 */
             font-size: 32px;     /* 文字大小 */
             text-align: center;  /* 文字位置 */
 
@@ -1074,7 +917,7 @@ color: #fff
 
             .social_buttons i:before {
             margin: auto;
-            line-height: 40px;  /* 文字離上下邊框&#65292;空下多少距離 */
+            line-height: 40px;  /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
 
@@ -1109,9 +952,41 @@ color: #fff
             }
         </style>
 
+		
+		<!--畫底線功能-->
+        <style type='text/css'>
+            b1{
+            background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            g1{
+            background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            r1{
+            background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+            y1{
+            background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
+            line-height: 22px;
+            }
+
+        </style>
+        <!--畫底線功能2-->
+        <script type='text/javascript'>
+            document.createElement(&quot;b1&quot;)
+            document.createElement(&quot;g1&quot;)
+            document.createElement(&quot;r1&quot;)
+            document.createElement(&quot;y1&quot;)
+        </script>
 
 
-      <!-- 回到頂端(需要jquery)-->
+		<script src='//code.jquery.com/jquery-2.1.4.min.js'/>
+		<!-- 回到頂端(需要jquery)-->
 		<style>
         #goTop {
 			position: fixed;
@@ -1136,6 +1011,101 @@ color: #fff
         }
       </style>
 
+	  	  
+		<!-- Related Posts widget with Thumbnails Code Before Head Start-->
+		<b:if cond='data:blog.pageType == &quot;item&quot;'>
+			<script type='text/javascript'>
+				//<![CDATA[
+				var borelatedTitles = new Array();
+				var rboTitlesNum = 0;
+				var relatedUrls = new Array();
+				var thumburl = new Array();
+
+				function related_results_labels_thumbs(json) {
+					for (var i = 0; i < json.feed.entry.length; i++) {
+						var entry = json.feed.entry[i];
+						borelatedTitles[rboTitlesNum] = entry.title.$t;
+						try {
+							thumburl[rboTitlesNum] = entry.gform_foot.url
+						} catch (error) {
+							s = entry.content.$t;
+							a = s.indexOf("<img");
+							b = s.indexOf("src=\"", a);
+							c = s.indexOf("\"", b + 5);
+							d = s.substr(b + 5, c - b - 5);
+							if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+								thumburl[rboTitlesNum] = d
+							} else thumburl[rboTitlesNum] = 'https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/s144/IMG_1818.jpg'
+						}
+						if (borelatedTitles[rboTitlesNum].length > 35) borelatedTitles[rboTitlesNum] = borelatedTitles[rboTitlesNum].substring(0, 45) + "...";
+						for (var k = 0; k < entry.link.length; k++) {
+							if (entry.link[k].rel == 'alternate') {
+								relatedUrls[rboTitlesNum] = entry.link[k].href;
+								rboTitlesNum++
+							}
+						}
+					}
+				}
+
+				function removeDuplicate_thumbs() {
+					var tmp = new Array(0);
+					var tmp2 = new Array(0);
+					var tmp3 = new Array(0);
+					for (var i = 0; i < relatedUrls.length; i++) {
+						if (!contains_thumbs(tmp, relatedUrls[i])) {
+							tmp.length += 1;
+							tmp[tmp.length - 1] = relatedUrls[i];
+							tmp2.length += 1;
+							tmp3.length += 1;
+							tmp2[tmp2.length - 1] = borelatedTitles[i];
+							tmp3[tmp3.length - 1] = thumburl[i]
+						}
+					}
+					borelatedTitles = tmp2;
+					relatedUrls = tmp;
+					thumburl = tmp3
+				}
+
+				function contains_thumbs(a, e) {
+					for (var j = 0; j < a.length; j++)
+						if (a[j] == e) return true;
+					return false
+				}
+
+				function printRelatedLabel_thumbs() {
+					for (var i = 0; i < relatedUrls.length; i++) {
+						if ((relatedUrls[i] == findcurrentposturl) || (!(borelatedTitles[i]))) {
+							relatedUrls.splice(i, 1);
+							borelatedTitles.splice(i, 1);
+							thumburl.splice(i, 1);
+							i--
+						}
+					}
+					var r = Math.floor((borelatedTitles.length - 1) * Math.random());
+					var i = 0;
+					if (borelatedTitles.length > 0) document.write('<h4><span>' + titleofrelatedpost + '</span></h4>');
+					document.write('<sl class="related-posts-list">');
+					while (i < borelatedTitles.length && i < 20 && i < maxpost) {
+						document.write('<ci><a href="' + relatedUrls[r] + '"><span class="rthumb"><img class="related_img" src="' + thumburl[r] + '"/></span><p><span class="related-title">' + borelatedTitles[r] + '</span></p></a></ci>');
+						if (r < borelatedTitles.length - 1) {
+							r++
+						} else {
+							r = 0
+						}
+						i++
+					}
+					document.write('</sl>');
+					relatedUrls.splice(0, relatedUrls.length);
+					thumburl.splice(0, thumburl.length);
+					borelatedTitles.splice(0, borelatedTitles.length)
+				} //]]>
+			</script>
+		</b:if>
+		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
+
+  
+	  
+	  
 </head>
 
 
@@ -1951,9 +1921,30 @@ head.appendChild(script);
                 <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
               </b:if>
             </div>
-
           </div>
         </div>
+		
+	<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
+	<b:if cond='data:blog.pageType == &quot;item&quot;'>
+																			<div id='related-posts'>
+																				<b:loop values='data:post.labels' var='label'>
+																				<b:if cond='data:label.isLast != &quot;true&quot;'>
+																				</b:if>
+																					<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=7&quot;' type='text/javascript'/>
+																				</b:loop>
+																				<script type='text/javascript'>
+																					var findcurrentposturl=&quot;<data:post.url/>&quot;;
+																					var maxpost=6;
+																					var titleofrelatedpost=&quot;<b>推薦文章</b>&quot;;
+																					removeDuplicate_thumbs();
+																					printRelatedLabel_thumbs();
+																				</script>
+																			</div>
+																		</b:if>
+	<!-- Related Posts widget with Thumbnails Code Before Post Footer Ends-->	
+		
+		
+		
 
         <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
       </div>
@@ -2135,6 +2126,32 @@ head.appendChild(script);
       </div>
 
       <div class='post-footer-line post-footer-line-3'>
+	  
+	  
+	  
+	<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
+																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
+																			<div id='related-posts'>
+																				<b:loop values='data:post.labels' var='label'>
+																				<b:if cond='data:label.isLast != &quot;true&quot;'>
+																				</b:if>
+																				<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=7&quot;' type='text/javascript'/>
+																				</b:loop>
+																				<script type='text/javascript'>
+																				var findcurrentposturl=&quot;<data:post.url/>&quot;;
+																				var maxpost=6;
+																				var titleofrelatedpost=&quot;<b>推薦文章</b>&quot;;
+																				removeDuplicate_thumbs();
+																				printRelatedLabel_thumbs();
+																				</script>
+																			</div>
+																		</b:if>
+																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Ends-->  
+	  
+	  
+	  
+	  
+	  
       <span class='post-location'>
         <b:if cond='data:top.showLocation and data:post.location'>
           <data:postLocationLabel/>
@@ -2523,29 +2540,6 @@ head.appendChild(script);
         document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
       }, 10);
   </script>
-
-
-
-        <!-- 隨機文章 start -->
-        <b:if cond='data:blog.pageType == &quot;item&quot;'>
-            <script>
-                //<![CDATA[
-                var rndPost = {
-                show : 4, // 隨機文章的數量
-                width : 1, // 縮圖寬度比例
-                height : 0.618, // 縮圖高度比例
-                caption : "隨機推薦文章:", // 大標題字樣
-                noImage : "https://lh3.googleusercontent.com/-U8uDZJEfxS4/WRa84yiMwbI/AAAAAAAArtY/NVdfcoXRUx4i-76YdVgmdjCJvxYBXwjEACHM/IMG_1818.jpg", //無縮圖的替代圖片
-                comment : 0, // 若不顯示留言數量, 請改為 0
-                excludeLabel : ["。大般若經 The Maha Prajna Paramita", "。華嚴經 The Avatamsaka Sutra"], // 排除的標籤字串, 請放在雙引號 "" 之內, 每個字串用小寫逗號 "," 隔開, 最後一個字串後面與右括弧之間不可有逗號
-                location : ".post-body", // 擺放位置
-                //]]>
-                postUrl : &quot;<data:blog.canonicalUrl/>&quot;
-                };
-                jQuery.getScript(&quot;https://dl.getdropbox.com/s/xcz6q5e5nt5yhpv/rndPost-min-150506.js&quot;);
-            </script>
-        </b:if>
-        <!-- 隨機文章 end-->
 
 
         <!-- Go Top 按鈕+動畫 start -->
