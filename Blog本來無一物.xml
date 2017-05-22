@@ -928,71 +928,83 @@
         <!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
         <style>
-            .social_buttons {
-            display: inline-block;
-            margin-top: 20px;
-            font-family: Arial, sans-serif;
-            }
-
             .social_buttons a {
-            display: inline-block;
-            text-decoration: none;
-            color: #fff;      /* 文字內容顏色 */
-            padding: 5px;    /* 文字離邊框空下多少距離 */
-            transition: all .2s;
-            -webkit-transition: all .2s;
-            -moz-transition: all .2s;
-            border-radius: 8px;  /* 方框圓角 */
-            }
-
-            .social_buttons a:hover {
-            -ms-transform: translateY(-4px);       /* 滑鼠移過方框移動多少距離 */
-            -webkit-transform: translateY(-4px);   /* 滑鼠移過方框移動多少距離 */
-            transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
+			font-family: Arial, sans-serif;
+			display: inline-block;
+			text-decoration: none;
+			color: #fff;                /* 文字內容顏色 */
+			-webkit-border-radius: 8;
+			-moz-border-radius: 8;
+			border-radius: 8px;         /* 方框圓角 */
+			padding: 5px 5px 5px 5px;   /*文字離邊框空下多少距離 */
             }
 
             .social_buttons i {
-            width: 40px;         /* 文字離左右邊框空下多少距離 */
-            height: 40px;        /* 文字離上下邊框空下多少距離 */
-            font-size: 32px;     /* 文字大小 */
-            text-align: center;  /* 文字位置 */
+			width: 40px;         /* 文字離左右邊框空下多少距離 */
+			height: 40px;        /* 文字離上下邊框空下多少距離 */
+			font-size: 32px;     /* 文字大小 */
+			text-align: center;  /* 文字位置 */
             }
 
             .social_buttons i:before {
             margin: auto;
-            line-height: 40px;  /* 文字離上下邊框空下多少距離 */
+            line-height: 40px;       /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
 
             .social_fb {
-            background-color: rgb(59, 89, 152);
+			background: rgb(60, 90, 150);
+			border: solid rgb(60, 90, 150) 2px;
             }
-
+			.social_fb:hover {
+			background: #ffffff;
+			color: #3c5a96;
+            }
+			
             .social_weibo {
-            background-color: rgb(245, 202, 89);
+            background: rgb(245, 202, 89);
+			border: solid rgb(245, 202, 89) 2px;
             }
+			.social_weibo:hover {
+			background: #ffffff;
+			color: rgb(245, 202, 89);
+			}
 
             .social_gplus {
-            background-color: rgb(220, 78, 65);
+            background: rgb(220, 78, 65);
+			border: solid rgb(220, 78, 65) 2px;
             }
+			.social_gplus:hover {
+			background: #ffffff;
+			color: rgb(220, 78, 65);
+			}
 
             .social_twitter {
-            background-color: rgb(85, 172, 238);
+            background: rgb(85, 172, 238);
+			border: solid rgb(85, 172, 238) 2px;
             }
+			.social_twitter:hover {
+			background: #ffffff;
+			color: rgb(85, 172, 238);
+			}
 
             .social_pinterest {
             background-color: rgb(190, 30, 30);
+			border: solid rgb(190, 30, 30) 2px;
             }
+			.social_pinterest:hover {
+			background: #ffffff;
+			color: rgb(190, 30, 30);
+			}
 
             .social_line {
             background-color: rgb(70, 190, 30);
+			border: solid rgb(70, 190, 30) 2px;
             }
-
-            .social_text {
-            font-size: 12px;
-            padding: 0 15px 20 5px;
-            line-height: 32px;
-            }
+			.social_line:hover {
+			background: #ffffff;
+			color: rgb(70, 190, 30);
+			}
         </style>
 
 		
@@ -3254,6 +3266,7 @@ head.appendChild(script);
 																				<div class='social_buttons'>
 																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 																						<i class='social_logo fa fa-facebook'/>
+																						
 																					</a>
 																					<a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
 																						<i class='social_logo fa fa-google-plus'/>
