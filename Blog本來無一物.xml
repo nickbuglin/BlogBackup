@@ -824,9 +824,9 @@
             /* 按鈕原本色樣  */
             #dropMenu &gt; ul &gt; li a {
 			background-color:rgba(0,0,0,0.3);        /* 背景顏色 */
-            border-bottom: 2px solid #d2d2d2;       /* 下底線寬、陰影色 */
-            border-top: 0px solid #d2d2d2;          /* 上面線寬、陰影色 */
-            border-right: 2px solid #d2d2d2;        /* 按鈕間隔寬、陰影色 */
+            border-bottom: 2px solid #d2d2d2;       /* 下底線寬&#12289;陰影色 */
+            border-top: 0px solid #d2d2d2;          /* 上面線寬&#12289;陰影色 */
+            border-right: 2px solid #d2d2d2;        /* 按鈕間隔寬&#12289;陰影色 */
             line-height: 36px;                      /* 按鈕高度 */
             padding: 0 16px;                        /* 文字上下0左右16留白多少 */
 			border-radius: 10px 10px 10px 10px;         /* 四角圓弧度 */
@@ -940,8 +940,8 @@
             }
 
             .social_buttons i {
-			width: 40px;         /* 文字離左右邊框空下多少距離 */
-			height: 40px;        /* 文字離上下邊框空下多少距離 */
+			width: 35px;         /* 文字離左右邊框空下多少距離 */
+			height: 35px;        /* 文字離上下邊框空下多少距離 */
 			font-size: 32px;     /* 文字大小 */
 			text-align: center;  /* 文字位置 */
             }
@@ -951,13 +951,16 @@
             line-height: 40px;       /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
+			
+			.social_buttons a:hover {
+			background: rgba(255, 255, 255,0.3);
+			}
 
             .social_fb {
 			background: rgb(60, 90, 150);
 			border: solid rgb(60, 90, 150) 2px;
             }
 			.social_fb:hover {
-			background: #ffffff;
 			color: #3c5a96;
             }
 			
@@ -966,7 +969,6 @@
 			border: solid rgb(245, 202, 89) 2px;
             }
 			.social_weibo:hover {
-			background: #ffffff;
 			color: rgb(245, 202, 89);
 			}
 
@@ -975,7 +977,6 @@
 			border: solid rgb(220, 78, 65) 2px;
             }
 			.social_gplus:hover {
-			background: #ffffff;
 			color: rgb(220, 78, 65);
 			}
 
@@ -984,7 +985,6 @@
 			border: solid rgb(85, 172, 238) 2px;
             }
 			.social_twitter:hover {
-			background: #ffffff;
 			color: rgb(85, 172, 238);
 			}
 
@@ -993,7 +993,6 @@
 			border: solid rgb(190, 30, 30) 2px;
             }
 			.social_pinterest:hover {
-			background: #ffffff;
 			color: rgb(190, 30, 30);
 			}
 
@@ -1002,7 +1001,6 @@
 			border: solid rgb(70, 190, 30) 2px;
             }
 			.social_line:hover {
-			background: #ffffff;
 			color: rgb(70, 190, 30);
 			}
         </style>
@@ -3287,7 +3285,6 @@ head.appendChild(script);
 																			</b:if>
 																			</div>
 																			<!-- -->	
-																		
 																		
 																		
 																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
