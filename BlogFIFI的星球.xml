@@ -2146,6 +2146,11 @@ head.appendChild(script);
 			<div id='social_but'>
 				<b:if cond='data:blog.pageType == &quot;item&quot;'> 
 					<div class='social_buttons'>
+					
+						<!--FB like 按鈕-->
+						<iframe allowTransparency='true' expr:src='"http://www.facebook.com/plugins/like.php?href=" + data:post.url + "&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=45&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=35"' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
+				
+					
 						<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 							<i class='social_logo fa fa-facebook'/>
 						</a>

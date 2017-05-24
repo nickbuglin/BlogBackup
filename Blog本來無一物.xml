@@ -1046,7 +1046,7 @@
             border-radius: 8px;          /* 方框圓角 */
 			position: fixed;
 			bottom: 0px;                 /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
-			left: 800px;                 /* 與左方的距離 */
+			left: 850px;                 /* 與左方的距離 */
 			opacity: .3;                 /* 按鈕透明度 */
 			z-index: 9999;
 			cursor: pointer;
@@ -3479,7 +3479,10 @@ head.appendChild(script);
 
                                                                     <!-- Then use the post body as the schema.org description, for good G+/FB snippeting. -->
                                                                     <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
-                                                                        <data:post.body/>
+                                                                        
+																		
+																		
+																		<data:post.body/>
                                                                         <div style='clear: both;'/> <!-- clear for photos floats -->
                                                                     </div>
 
@@ -3580,9 +3583,11 @@ head.appendChild(script);
 																			<div id='social_but'>
 																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
 																				<div class='social_buttons'>
+																					<!--FB like 按鈕-->
+																					<iframe allowTransparency='true' expr:src='"http://www.facebook.com/plugins/like.php?href=" + data:post.url + "&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=45&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=35"' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
+																				
 																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 																						<i class='social_logo fa fa-facebook'/>
-																						
 																					</a>
 																					<a class='social_gplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Google+ 分享'>
 																						<i class='social_logo fa fa-google-plus'/>
@@ -4074,7 +4079,6 @@ head.appendChild(script);
 			});
 		});</script>	
 		
-
 
     </body>
 
