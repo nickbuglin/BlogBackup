@@ -694,10 +694,20 @@
 			width:130px;            /* 圖片寬 */
 			}
 		}
-		
-		
 		/* CSS For related post widget-----END------ */
-
+		
+		/* Quote 引用的樣式效果 */
+		@import url(https://fonts.googleapis.com/css?family=Lato:700);
+		blockquote {
+		  font-family: "Lato", sans-serif !important;
+		  font-weight: 700 !important;
+		  color: #115CDE !important;
+		  border-left: 5px solid #CD0F0F !important;
+		  padding: 20px !important;
+		  background: #ededed !important;
+		  font-size: 1.05em !important;
+		}
+		
 		]]></b:skin>
 
         <b:template-skin>
@@ -3225,7 +3235,8 @@ head.appendChild(script);
         &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;放鬆音樂 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_65.html&quot;&gt;&lt;span&gt;大自然的聲音&#65292;大雷雨聲&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_65.html&quot;&gt;&lt;span&gt;純粹自然天籟&#12290;大雷雨聲&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_8.html&quot;&gt;&lt;span&gt;純粹自然天籟&#12290;下雨天鳥叫聲&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;優質推薦 &#9660;&lt;/span&gt;&lt;/a&gt;
@@ -3808,6 +3819,13 @@ head.appendChild(script);
                                                                                 </div>
                                                                             </div>
 
+																			
+																		<!-- 行動版自適應ADSense -->
+																		<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+																			<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-format='auto' data-ad-slot='8514089638' style='display:block'/>
+																		<script>
+																			(adsbygoogle = window.adsbygoogle || []).push({});
+																		</script>
 																		
 
 																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
@@ -4741,12 +4759,12 @@ head.appendChild(script);
   </b:widget>
   <b:widget id='AdSense2' locked='false' title='' type='AdSense' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#aecceb</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.urlcolor'>#336699</b:widget-setting>
-      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#3f3fd4</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#660000</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -4853,12 +4871,12 @@ head.appendChild(script);
 </b:section-contents><b:section-contents id='sidebar-left-2-1'/><b:section-contents id='sidebar-left-2-2'/><b:section-contents id='sidebar-left-3'>
   <b:widget id='AdSense3' locked='false' title='' type='AdSense' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#003366</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#aecceb</b:widget-setting>
       <b:widget-setting name='style.layout'>300x1050</b:widget-setting>
-      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.urlcolor'>#3f3fd4</b:widget-setting>
-      <b:widget-setting name='style.linkcolor'>#0b8585</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#6699cc</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#aecceb</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
