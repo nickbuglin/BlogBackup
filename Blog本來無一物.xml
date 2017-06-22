@@ -937,12 +937,12 @@
 
         <!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
-        <style>
+        <style type='text/css'>
             .social_buttons a {
 			font-family: Arial, sans-serif;
 			display: inline-block;
 			text-decoration: none;
-			color: #fff;                /* 文字內容顏色 */
+			color: #fff;                 /*文字內容顏色 */
 			-webkit-border-radius: 8;
 			-moz-border-radius: 8;
 			border-radius: 8px;         /* 方框圓角 */
@@ -1014,7 +1014,37 @@
 			color: rgb(70, 190, 30);
 			}
         </style>
+		
+		<!--相關網站按鈕-->
+        <style type='text/css'>
+            .web_buttons a {
+			text-decoration: none;
+			color: rgb(11, 133, 133);                 /*文字內容顏色 */
+			line-height: 40px;       /* 文字離上下邊框空下多少距離 */
+			padding: 10px 20px 10px 10px;   /*文字離邊框空下多少距離 */
+            }
+		
+			.web_buttons a:hover {
+			background: rgba(255, 255, 255,0);
+			}
 
+			.web_youtube:hover {
+			color: rgb(190, 30, 30);
+			}
+			
+			.web_fb:hover {
+			color: rgb(60, 90, 150);
+            }
+			
+			.web_gplus:hover {
+			color: rgb(220, 78, 65);
+			}
+
+			.web_books:hover {
+			color: rgb(70, 190, 30);
+			}
+        </style>
+		
 		
 		<!--畫底線功能-->
         <style type='text/css'>
@@ -1285,7 +1315,7 @@ head.appendChild(script);
                                             <b:widget-settings>
                                               <b:widget-setting name='displayUrl'/>
                                               <b:widget-setting name='displayHeight'>0</b:widget-setting>
-                                              <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+                                              <b:widget-setting name='sectionWidth'>752</b:widget-setting>
                                               <b:widget-setting name='useImage'>false</b:widget-setting>
                                               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                                               <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
@@ -1381,12 +1411,38 @@ head.appendChild(script);
                                         <b:widget-settings>
                                           <b:widget-setting name='content'>&lt;div id=&quot;dropMenu&quot;&gt;
     &lt;ul&gt;
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;相關資源 &#9660;&lt;/span&gt;&lt;/a&gt;
+        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411&quot;&gt;&lt;span&gt;FB 粉絲專頁&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Youtube頻道&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;https://plus.google.com/111149140642619080523&quot;&gt;&lt;span&gt;Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot;&gt;&lt;span&gt;Google圖書免費佛經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學人物介紹...&#9658;&lt;/span&gt;&lt;/a&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_22.html&quot;&gt;&lt;span&gt;須菩提&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_10.html&quot;&gt;&lt;span&gt;舍利弗&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;			
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_83.html&quot;&gt;&lt;span&gt;佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_40.html&quot;&gt;&lt;span&gt;念佛一定得吃素?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/05/blog-post_464.html&quot;&gt;&lt;span&gt;超渡真正意義為何&#65311;誰需要超渡&#65311;要如何超渡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_47.html&quot;&gt;&lt;span&gt;哪個法門最好&#65311;初學佛要學哪個法門&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_49.html&quot;&gt;&lt;span&gt;重要!不要再燒經文咒文了!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_77.html&quot;&gt;&lt;span&gt;七如來到底為何&#65311;有甘露王如來&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_10.html&quot;&gt;&lt;span&gt;人非人到底是何意思&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html&quot;&gt;&lt;span&gt;迴向的重要性&#65292;念經&#12289;做功德要如何迴向&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_11.html&quot;&gt;&lt;span&gt;法界&#65311;法界藏&#65311;如來藏&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_61.html&quot;&gt;&lt;span&gt;繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_2.html&quot;&gt;&lt;span&gt;淺釋何謂&#12300;法&#12301;&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_95.html&quot;&gt;&lt;span&gt;一生念阿彌陀佛就能成佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_89.html&quot;&gt;&lt;span&gt;三世諸佛&#65311;三世因果&#65311; 三世到底為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_21.html&quot;&gt;&lt;span&gt;為何佛經都要用&#12300;如是我聞&#12301;開頭&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_80.html&quot;&gt;&lt;span&gt;如何安全學佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_44.html&quot;&gt;&lt;span&gt;密宗的佛法要有傳承才能學?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_18.html&quot;&gt;&lt;span&gt;何謂佛?為何稱為佛&#65311;佛意思為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像&#12289;法器要開光&#65311; 怎麼開光&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_72.html&quot;&gt;&lt;span&gt;念佛&#65311;怎麼念佛&#65311; 就是念佛號&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_39.html&quot;&gt;&lt;span&gt;佛經有偽經?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_92.html&quot;&gt;&lt;span&gt;如何供養佛? 怎麼供奉佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_98.html&quot;&gt;&lt;span&gt;金剛經裡面&#12300;著衣持鉢&#65292;入舍衛大城乞食&#12301;智慧在哪裡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/led.html&quot;&gt;&lt;span&gt;佛前供養點燈&#65292;能不能用LED燈&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;常見經咒校對 &#9660;&lt;/span&gt;&lt;/a&gt;
@@ -1397,7 +1453,9 @@ head.appendChild(script);
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_62.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(二)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_15.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(三)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_17.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(四)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_9.html&quot;&gt;&lt;span&gt;心經各版本結集&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_39.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(五)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_54.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(六)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_77.html&quot;&gt;&lt;span&gt;以經解經&#65306;心經詳解(七)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_9.html&quot;&gt;&lt;span&gt;心經各版本結集&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_4.html&quot;&gt;&lt;span&gt;心經書寫&#12289;抄經&#12289;練字字帖&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
@@ -3197,41 +3255,6 @@ head.appendChild(script);
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/05/blog-post_869.html&quot;&gt;&lt;span&gt;佛說海龍王經-十德六度(十善業道經)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
-		
-        &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學指南知識 &#9660;&lt;/span&gt;&lt;/a&gt;
-            &lt;ul&gt;
-				&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學人物介紹...&#9658;&lt;/span&gt;&lt;/a&gt;
-					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_22.html&quot;&gt;&lt;span&gt;須菩提&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_10.html&quot;&gt;&lt;span&gt;舍利弗&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/li&gt;			
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_83.html&quot;&gt;&lt;span&gt;佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_79.html&quot;&gt;&lt;span&gt;教你如何拜佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_40.html&quot;&gt;&lt;span&gt;念佛一定得吃素?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/05/blog-post_464.html&quot;&gt;&lt;span&gt;超渡真正意義為何&#65311;誰需要超渡&#65311;要如何超渡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_47.html&quot;&gt;&lt;span&gt;哪個法門最好&#65311;初學佛要學哪個法門&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_49.html&quot;&gt;&lt;span&gt;重要!不要再燒經文咒文了!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_77.html&quot;&gt;&lt;span&gt;七如來到底為何&#65311;有甘露王如來&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_10.html&quot;&gt;&lt;span&gt;人非人到底是何意思&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html&quot;&gt;&lt;span&gt;迴向的重要性&#65292;念經&#12289;做功德要如何迴向&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_11.html&quot;&gt;&lt;span&gt;法界&#65311;法界藏&#65311;如來藏&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_61.html&quot;&gt;&lt;span&gt;繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_2.html&quot;&gt;&lt;span&gt;淺釋何謂&#12300;法&#12301;&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_95.html&quot;&gt;&lt;span&gt;一生念阿彌陀佛就能成佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_89.html&quot;&gt;&lt;span&gt;三世諸佛&#65311;三世因果&#65311; 三世到底為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_21.html&quot;&gt;&lt;span&gt;為何佛經都要用&#12300;如是我聞&#12301;開頭&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_80.html&quot;&gt;&lt;span&gt;如何安全學佛?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_44.html&quot;&gt;&lt;span&gt;密宗的佛法要有傳承才能學?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_18.html&quot;&gt;&lt;span&gt;何謂佛?為何稱為佛&#65311;佛意思為何&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_14.html&quot;&gt;&lt;span&gt;佛像&#12289;法器要開光&#65311; 怎麼開光&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_72.html&quot;&gt;&lt;span&gt;念佛&#65311;怎麼念佛&#65311; 就是念佛號&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_39.html&quot;&gt;&lt;span&gt;佛經有偽經?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_92.html&quot;&gt;&lt;span&gt;如何供養佛? 怎麼供奉佛&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_98.html&quot;&gt;&lt;span&gt;金剛經裡面&#12300;著衣持鉢&#65292;入舍衛大城乞食&#12301;智慧在哪裡&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/led.html&quot;&gt;&lt;span&gt;佛前供養點燈&#65292;能不能用LED燈&#65311;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛剎寶地 &#9660;&lt;/span&gt;&lt;/a&gt;
             &lt;ul&gt;
                 &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_5.html&quot;&gt;&lt;span&gt;噶居寺(藏傳佛教風格佛寺)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -3705,12 +3728,8 @@ head.appendChild(script);
                                                                     <b:include data='top' name='status-message'/>
 																	
 																	<!-- ADSense行動版自適應(行動版頂端) -->
-																	<script async='async' src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-																	<ins class="adsbygoogle"
-																		 style="display:block"
-																		 data-ad-client="ca-pub-6678320447129348"
-																		 data-ad-slot="9079166037"
-																		 data-ad-format="auto"></ins>
+																	<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+																	<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-format='auto' data-ad-slot='9079166037' style='display:block'/>
 																	<script>
 																	(adsbygoogle = window.adsbygoogle || []).push({});
 																	</script>
@@ -3756,12 +3775,8 @@ head.appendChild(script);
 																	</div>
 
 																	<!-- ADSense行動版自適應(最底端) -->
-																	<script async='async' src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-																	<ins class="adsbygoogle"
-																		 style="display:block"
-																		 data-ad-client="ca-pub-6678320447129348"
-																		 data-ad-slot="1555899237"
-																		 data-ad-format="auto"></ins>
+																	<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+																	<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-format='auto' data-ad-slot='1555899237' style='display:block'/>
 																	<script>
 																	(adsbygoogle = window.adsbygoogle || []).push({});
 																	</script>
@@ -4595,7 +4610,30 @@ head.appendChild(script);
     <b:section-contents id='sidebar-left-1'>
   <b:widget id='HTML6' locked='false' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
+      <b:widget-setting name='content'>&#65279;&#65279;&lt;div class=&#39;web_buttons&#39;&gt;
+&lt;a class=&#39;web_youtube&#39; 
+href=&#39;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&#39; onclick=&#39;window.open&#39; target=&#39;_blank&#39; title=&#39;Youtube Channel&#39;&gt;
+&lt;i class=&#39;fa fa-3x fa-youtube-square&#39;/&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#39;web_fb&#39; 
+href=&#39;https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411&#39; onclick=&#39;window.open&#39; target=&#39;_blank&#39; title=&#39;FB粉絲專頁&#39;&gt;
+&lt;i class=&#39;fa fa-3x fa-facebook-square&#39;/&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#39;web_gplus&#39; 
+href=&#39;https://plus.google.com/111149140642619080523&#39; onclick=&#39;window.open&#39; target=&#39;_blank&#39; title=&#39;Google+&#39;&gt;
+&lt;i class=&#39;fa fa-3x fa-google-plus-square&#39;/&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#39;web_books&#39; 
+href=&#39;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&#39; onclick=&#39;window.open&#39; target=&#39;_blank&#39; title=&#39;免費電子佛經&#39;&gt;
+&lt;i class=&#39;fa fa-3x fa-book&#39;/&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
                     &lt;input class=&#39;emailInput&#39; name=&#39;email&#39; placeholder=&#39;輸入 EMAIL&#39; type=&#39;text&#39;/&gt;
                     &lt;input name=&#39;uri&#39; type=&#39;hidden&#39; value=&#39;SenseAllIsVoid&#39;/&gt;
                     &lt;input name=&#39;loc&#39; type=&#39;hidden&#39; value=&#39;zh_TW&#39;/&gt;
@@ -4711,28 +4749,17 @@ head.appendChild(script);
                     cursor: pointer;
                     background-color: #ddd;
                     }
-                    &lt;/style&gt;
+&lt;/style&gt;
 
                     &lt;div style=&quot;margin-top: 5px; border-bottom: 2px solid #777;&quot;&gt;
-                    &amp;#12288;&lt;span class=&quot;Menubox_over&quot; id=&#39;one1&#39; onclick=&#39;setTab(&quot;one&quot;,1,3)&#39;  title=&#39;訂閱&#39;&gt;訂閱&lt;/span&gt;&amp;nbsp;
-                    &lt;span class=&quot;Menubox_out&quot; id=&#39;one2&#39; onclick=&#39;setTab(&quot;one&quot;,2,3)&#39; title=&#39;搜尋&#39;&gt;搜尋&lt;/span&gt;&amp;nbsp;
+                    &lt;span class=&quot;Menubox_over&quot; id=&#39;one1&#39; onclick=&#39;setTab(&quot;one&quot;,1,3)&#39;  title=&#39;訂閱&#39;&gt;訂閱&lt;/span&gt;
+                    &lt;span class=&quot;Menubox_out&quot; id=&#39;one2&#39; onclick=&#39;setTab(&quot;one&quot;,2,3)&#39; title=&#39;搜尋&#39;&gt;搜尋&lt;/span&gt;
                     &lt;span class=&quot;Menubox_out&quot; id=&#39;one3&#39; onclick=&#39;setTab(&quot;one&quot;,3,3)&#39; title=&#39;功德迴向&#39;&gt;功德迴向&lt;/span&gt;
-                    &lt;/div&gt;&lt;p/&gt;
-
-
-
-
-                    &lt;div id=&#39;con_one_1&#39;&gt;
-
-                    &lt;span class=&quot;feedly_btn&quot; title=&quot;訂閱我們到 Feedly&quot;&gt;&lt;/span&gt;
-
-                    &lt;iframe src=&quot;https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYesYogaBuddha&amp;tabs=timeline&amp;width=270&amp;height=130&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId&quot; width=&quot;270&quot; height=&quot;130&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-
                     &lt;/div&gt;
 
 
-
+                    &lt;div id=&#39;con_one_1&#39;&gt;
+                    &lt;/div&gt;
 
                     &lt;div id=&#39;con_one_2&#39; style=&#39;display:none&#39;&gt;
 
@@ -4751,8 +4778,6 @@ head.appendChild(script);
                     &lt;/div&gt;
 
                     &lt;div id=&#39;con_one_3&#39; style=&#39;display:none&#39;&gt;
-
-                    &lt;span style=&quot;font-weight: normal;color:#cc0000;&quot;&gt;我此普賢殊勝行&#65292;無邊勝福皆迴向&#65292;普願沉溺諸眾生&#65292;速往無量光佛剎&#12290;願以此整理&#12289;校對&#12289;修正&#12289;發佈佛學內容的一切功德&#65292;上報四重恩&#65292;下濟三途苦&#65292;迴向給一切見聞或聽聞我所做佛學等一字一句資料的一切有情&#65292;願諸有情擺脫障難&#12289;卸除病痛&#12289;遠離厄運&#12289;隨順心願&#12289;廣結佛緣&#12289;速成菩提&#12290;&lt;/span&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;如果您閱讀過本站任何經文內容後&#65292;也想功德迴向&#65292;或不知道如何迴向&#65292;請參考下面這篇文章&#65306;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html#04&quot; style=&quot;font-size: 100%;&quot;&gt;&lt;b&gt;要如何迴向&#65311;&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;
                     &lt;/div&gt;
 
                     &lt;script&gt;
@@ -4782,7 +4807,7 @@ head.appendChild(script);
                     b.parentNode.removeChild(b);
                     c.parentNode.removeChild(c);
                     } )();
-                    &lt;/script&gt;&lt;/p&gt;</b:widget-setting>
+                    &lt;/script&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
