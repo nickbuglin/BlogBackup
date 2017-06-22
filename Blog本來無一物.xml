@@ -811,7 +811,7 @@
         <!--Tab標籤頁關掉原本的工具-->
         <style type='text/css'>
             #HTML6 {display: none;}
-            #BlogSearch1 {display: none;}
+            #HTML9 {display: none;}
             #Text1 {display: none;}
         </style>
 
@@ -4681,35 +4681,32 @@ href=&#39;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84
                 <b:include name='quickedit'/>
             </b:includable>
   </b:widget>
-  <b:widget id='BlogSearch1' locked='false' title='搜尋我們的佛學資料' type='BlogSearch' version='1'>
+  <b:widget id='HTML9' locked='false' title='搜尋我們的佛學資料' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;script&gt;
+  (function() {
+    var cx = &#39;partner-pub-6678320447129348:9321341631&#39;;
+    var gcse = document.createElement(&#39;script&#39;);
+    gcse.type = &#39;text/javascript&#39;;
+    gcse.async = true;
+    gcse.src = &#39;https://cse.google.com/cse.js?cx=&#39; + cx;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+&lt;/script&gt;
+&lt;gcse:search&gt;&lt;/gcse:search&gt;</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
-                <!-- only display title if it's non-empty -->
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                </b:if>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
 
-                <div class='widget-content'>
-                    <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
-                        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
-                            <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
-                            <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
-                                <tbody>
-                                    <tr>
-                                        <td class='gsc-input'>
-                                            <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
-                                        </td>
-                                        <td class='gsc-search-button'>
-                                            <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-
-                <b:include name='quickedit'/>
-            </b:includable>
+  <b:include name='quickedit'/>
+</b:includable>
   </b:widget>
   <b:widget id='Text1' locked='false' title='本來無一物的功德迴向' type='Text' version='1'>
     <b:widget-settings>
@@ -4815,7 +4812,7 @@ href=&#39;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84
 
                     (function() {
                     var a = document.getElementById(&quot;HTML6&quot;),
-                    b = document.getElementById(&quot;BlogSearch1&quot;),
+                    b = document.getElementById(&quot;HTML9&quot;),
                     c = document.getElementById(&quot;Text1&quot;),
                     x = document.getElementById(&quot;con_one_1&quot;),
                     y = document.getElementById(&quot;con_one_2&quot;),
