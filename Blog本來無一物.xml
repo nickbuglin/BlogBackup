@@ -807,14 +807,12 @@
             <b:include cond='not data:view.isPreview' data='{                          image: data:skin.vars.body_background.image,                          selector: &quot;body&quot;                        }' name='responsiveImageStyle'/>
         </b:if>
 
-
         <!--Tab標籤頁關掉原本的工具-->
         <style type='text/css'>
             #HTML6 {display: none;}
             #HTML9 {display: none;}
             #Text1 {display: none;}
         </style>
-
 
         <!--下拉式導覽選單-->
         <style>
@@ -931,7 +929,6 @@
             }
         </style>
 
-
         <!--email訂閱工具-->
         <style>
             #emailForm input {
@@ -953,7 +950,6 @@
 				color: #fff
             }
         </style>
-		
 
         <!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
@@ -966,19 +962,19 @@
 			-webkit-border-radius: 8;
 			-moz-border-radius: 8;
 			border-radius: 8px;         /* 方框圓角 */
-			padding: 5px 5px 5px 5px;   /*文字離邊框空下多少距離 */
+			padding: 2px 2px 2px 2px;   /*文字離邊框空下多少距離 */
             }
 
             .social_buttons i {
 			width: 35px;         /* 文字離左右邊框空下多少距離 */
-			height: 35px;        /* 文字離上下邊框空下多少距離 */
-			font-size: 32px;     /* 文字大小 */
+			height: 5px;        /* 文字離上下邊框空下多少距離 */
+			font-size: 25px;     /* 文字大小 */
 			text-align: center;  /* 文字位置 */
             }
 
             .social_buttons i:before {
             margin: auto;
-            line-height: 40px;       /* 文字離上下邊框空下多少距離 */
+            line-height: 20px;       /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
 			
@@ -989,6 +985,7 @@
             .social_fb {
 			background: rgb(60, 90, 150);
 			border: solid rgb(60, 90, 150) 2px;
+
             }
 			.social_fb:hover {
 			color: #3c5a96;
@@ -1018,14 +1015,6 @@
 			color: rgb(85, 172, 238);
 			}
 
-            .social_pinterest {
-            background-color: rgb(190, 30, 30);
-			border: solid rgb(190, 30, 30) 2px;
-            }
-			.social_pinterest:hover {
-			color: rgb(190, 30, 30);
-			}
-
             .social_line {
             background-color: rgb(70, 190, 30);
 			border: solid rgb(70, 190, 30) 2px;
@@ -1040,7 +1029,7 @@
             .web_buttons a {
 			text-decoration: none;
 			color: rgb(11, 133, 133);                 /*文字內容顏色 */
-			line-height: 40px;       /* 文字離上下邊框空下多少距離 */
+			line-height: 40px;              /* 文字離上下邊框空下多少距離 */
 			padding: 10px 20px 10px 10px;   /*文字離邊框空下多少距離 */
             }
 		
@@ -1065,7 +1054,6 @@
 			}
         </style>
 		
-		
 		<!--畫底線功能-->
         <style type='text/css'>
             b1{
@@ -1085,14 +1073,6 @@
             line-height: 22px;
             }
         </style>
-        <!--畫底線功能2-->
-        <script type='text/javascript'>
-            document.createElement(&quot;b1&quot;)
-            document.createElement(&quot;g1&quot;)
-            document.createElement(&quot;r1&quot;)
-            document.createElement(&quot;y1&quot;)
-        </script>
-
 
 		<script src='//code.jquery.com/jquery-2.1.4.min.js'/>
 		<!-- 回到頂端(需要jquery)-->
@@ -1128,7 +1108,6 @@
             transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
         }
       </style>
-	  	  
 
 		<!-- Related Posts widget with Thumbnails Code Before Head Start(需要jquery)-->
 		<b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1219,12 +1198,8 @@
 				} //]]>
 			</script>
 		</b:if>
-		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
-		
 
 </head>
-
-
 
 
     <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -4095,9 +4070,12 @@ head.appendChild(script);
 																			<div id='social_but'>
 																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
 																				<div class='social_buttons'>
+																					<!--Pinterest 按鈕-->
+																					<a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" data-pin-save="false" href="https://www.pinterest.com/pin/create/button/">
+																						<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" />
+																					</a>
 																					<!--FB like 按鈕-->
 																					<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.url + &quot;&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=200&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
-																				
 																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 																						<i class='social_logo fa fa-facebook'/>
 																					</a>
@@ -4109,9 +4087,6 @@ head.appendChild(script);
 																					</a>
 																					<a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
 																						<i class='social_logo fa fa-twitter'/>
-																					</a>
-																					<a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-																						<i class='social_logo fa fa-pinterest-p'/>
 																					</a>
 																					<a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
 																						<i class='fa fa-commenting-o'/>
@@ -4569,6 +4544,13 @@ head.appendChild(script);
             }, 10);
         </script>
 
+		<!--畫底線功能-->
+        <script type='text/javascript'>
+            document.createElement(&quot;b1&quot;)
+            document.createElement(&quot;g1&quot;)
+            document.createElement(&quot;r1&quot;)
+            document.createElement(&quot;y1&quot;)
+        </script>
 
         <!-- Go Top 按鈕+動畫 start-->
 		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-angle-double-up'/></a>
@@ -4582,8 +4564,6 @@ head.appendChild(script);
 				$(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
             });
         </script>
-        <!-- Go Top 按鈕+動畫 end -->
-		
 		
 		<!-- 讓工具浮動固定在底部 (需要jquery) -->
 		<script type='text/javascript'> 
@@ -4603,6 +4583,8 @@ head.appendChild(script);
 			});
 		});</script>	
 		
+		<!-- pinterest button -->
+		<script async='defer' src="//assets.pinterest.com/js/pinit.js"></script>
 
     </body>
 
@@ -4994,7 +4976,7 @@ href=&#39;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84
 </b:section-contents><b:section-contents id='footer-2-2'>
   <b:widget id='HTML2' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[考據校對佛經咒，原本用意只是要修正出最正確的佛經咒，希望自己持誦後能給亡者或孤魂野鬼等最正確最大的幫助，讓祂們得以盡快解脫，沒想到好多人隨喜讚嘆，跟著修正持念更正確的佛咒。<br />　　當今佛學有許多錯誤、相掙、矛盾、後人竄改的內容，甚至有許多法師根本沒讀過該本經書，就大言不慚口若懸河地解說起該本經書內容。末學也只能感嘆，末法時期了，妖魔鬼怪，附佛外道橫生，到處胡說八道，怪不得學佛者眾，成道者如鳳毛麟角。]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<span style="font-family:&quot;;"><br />　　考據校對佛經咒，原本用意只是要修正出最正確的佛經咒，希望自己持誦後能給亡者或孤魂野鬼等最正確最大的幫助，讓祂們得以盡快解脫，沒想到好多人隨喜讚嘆，跟著修正持念更正確的佛咒。</span><br />　　當今佛學有許多錯誤、相掙、矛盾、後人竄改的內容，甚至有許多法師根本沒讀過該本經書，就大言不慚口若懸河地解說起該本經書內容。末學也只能感嘆，末法時期了，妖魔鬼怪，附佛外道橫生，到處胡說八道，怪不得學佛者眾，成道者如鳳毛麟角。]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->

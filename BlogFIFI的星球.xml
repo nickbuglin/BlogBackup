@@ -896,7 +896,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             }
         </style>
 
-
         <!--email訂閱工具-->
         <style>
             #emailForm input {
@@ -918,32 +917,31 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             color: #fff
             }
         </style>
-		
 
-        <!--扁平化社群分享按鈕-->
+<!--扁平化社群分享按鈕-->
         <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'/>
-        <style>
+        <style type='text/css'>
             .social_buttons a {
 			font-family: Arial, sans-serif;
 			display: inline-block;
 			text-decoration: none;
-			color: #fff;                /* 文字內容顏色 */
+			color: #fff;                 /*文字內容顏色 */
 			-webkit-border-radius: 8;
 			-moz-border-radius: 8;
 			border-radius: 8px;         /* 方框圓角 */
-			padding: 5px 5px 5px 5px;   /*文字離邊框空下多少距離 */
+			padding: 2px 2px 2px 2px;   /*文字離邊框空下多少距離 */
             }
 
             .social_buttons i {
 			width: 35px;         /* 文字離左右邊框空下多少距離 */
-			height: 35px;        /* 文字離上下邊框空下多少距離 */
-			font-size: 32px;     /* 文字大小 */
+			height: 5px;        /* 文字離上下邊框空下多少距離 */
+			font-size: 25px;     /* 文字大小 */
 			text-align: center;  /* 文字位置 */
             }
 
             .social_buttons i:before {
             margin: auto;
-            line-height: 40px;       /* 文字離上下邊框空下多少距離 */
+            line-height: 20px;       /* 文字離上下邊框空下多少距離 */
             vertical-align: middle;
             }
 			
@@ -954,6 +952,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             .social_fb {
 			background: rgb(60, 90, 150);
 			border: solid rgb(60, 90, 150) 2px;
+
             }
 			.social_fb:hover {
 			color: #3c5a96;
@@ -983,14 +982,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 			color: rgb(85, 172, 238);
 			}
 
-            .social_pinterest {
-            background-color: rgb(190, 30, 30);
-			border: solid rgb(190, 30, 30) 2px;
-            }
-			.social_pinterest:hover {
-			color: rgb(190, 30, 30);
-			}
-
             .social_line {
             background-color: rgb(70, 190, 30);
 			border: solid rgb(70, 190, 30) 2px;
@@ -999,7 +990,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 			color: rgb(70, 190, 30);
 			}
         </style>
-
 		
 		<!--畫底線功能-->
         <style type='text/css'>
@@ -1019,16 +1009,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
-
         </style>
-        <!--畫底線功能2-->
-        <script type='text/javascript'>
-            document.createElement(&quot;b1&quot;)
-            document.createElement(&quot;g1&quot;)
-            document.createElement(&quot;r1&quot;)
-            document.createElement(&quot;y1&quot;)
-        </script>
-
 
 		<script src='//code.jquery.com/jquery-2.1.4.min.js'/>
 		<!-- 回到頂端(需要jquery)-->
@@ -1064,7 +1045,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
             transform: translateY(-4px);           /* 滑鼠移過方框移動多少距離 */
         }
       </style>
-
 	  	  
 		<!-- Related Posts widget with Thumbnails Code Before Head Start-->
 		<b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1155,8 +1135,6 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
 				} //]]>
 			</script>
 		</b:if>
-		<!-- Related Posts widget with Thumbnails Code Before Head Ends-->
-
 	  
 </head>
 
@@ -2158,11 +2136,12 @@ head.appendChild(script);
 			<div id='social_but'>
 				<b:if cond='data:blog.pageType == &quot;item&quot;'> 
 					<div class='social_buttons'>
-					
+						<!--Pinterest 按鈕-->
+						<a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" data-pin-save="false" href="https://www.pinterest.com/pin/create/button/">
+							<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" />
+						</a>
 						<!--FB like 按鈕-->
-						<iframe allowTransparency='true' expr:src='"http://www.facebook.com/plugins/like.php?href=" + data:post.url + "&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=45&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=35"' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
-				
-					
+						<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.url + &quot;&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=200&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
 						<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 							<i class='social_logo fa fa-facebook'/>
 						</a>
@@ -2174,9 +2153,6 @@ head.appendChild(script);
 						</a>
 						<a class='social_twitter' expr:href='&quot;http://twitter.com/share?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 twitter 分享'>
 							<i class='social_logo fa fa-twitter'/>
-						</a>
-						<a class='social_pinterest' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:blog.canonicalUrl + &quot;&amp;text=&quot; + data:blog.pageName + &quot; @&quot; + data:blog.title' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='儲存到 Pinterest'>
-							<i class='social_logo fa fa-pinterest-p'/>
 						</a>
 						<a class='social_line' expr:href='data:blog.isMobile ? &quot;http://line.naver.jp/R/msg/text/?&quot; + data:blog.pageName + &quot;%0D%0A&quot; + data:blog.canonicalUrl : &quot;https://lineit.line.me/share/ui?url=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 Line 分享'>
 							<i class='fa fa-commenting-o'/>
@@ -2590,13 +2566,20 @@ head.appendChild(script);
   </div>
   </div>
 
-  <script type='text/javascript'>
-    window.setTimeout(function() {
-        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
-      }, 10);
-  </script>
-
-
+	<script type='text/javascript'>
+	window.setTimeout(function() {
+		document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
+	  }, 10);
+	</script>
+  
+        <!--畫底線功能-->
+        <script type='text/javascript'>
+            document.createElement(&quot;b1&quot;)
+            document.createElement(&quot;g1&quot;)
+            document.createElement(&quot;r1&quot;)
+            document.createElement(&quot;y1&quot;)
+        </script>
+		
         <!-- Go Top 按鈕+動畫 start-->
 		<a href='#' id='goTop' title='回到頂端 GoTop'><i class='fa fa-3x fa-angle-double-up'/></a>
         <script>
@@ -2609,8 +2592,6 @@ head.appendChild(script);
 				$(&quot;html, body&quot;).animate({scrollTop: 0}, 1000, &quot;easeOutExpo&quot;);
             });
         </script>
-        <!-- Go Top 按鈕+動畫 end -->
-		
 		
 		<!-- 讓工具浮動固定在底部 (需要jquery) -->
 		<script type='text/javascript'> 
@@ -2631,6 +2612,8 @@ head.appendChild(script);
 			});
 		});</script>
 		
+		<!-- pinterest button -->
+		<script async='defer' src="//assets.pinterest.com/js/pinit.js"></script>		
 		
 </body>
 
