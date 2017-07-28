@@ -1413,6 +1413,8 @@ head.appendChild(script);
 				&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學人物介紹...&#9658;&lt;/span&gt;&lt;/a&gt;
 					&lt;ul&gt;
 						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_7.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(一)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_8.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(二)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_12.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(三)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_22.html&quot;&gt;&lt;span&gt;須菩提&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_10.html&quot;&gt;&lt;span&gt;舍利弗&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 					&lt;/ul&gt;
@@ -1483,6 +1485,13 @@ head.appendChild(script);
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.tw/2017/04/blog-post_6.html&quot;&gt;&lt;span&gt;大悲咒書寫&#12289;抄經&#12289;練字字帖&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                 &lt;/li&gt;
+                &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;藏傳大悲咒...&#9658;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_13.html&quot;&gt;&lt;span&gt;十一面神咒心經(藏傳大悲咒)利益功德出處&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_19.html&quot;&gt;&lt;span&gt;十一面觀音神咒(藏傳大悲咒)結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/diy.html&quot;&gt;&lt;span&gt;十一面觀音神咒(藏傳大悲咒)仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;				
 				&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;地藏經...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
                         &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大乘大集地藏十輪經...&#9658;&lt;/span&gt;&lt;/a&gt;
@@ -1524,6 +1533,8 @@ head.appendChild(script);
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_23.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/02/blog-post_94.html&quot;&gt;&lt;span&gt;首楞嚴咒仿貝葉經書(純梵音雙面列印版)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/04/blog-post_10.html&quot;&gt;&lt;span&gt;佛頂大白傘蓋陀羅尼經(加註解)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/201707.html&quot;&gt;&lt;span&gt;首楞嚴咒(大白傘蓋陀羅尼)2017.07校對修正更新&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
                     &lt;/ul&gt;
                 &lt;/li&gt;
                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;阿彌陀經...&#9658;&lt;/span&gt;&lt;/a&gt;
@@ -4065,14 +4076,12 @@ head.appendChild(script);
                                                                         </div>
 
                                                                         <div class='post-footer-line post-footer-line-3'> <!--文章底留言前處-->
-
-																		
 																			<div id='social_but'>
 																			<b:if cond='data:blog.pageType == &quot;item&quot;'> <!--扁平化社群分享按鈕-->
 																				<div class='social_buttons'>
 																					<!--Pinterest 按鈕-->
-																					<a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" data-pin-save="false" href="https://www.pinterest.com/pin/create/button/">
-																						<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" />
+																					<a data-pin-do='buttonBookmark' data-pin-round='true' data-pin-save='false' data-pin-tall='true' href='https://www.pinterest.com/pin/create/button/'>
+																						<img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png'/>
 																					</a>
 																					<!--FB like 按鈕-->
 																					<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.url + &quot;&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=200&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
@@ -4094,18 +4103,17 @@ head.appendChild(script);
 																				</div>
 																			</b:if>
 																			</div>
-																			<!-- -->
 
-																		<!-- yogabuddha_sidebar-left-1_AdSense_728x90_as -->
+																		<!-- yogabuddha_main_Blog1_728x90 -->
 																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
 																			<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-																			<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-slot='6923912031' style='display:inline-block;width:728px;height:90px;margin: 20px 30px 10px 30px;'/>
+																			<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-slot='6923912031' style='display:inline-block;width:728px;height:90px'/>
 																			<script>
 																			(adsbygoogle = window.adsbygoogle || []).push({});
 																			</script>
 																		</b:if>																		
 																		
-																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
+																		<!-- 電腦版 Related Posts widget with Thumbnails Code Before Post Footer Start-->
 																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
 																			<div id='related-posts'>
 																				<b:loop values='data:post.labels' var='label'>
@@ -4122,10 +4130,6 @@ head.appendChild(script);
 																				</script>
 																			</div>
 																		</b:if>
-																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Ends-->
-																		
-																		
-																		
 																		
                                                                             <span class='post-location'>
                                                                                 <b:if cond='data:top.showLocation and data:post.location'>
@@ -4584,7 +4588,7 @@ head.appendChild(script);
 		});</script>	
 		
 		<!-- pinterest button -->
-		<script async='defer' src="//assets.pinterest.com/js/pinit.js"></script>
+		<script async='defer' src='//assets.pinterest.com/js/pinit.js'/>
 
     </body>
 
