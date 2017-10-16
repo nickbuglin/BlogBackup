@@ -5,7 +5,6 @@
 
         <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>  <!--google-search-->
         <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>  <!--MS-BingSearch-->
-        <meta content='https://www.facebook.com/YesYogaBuddha' property='article:author'/>  <!--FB-轉貼文章-->
 		<meta content='7bb289c60a094375a309eaf65d3bdf98' name='p:domain_verify'/>  
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
 
@@ -31,6 +30,16 @@
             });
         </script>
         
+		
+        <!--二姊的ADSense層級廣告-->
+		<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: &quot;ca-pub-1906469337822124&quot;,
+		enable_page_level_ads: true
+		});
+		</script>
+		
         
         <b:include data='blog' name='all-head-content'/>
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1412,9 +1421,11 @@ head.appendChild(script);
             &lt;ul&gt;
 				&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;佛學人物介紹...&#9658;&lt;/span&gt;&lt;/a&gt;
 					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_7.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(一)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_8.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(二)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_12.html&quot;&gt;&lt;span&gt;觀世音菩薩完全詳解(三)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_7.html&quot;&gt;&lt;span&gt;觀世音菩薩&#12290;完全詳解(一)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_8.html&quot;&gt;&lt;span&gt;觀世音菩薩&#12290;完全詳解(二)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/07/blog-post_12.html&quot;&gt;&lt;span&gt;觀世音菩薩&#12290;完全詳解(三)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/10/blog-post_12.html&quot;&gt;&lt;span&gt;大自在天(濕婆神)&#12290;完全詳解(一)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/10/blog-post_24.html&quot;&gt;&lt;span&gt;大自在天(濕婆神)&#12290;完全詳解(二)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_22.html&quot;&gt;&lt;span&gt;須菩提&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 						&lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/06/blog-post_10.html&quot;&gt;&lt;span&gt;舍利弗&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 					&lt;/ul&gt;
@@ -1488,8 +1499,11 @@ head.appendChild(script);
                 &lt;/li&gt;				
                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大悲咒...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_899.html&quot;&gt;&lt;span&gt;大悲咒梵文繁體結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_802.html&quot;&gt;&lt;span&gt;大悲咒仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/10/blog-post_5.html&quot;&gt;&lt;span&gt;從漢傳大悲咒揭開青頸觀音的真面目&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_899.html&quot;&gt;&lt;span&gt;青頸觀音陀羅尼(漢傳大悲咒)-結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_802.html&quot;&gt;&lt;span&gt;青頸觀音陀羅尼(漢傳大悲咒)-仿貝葉經書(有注音)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/20170930.html&quot;&gt;&lt;span&gt;青頸觀音陀羅尼(漢傳大悲咒)-雙面列印仿貝葉經書&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/blog-post_87.html&quot;&gt;&lt;span&gt;青頸觀音陀羅尼(漢傳大悲咒)-全文字各版本咒語對照&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_216.html&quot;&gt;&lt;span&gt;金剛頂瑜伽青頸大悲王觀自在念誦儀軌(節錄)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_648.html&quot;&gt;&lt;span&gt;青頸觀自在菩薩心陀羅尼經&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_813.html&quot;&gt;&lt;span&gt;千手千眼觀世音菩薩大悲心陀羅尼&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1582,6 +1596,7 @@ head.appendChild(script);
                 &lt;/li&gt;
                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;阿彌陀佛根本咒(往生咒)...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/10/blog-post_6.html&quot;&gt;&lt;span&gt;阿彌陀佛根本咒(往生咒)-勘誤與功德介紹&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/20170924.html&quot;&gt;&lt;span&gt;阿彌陀佛根本咒(往生咒)-仿貝葉經書(有注音)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/blog-post_24.html&quot;&gt;&lt;span&gt;阿彌陀佛根本咒(往生咒)-全文字各版本咒語對照&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/20170925.html&quot;&gt;&lt;span&gt;阿彌陀佛根本咒(往生咒)-結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1613,6 +1628,7 @@ head.appendChild(script);
                 &lt;/li&gt;		
                 &lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;大寶廣博樓閣善住秘密陀羅尼...&#9658;&lt;/span&gt;&lt;/a&gt;
                     &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/10/blog-post.html&quot;&gt;&lt;span&gt;功德利益&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/20170923.html&quot;&gt;&lt;span&gt;仿貝葉經書(有注音)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/blog-post_51.html&quot;&gt;&lt;span&gt;全文字各版本咒語對照&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/09/20170923_23.html&quot;&gt;&lt;span&gt;結構解析&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -4107,7 +4123,10 @@ head.appendChild(script);
 																						<img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png'/>
 																					</a>
 																					<!--FB like 按鈕-->
-																					<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.url + &quot;&amp;send=false&amp;layout=button&amp;show_faces=false&amp;width=200&amp;size=large&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=60&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:51px; height:28px;'/> 
+																					
+																					<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>																					
+																					
+																					<!--FB like 按鈕-->
 																					<a class='social_fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.canonicalUrl' onclick='window.open(this.href, &quot;_blank&quot;, &quot;height=768,width=1024&quot;); return false;' target='_blank' title='用 FB 分享'>
 																						<i class='social_logo fa fa-facebook'/>
 																					</a>
@@ -4628,6 +4647,17 @@ head.appendChild(script);
 		<!-- pinterest button -->
 		<script async='defer' src='//assets.pinterest.com/js/pinit.js'/>
 
+		<!-- FB like button -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.10";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+        </script>		
+		
     </body>
 
     <macro:includable id='sections' var='col'>
@@ -4672,7 +4702,9 @@ head.appendChild(script);
     <b:section-contents id='sidebar-left-1'>
   <b:widget id='HTML6' locked='false' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&#65279;&#65279;&lt;div class=&#39;web_buttons&#39;&gt;
+      <b:widget-setting name='content'>&#65339;貼心提醒&#65341;佛經咒內容有修正更新&#65292;會直接修改舊文章&#65292;如果只追蹤此網站的CSS&#65292;您將永遠無法得知我們的舊文章裡面的佛經咒做了修正更新&#65292;所以還是建議要追蹤我們的FB&#65292;有修正更新一定會在FB貼文公告&#12290;
+
+&#65279;&#65279;&lt;div class=&#39;web_buttons&#39;&gt;
 &lt;a class=&#39;web_youtube&#39; 
 href=&#39;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&#39; onclick=&#39;window.open&#39; target=&#39;_blank&#39; title=&#39;Youtube Channel&#39;&gt;
 &lt;i class=&#39;fa fa-3x fa-youtube-square&#39;/&gt;&lt;/i&gt;
@@ -4905,7 +4937,7 @@ href=&#39;https://play.google.com/store/books/author?id=%E6%9C%AC%E4%BE%86%E7%84
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='Feed1' locked='false' title='最新文章' type='Feed'>
+  <b:widget id='Feed1' locked='false' title='' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>http://yogabuddha.blogspot.com/feeds/posts/default</b:widget-setting>
       <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
