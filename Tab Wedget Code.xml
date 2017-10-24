@@ -1,0 +1,82 @@
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'></link>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- begin panel group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- panel 1 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title">訂閱追蹤 Follow us</h4>
+                        </div>
+                    </span>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+							［貼心提醒］佛經咒內容有修正更新，會直接修改舊文章，如果只追蹤此網站的CSS，您將永遠無法得知我們的舊文章裡面的佛經咒做了修正更新，所以還是建議要追蹤我們的FB，有修正更新一定會在FB貼文公告。
+							<div class="container">
+								<a href="https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411" onclick="window.open" target="_blank" title="FB粉絲專頁"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+								<a href="http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9" onclick="window.open" target="_blank" title="Youtube Channel"><i id="social-yt" class="fa fa-youtube-square fa-3x social"></i></a>
+								<a href="https://plus.google.com/111149140642619080523" onclick="window.open" target="_blank" title="Google+"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+								<a href="mailto:yesyogabudha@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+							</div>
+							<form action='http://feedburner.google.com/fb/a/mailverify' id='emailForm' method='post' onsubmit='window.open("http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid", "popupwindow", "scrollbars=yes,width=550,height=520"); return true;' target='popupwindow'>
+							<input class='emailInput' name='email' placeholder='輸入 EMAIL' type='text'/>
+							<input name='uri' type='hidden' value='SenseAllIsVoid'/>
+							<input name='loc' type='hidden' value='zh_TW'/>
+							<input class='emailSubmit' type='submit' value='訂閱'/>
+							</form>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!-- panel 2 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="panel-title collapsed">功德迴向 Transfer of Merit</h4>
+                        </div>
+                    </span>
+
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+							<span style="font-weight: normal;color:#cc0000;">我此普賢殊勝行，無邊勝福皆迴向，普願沉溺諸眾生，速往無量光佛剎。願以此整理、校對、修正、發佈佛學內容的一切功德，上報四重恩，下濟三途苦，迴向給一切見聞或聽聞我所做佛學等一字一句資料的一切有情眾生，願諸有情擺脫障難、卸除病痛、遠離厄運、隨順心願、廣結佛緣、速成菩提。</span>
+							<div style="font-weight: normal;"><br /></div>
+							<div style="font-weight: normal;">如果您閱讀過本站任何經文內容後，也想功德迴向，可以跟我這樣說：『<span style="font-weight: normal;color:#cc0000;">我此普賢殊勝行，無邊勝福皆迴向，普願沉溺諸眾生，速往無量光佛剎。</span>』或參閱下面這篇文章更深入了解：<b style="font-size: 100%;"><a href="http://yogabuddha.blogspot.com/2017/03/blog-post_16.html#04" style="font-size: 100%;" target="_blank">要如何迴向？</a></b></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--  panel 3 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="panel-title">站內搜尋 Search</h4>
+                        </div>
+                    </span>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <script>
+								  (function() {
+									var cx = 'partner-pub-6678320447129348:9321341631';
+									var gcse = document.createElement('script');
+									gcse.type = 'text/javascript';
+									gcse.async = true;
+									gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+									var s = document.getElementsByTagName('script')[0];
+									s.parentNode.insertBefore(gcse, s);
+								  })();
+							</script>
+							<gcse:search></gcse:search>
+                          </div>
+                        </div>
+                      </div>
+            </div> <!-- / panel-group -->
+        </div>
+    </div>
+</div>
