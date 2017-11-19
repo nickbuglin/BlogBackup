@@ -27,14 +27,6 @@
             });
         </script>
 
-        <!--二姊的ADSense層級廣告-->
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-		google_ad_client: &quot;ca-pub-1906469337822124&quot;,
-		enable_page_level_ads: true
-		});
-		</script>
-
         <b:include data='blog' name='all-head-content'/>
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
             <title>
@@ -618,15 +610,75 @@
 		text-transform:uppercase
 		}
 
+		/* 邊框的樣式 */
 		.related-posts-list ci{
 		background-color:#fff;
-		box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);
-		width:29.5%;              
+		box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);  /* 外框陰影H座標V座標blue陰影color顏色 */
+		width:32%;               /* 外框寬度佔百分比 */
 		float:left;               
 		position:relative;        
 		margin:0 1% 1% 0%;  
 		padding:1% 1% 6% 1%;  
 		}
+		
+		.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
+
+		#related-posts a{
+		color:#3C42F4;
+		font:400 16px &#39;Oswald&#39;,sans-serif;
+		text-decoration:none;
+		}
+
+		#related-posts sl ci p{
+		position:absolute; 
+		margin-bottom:15px; 
+		padding-top:125px;      /* 文字上面留邊大小 */
+		margin-left:3px;  
+		}
+
+		/* 圖片樣式 */
+		#related-posts .related_img{
+		height:120px;  
+		width:230px; 
+		object-fit:cover; 
+		}
+		
+		.related-title{
+		text-align:center;
+		padding:5px 0px;
+		}
+
+		.rthumb{
+		float:left;
+		margin-top:2px; 
+		margin-left:5px;  
+		margin-right:0px;     /* 圖片離右邊文字留邊距離 */
+		}   
+		
+		@media screen and (max-width: 680px) {
+			.related-posts-list ci{
+			background-color:#fff;
+			box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);
+			width:95%;
+			margin:0 1% 1% 1%;
+			padding:1% 1% 1% 1%;
+			}
+			
+			#related-posts a{
+			font:400 20px &#39;Oswald&#39;,sans-serif;
+			}
+			
+			#related-posts sl ci p{
+			padding-top:5px; 
+			margin-left:150px; 
+			}
+		
+			#related-posts .related_img{
+			height:130px;  
+			width:130px;   
+			}
+		}
+	
 		
 		/* Quote 引用的樣式效果 */
 		@import url(https://fonts.googleapis.com/css?family=Lato:700);
@@ -857,65 +909,6 @@
             transform: translateY(-4px);     
         }
       </style>
-
-		<!-- Related Posts widget with Thumbnails -->
-		<style>
-			.related-posts-list ci:nth-child(3n){margin-right:0 !important;}
-
-			#related-posts a{
-			color:#3C42F4;
-			font:400 16px &#39;Oswald&#39;,sans-serif;
-			text-decoration:none;
-			}
-
-			#related-posts sl ci p{
-			position:absolute; 
-			margin-bottom:15px; 
-			padding-top:110px; 
-			margin-left:3px;  
-			}
-
-			#related-posts .related_img{
-			height:120px;  
-			width:230px; 
-			object-fit:cover; 
-			}
-			
-			.related-title{
-			text-align:center;
-			padding:5px 0px;
-			}
-
-			.rthumb{
-			float:left;
-			margin-top:2px; 
-			margin-left:5px;  
-			margin-right:0px;} 
-			
-			@media screen and (max-width: 680px) {
-				.related-posts-list ci{
-				background-color:#fff;
-				box-shadow:3px 3px 20px rgba(180, 180, 180, 0.7);
-				width:95%;
-				margin:0 1% 1% 1%;
-				padding:1% 1% 1% 1%;
-				}
-				
-				#related-posts a{
-				font:400 20px &#39;Oswald&#39;,sans-serif;
-				}
-				
-				#related-posts sl ci p{
-				padding-top:5px; 
-				margin-left:150px; 
-				}
-			
-				#related-posts .related_img{
-				height:130px;  
-				width:130px;   
-				}
-			}
-		</style>	
 	  
 		<!-- Related Posts widget with Thumbnails Code Before Head Start(需要jquery)-->
 		<b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1011,42 +1004,51 @@
 		<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' rel='stylesheet'/>		
 		<script crossorigin='anonymous' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'/>		
 		<style>
-			.navbar-default {	
-				font-size: 15px;
-				background-color: #434343; 
-				border-radius: 8px;   
+			.navbar-default .navbar-nav>li>a {
+				color: #ffffff; 			  
+				background-color: #434343;
+				padding: 15px 15px 5px 5px;          /* 文字外留白距離 */
 			}
-			.navbar-default .navbar-brand {	
-				color: #ffffff;  
-				font-size: 17px;
+			.navbar-default { 						 /* 基本設定 */
+			  font-size: 16px;
+			  background-color: #434343;    		 
+			  border-color: #434343;    
+
+			}
+			.navbar-default .navbar-brand {			 /* 標題顏色 */
+			  color: #ffffff;  
+			  font-size: 18px;
+			  padding: 15px 10px 5px 5px;            /* 文字外留白距離 */
 			}
 			.navbar-default .navbar-brand:hover,
-			.navbar-default .navbar-brand:focus {	 
-				color: #bc0000;
+			.navbar-default .navbar-brand:focus {	 /* 標題滑鼠停留的文字顏色,被選取時的文字顏色 */
+			  color: #bc0000;
 			}
-			.navbar-default .navbar-nav &gt; li &gt; a {
-				color: #ffffff;
-				background-color: #434343; 
-				padding: 14px 10px 14px 10px; 
+			.navbar-default .navbar-text {	 	 	/* 下拉選單內文字原本顏色 */
+			  color: #ffffff;
+			}
+			.navbar-default .navbar-nav &gt; li &gt; a {					/* 最上層標題文字原本顏色 */
+			  color: #ffffff;
 			}
 			.navbar-default .navbar-nav &gt; li &gt; a:hover,
-			.navbar-default .navbar-nav &gt; li &gt; a:focus {	
-				color: #bc0000;
-				background-color: #ffffff; 
+			.navbar-default .navbar-nav &gt; li &gt; a:focus {		    /* 最上層標題文字,滑鼠停留時的顏色 */
+			  color: #bc0000;
 			}
-			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu {	
-				background-color: #434343;
+			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu {						/* 下拉選單內背景顏色 */
+			  background-color: #434343;
 			}
-			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; a {
-				color: #ffffff;
+			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; a {			/* 下拉選單內文字的顏色 */
+			  color: #ffffff;
 			}
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; a:hover,
-			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; a:focus {	
-				color: #bc0000;
-				background-color: #ffffff;
+			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; a:focus {		/* 下拉選單內,滑鼠移過時文字的顏色,背景顏色 */
+			  color: #bc0000;
+			  background-color: #ffffff;
 			}
+			
+			
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu {	
-				background-color: #434343;
+				background-color: #515151;
 			}
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; a {
 				color: #ffffff;
@@ -1068,7 +1070,7 @@
 				background-color: #ffffff;
 			}
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu {			
-				background-color: #434343;
+				background-color: #515151;
 			}
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; a {	
 				color: #ffffff;
@@ -1077,63 +1079,70 @@
 			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; .dropdown-menu &gt; li &gt; a:focus {	
 				color: #bc0000;
 				background-color: #ffffff;
+			}			
+			
+			
+			
+			
+			.navbar-default .navbar-nav &gt; li &gt; .dropdown-menu &gt; li.divider {		/* 下拉選單內,分隔線的顏色 */
+			  background-color: #ffffff;
 			}
 			.navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a,
 			.navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:hover,
-			.navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:focus {  
+			.navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:focus {  	/* ??? */
 			  color: #bc0000;
 			  background-color: #ffffff;
 			}
 			.navbar-default .navbar-nav &gt; .active &gt; a,
 			.navbar-default .navbar-nav &gt; .active &gt; a:hover,
-			.navbar-default .navbar-nav &gt; .active &gt; a:focus {		
+			.navbar-default .navbar-nav &gt; .active &gt; a:focus {				/* 頂層選單Active中的顏色 */
 			  color: #bc0000;
 			  background-color: #ffffff;
 			}
 			.navbar-default .navbar-nav &gt; .open &gt; a,
 			.navbar-default .navbar-nav &gt; .open &gt; a:hover,
-			.navbar-default .navbar-nav &gt; .open &gt; a:focus {	
+			.navbar-default .navbar-nav &gt; .open &gt; a:focus {				/* 頂層選單下拉選單後的顏色 */
 			  color: #bc0000;
 			  background-color: #ffffff;
 			}
-			.navbar-default .navbar-toggle {		
+			.navbar-default .navbar-toggle {								/* 三選單,外框顏色 */
 			  border-color: #ffffff;
 			}
 			.navbar-default .navbar-toggle:hover,
-			.navbar-default .navbar-toggle:focus {		
+			.navbar-default .navbar-toggle:focus {							/* 三選單,滑鼠停留的顏色 */
 			  background-color: #FF4545;
 			}
-			.navbar-default .navbar-toggle .icon-bar {	
+			.navbar-default .navbar-toggle .icon-bar {						/* 三選單,三撇的顏色 */
 			  background-color: #ffffff;
 			}
 			.navbar-default .navbar-collapse,								
-			.navbar-default .navbar-form {		
+			.navbar-default .navbar-form {									/* 三選單, */
 			  border-color: #ffffff;
 			}			
-			.navbar-default .navbar-link {		
+			
+			.navbar-default .navbar-link {									/* 三選單,下拉選單後，文字顏色 */
 			  color: #ffffff;
-			  
 			}
-			.navbar-default .navbar-link:hover {		
+			.navbar-default .navbar-link:hover {							/* 三選單,下拉選單後，滑鼠移動過的文字顏色 */
 			  color: #bc0000;
 			}
-			.navbar .nav &gt; li {									
+						
+			.navbar .nav > li {												/* 三選單,下拉選單層級拉高,不然會被擋住 */					
 			z-index: 10000;
 			}
-			
+
 			@media (max-width: 767px) {
-			  .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a {  
+			  .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a {  				/* 三選單,第二 三層選單文字顏色 */
 				color: #ffffff;
-				
 			  }
 			  .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a:hover,
-			  .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a:focus {	
+			  .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a:focus {			/* 三選單,第二 三層選單文字被選取的顏色 */
 				color: #bc0000;
 
 			  }
 			  .navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a,
 			  .navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:hover,
-			  .navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:focus {	
+			  .navbar-default .navbar-nav .open .dropdown-menu &gt; .active &gt; a:focus {		/* 三選單,??? */
 				color: #bc0000;
 				background-color: #ffffff;
 			  }
@@ -1151,7 +1160,8 @@
             .navbar-template {
                 padding: 140px 15px;
             }		
-		</style>		
+		</style>
+		
 		
 		<!-- Bootstrap導覽列 Jscript -->	
 		<script>
@@ -1202,16 +1212,16 @@
 			
 			@media (min-width: 1200px) {
 				#collapseOne {
-					width: 270px;
+					width: 260px;
 				}
 				#collapseTwo {
-					width: 270px;
+					width: 260px;
 				}
 				#collapseThree {
-					width: 270px;
+					width: 260px;
 				}
 				.panel.panel-default {
-					width: 270px;
+					width: 260px;
 				}
 			} 
 			@media (max-width: 1199px) {
@@ -3595,10 +3605,19 @@ head.appendChild(script);
 								<li><a href='https://yogabuddha.blogspot.tw/2017/08/blog-post_33.html'>(一)&#65306;悉曇天城梵文的歷史演變</a></li>
 								<li><a href='https://yogabuddha.blogspot.tw/2017/08/blog-post_15.html'>(二)&#65306;佛陀使用的文字與梵文訛傳</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post.html'>(三)&#65306;基本母音子音念法</a></li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/08/v.html'>(四)&#65306;從準提咒來學&#12300;止韻&#12301;與&#12300;v變音&#12301;</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/08/v.html'>(四)&#65306;準提咒發音示範與梵文的「止韻」「v變音」</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_17.html'>(五)&#65306;使用梵文的好處與相較印地語的發音差別</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post_19.html'>(六)：十一面觀音神咒(藏傳大悲咒)發音示範與「南無」的變音</a></li>
 								<li class='divider'/>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post_26.html'>暗度陳倉錯千百年的悉曇梵字</a></li>
+                            </ul>
+                        </li>
+						
+						<li>
+                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>瑜伽與佛法<b class='caret'/></a>
+                            <ul class='dropdown-menu'>
+								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_27.html'>(一)：認識瑜伽與禪定</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post.html'>(二)：瑜伽與佛法相依相輔</a></li>
                             </ul>
                         </li>
 						
@@ -3615,19 +3634,20 @@ head.appendChild(script);
 						<li>
                             <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>佛法清涼劑<b class='caret'/></a>
                             <ul class='dropdown-menu'>
+								<li>
+									<a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>放鬆音樂<b class='caret'/></a>
+									<ul class='dropdown-menu'>
+										<li><a href='http://yogabuddha.blogspot.com/2017/06/blog-post_65.html'>純粹自然天籟&#12290;大雷雨聲</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2017/06/blog-post_8.html'>純粹自然天籟&#12290;下雨天鳥叫聲</a></li>
+										<li><a href='http://yogabuddha.blogspot.tw/2017/07/blog-post_3.html'>純粹自然天籟&#12290;高山清涼溪水</a></li>
+									</ul>
+								</li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post_24.html'>三皈依</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/07/blog-post_65.html'>十善與六度</a></li>
                             </ul>
                         </li>
 						
-						<li>
-                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>放鬆音樂<b class='caret'/></a>
-                            <ul class='dropdown-menu'>
-								<li><a href='http://yogabuddha.blogspot.com/2017/06/blog-post_65.html'>純粹自然天籟&#12290;大雷雨聲</a></li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/06/blog-post_8.html'>純粹自然天籟&#12290;下雨天鳥叫聲</a></li>
-								<li><a href='http://yogabuddha.blogspot.tw/2017/07/blog-post_3.html'>純粹自然天籟&#12290;高山清涼溪水</a></li>
-                            </ul>
-                        </li>
+						
 					</ul>	
 				
 					<ul class='nav navbar-nav navbar-right'>	
@@ -4974,7 +4994,7 @@ head.appendChild(script);
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='PopularPosts1' locked='false' mobile='yes' title='熱門文章' type='PopularPosts' version='1'>
+  <b:widget id='PopularPosts1' locked='false' title='熱門文章' type='PopularPosts' version='1'>
     <b:widget-settings>
       <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
       <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -5139,7 +5159,7 @@ head.appendChild(script);
                 <b:include name='quickedit'/>
             </b:includable>
   </b:widget>
-  <b:widget id='Feed1' locked='false' title='最新文章' type='Feed'>
+  <b:widget id='Feed1' locked='false' title='' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>http://yogabuddha.blogspot.com/feeds/posts/default</b:widget-setting>
       <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>

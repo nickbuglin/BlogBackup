@@ -597,7 +597,7 @@ html .mobile .mobile-date-outer, html .mobile .blog-pager {
   border-$startSide: 1px solid $(tabs.separator.color);
 }
 
-/* CSS For related posts widget推薦文章----------- */
+		/* CSS For related posts widget推薦文章----------- */
 		#related-posts {
 		float:left;
 		width:100%;
