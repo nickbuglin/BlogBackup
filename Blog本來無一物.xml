@@ -4161,13 +4161,6 @@ head.appendChild(script);
 																			  <a class='home-link' expr:href='data:desktopLinkUrl'><!-- <data:desktopLinkMsg/> -->前往電腦版留言</a>
 																		 </b:if>
 																	</div>
-
-																	<!-- ADSense行動版自適應(最底端) -->
-																	<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-																	<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-format='auto' data-ad-slot='1555899237' style='display:block'/>
-																	<script>
-																	(adsbygoogle = window.adsbygoogle || []).push({});
-																	</script>
 																	
                                                                 </div>
                                                                 <div class='clear'/>
@@ -4465,12 +4458,13 @@ head.appendChild(script);
                                                                         <div class='post-footer-line post-footer-line-3'> <!--文章底留言前處-->
 
 																		<!-- Google ADsense yogabuddha_728x90 -->
-																			<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-																			<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-slot='6923912031' style='display:inline-block;width:728px;height:90px'/>
-																			<script>
-																			(adsbygoogle = window.adsbygoogle || []).push({});
-																			</script>
-																		
+																			<div style="text-align: center;">
+																				<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+																				<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-slot='6923912031' style='display:inline-block;width:728px;height:90px'/>
+																				<script>
+																				(adsbygoogle = window.adsbygoogle || []).push({});
+																				</script>
+																			</div>																		
 																		<!-- 電腦版 Related Posts widget with Thumbnails Code Before Post Footer Start-->
 																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
 																			<div id='related-posts'>
@@ -4488,13 +4482,12 @@ head.appendChild(script);
 																				</script>
 																			</div>
 																		</b:if>
-																		
-                                                                            <span class='post-location'>
-                                                                                <b:if cond='data:top.showLocation and data:post.location'>
-                                                                                    <data:postLocationLabel/>
-                                                                                    <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
-                                                                                </b:if>
-                                                                            </span>
+																				<span class='post-location'>
+																					<b:if cond='data:top.showLocation and data:post.location'>
+																						<data:postLocationLabel/>
+																						<a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+																					</b:if>
+																				</span>
                                                                         </div>
 
                                                                         <b:if cond='data:post.authorAboutMe'>
