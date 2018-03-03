@@ -18,15 +18,15 @@
             ga(&#39;send&#39;, &#39;pageview&#39;);
         </script>
 
-        <!--ADSense層級廣告-->
+        <!--ADSense 自動廣告-->
         <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: &quot;ca-pub-6678320447129348&quot;,
-            enable_page_level_ads: true
-            });
-        </script>
-
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({
+				  google_ad_client: "ca-pub-6678320447129348",
+				  enable_page_level_ads: true
+			 });
+		</script>
+		
         <b:include data='blog' name='all-head-content'/>
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
             <title>
@@ -1004,7 +1004,7 @@
 		<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' rel='stylesheet'/>		
 		<script crossorigin='anonymous' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'/>		
 		<style>
-			.navbar-default .navbar-nav>li>a {
+			.navbar-default .navbar-nav&gt;li&gt;a {
 				color: #ffffff; 			  
 				background-color: #434343;
 				padding: 15px 15px 5px 5px;          /* 文字外留白距離 */
@@ -1120,14 +1120,14 @@
 			  border-color: #ffffff;
 			}			
 			
-			.navbar-default .navbar-link {									/* 三選單,下拉選單後，文字顏色 */
+			.navbar-default .navbar-link {									/* 三選單,下拉選單後&#65292;文字顏色 */
 			  color: #ffffff;
 			}
-			.navbar-default .navbar-link:hover {							/* 三選單,下拉選單後，滑鼠移動過的文字顏色 */
+			.navbar-default .navbar-link:hover {							/* 三選單,下拉選單後&#65292;滑鼠移動過的文字顏色 */
 			  color: #bc0000;
 			}
 						
-			.navbar .nav > li {												/* 三選單,下拉選單層級拉高,不然會被擋住 */					
+			.navbar .nav &gt; li {												/* 三選單,下拉選單層級拉高,不然會被擋住 */					
 			z-index: 10000;
 			}
 
@@ -1285,7 +1285,7 @@
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3dSense+all+is+void+%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9+Sense+all+is+void\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -1370,7 +1370,7 @@ head.appendChild(script);
 								
                                 <div class='region-inner cherrychili-header-inner'>
 									<b:section class='header-left' id='header-left' maxwidgets='1' name='Header-Left' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='Sense all is void 本來無一物 (標頭)' type='Header'>
+<b:widget id='Header1' locked='false' title='本來無一物 Sense all is void (標頭)' type='Header'>
   <b:widget-settings>
     <b:widget-setting name='displayUrl'/>
     <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1527,6 +1527,7 @@ head.appendChild(script);
 										<li><a href='http://yogabuddha.blogspot.tw/2017/05/blog-post_464.html'>超渡真正意義為何&#65311;誰需要超渡&#65311;要如何超渡&#65311;</a></li>
                                     </ul>
                                 </li>
+								<li><a href='https://yogabuddha.blogspot.tw/2017/11/blog-post_14.html'>咒卷佛珠手串免費結緣辦法</a></li>
                             </ul>
                         </li>
 					
@@ -1622,9 +1623,11 @@ head.appendChild(script);
 										<li class='divider'/>
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_10.html'>佛頂大白傘蓋陀羅尼經(加註解)</a></li>
 										<li class='divider'/>
-										<li><a href='http://yogabuddha.blogspot.com/2017/07/201707.html'>2017.07校對修正更新</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/02/201802.html'>2018.02修正內容詳解</a></li>
+										<li><a href='http://yogabuddha.blogspot.tw/2018/01/201801.html'>2018.01修正內容詳解</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/09/2017.html'>2017.09超級更新(一)&#65306;感慨與省思</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/09/2017_10.html'>2017.09超級更新(二)&#65306;修正內容詳解</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2017/07/201707.html'>2017.07修正內容詳解</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -3605,9 +3608,16 @@ head.appendChild(script);
 								<li><a href='https://yogabuddha.blogspot.tw/2017/08/blog-post_33.html'>(一)&#65306;悉曇天城梵文的歷史演變</a></li>
 								<li><a href='https://yogabuddha.blogspot.tw/2017/08/blog-post_15.html'>(二)&#65306;佛陀使用的文字與梵文訛傳</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post.html'>(三)&#65306;基本母音子音念法</a></li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/08/v.html'>(四)&#65306;準提咒發音示範與梵文的「止韻」「v變音」</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/08/v.html'>(四)&#65306;準提咒發音示範與梵文的&#12300;止韻&#12301;&#12300;v變音&#12301;</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_17.html'>(五)&#65306;使用梵文的好處與相較印地語的發音差別</a></li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post_19.html'>(六)：十一面觀音神咒(藏傳大悲咒)發音示範與「南無」的變音</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post_20.html'>(六)&#65306;十一面觀音神咒(藏傳大悲咒)發音示範與&#12300;南無&#12301;的變音</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/sambuddha.html'>(七)&#65306;阿彌陀佛根本咒(往生咒)發音示範與&#12300;sambuddha&#12301;修正</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post_29.html'>(八)&#65306;金剛薩埵百字明咒發音示範與&#12300;彈舌音&#12301;教學</a></li>
+								<li><a href='https://yogabuddha.blogspot.tw/2017/12/blog-post.html'>(九)&#65306;大寶廣博樓閣善住秘密陀羅尼發音示範</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/12/blog-post_12.html'>(十)&#65306;一切如來心祕密全身舍利寶篋印陀羅尼發音示範</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/12/blog-post_21.html'>(十一)&#65306;佛頂尊勝咒發音示範</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2018/01/blog-post.html'>(十二)&#65306;青頸觀音陀羅尼(漢傳大悲咒)發音示範</a></li>
+								<li><a href='https://yogabuddha.blogspot.tw/2018/02/blog-post.html'>(十三)&#65306;梵文前後字字母縮寫問題</a></li>
 								<li class='divider'/>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post_26.html'>暗度陳倉錯千百年的悉曇梵字</a></li>
                             </ul>
@@ -3616,8 +3626,8 @@ head.appendChild(script);
 						<li>
                             <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>瑜伽與佛法<b class='caret'/></a>
                             <ul class='dropdown-menu'>
-								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_27.html'>(一)：認識瑜伽與禪定</a></li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post.html'>(二)：瑜伽與佛法相依相輔</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_27.html'>(一)&#65306;認識瑜伽與禪定</a></li>
+								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post.html'>(二)&#65306;瑜伽與佛法相依相輔</a></li>
                             </ul>
                         </li>
 						
@@ -5159,7 +5169,7 @@ head.appendChild(script);
                 <b:include name='quickedit'/>
             </b:includable>
   </b:widget>
-  <b:widget id='Feed1' locked='false' title='' type='Feed'>
+  <b:widget id='Feed1' locked='false' title='最新文章' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>http://yogabuddha.blogspot.com/feeds/posts/default</b:widget-setting>
       <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
