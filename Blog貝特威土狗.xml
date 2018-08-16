@@ -3,7 +3,7 @@
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
     <head>
         <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>  <!--google-search-->
-        <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>  <!--MS-BingSearch-->
+        <meta name="msvalidate.01" content="728642E177C012CBB30C5442E988DEF6" />  <!--MS-BingSearch-->
 		<meta content='7bb289c60a094375a309eaf65d3bdf98' name='p:domain_verify'/>  
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
 
