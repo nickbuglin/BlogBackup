@@ -3651,22 +3651,13 @@ head.appendChild(script);
 								<li><a href='http://yogabuddha.blogspot.com/2017/07/blog-post_65.html'>十善與六度</a></li>
                             </ul>
                         </li>
-						
-						
 					</ul>	
-				
 					<ul class='nav navbar-nav navbar-right'>	
 						<li>
-                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>優質推薦<b class='caret'/></a>
+                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>其他推薦<b class='caret'/></a>
                             <ul class='dropdown-menu'>
-								<li><a href='https://natureintw.blogspot.com/'>那裘伊普羅勳</a></li>
+								<li><a href='https://betterwaystogo.blogspot.com/'>貝特威土狗</a></li>
 								<li><a href='https://fifiplanet.blogspot.tw/'>FIFI的星球</a></li>
-								<li class='divider'/>
-								<li><a href='https://fifiplanet.blogspot.tw/2017/05/fifi.html'>Fifi貼圖&#65306;生活篇(一)</a></li>
-								<li><a href='https://fifiplanet.blogspot.tw/2017/05/fifilululine.html'>Fifi貼圖&#65306;FiFi+LuLu感情篇</a></li>
-								<li><a href='https://fifiplanet.blogspot.tw/2017/05/fifiline-1.html'>Fifi貼圖&#65306;好友篇</a></li>
-								<li><a href='https://fifiplanet.blogspot.tw/2017/07/linefifi2.html'>Fifi貼圖&#65306;生活篇(二)</a></li>
-								<li><a href='https://fifiplanet.blogspot.tw/2017/09/line.html'>Fifi貼圖&#65306;青春女孩慣用語</a></li>
                             </ul>
                         </li>
                     </ul>
