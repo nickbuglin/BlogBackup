@@ -1192,14 +1192,6 @@
 				user-select: none;  
 				border-radius: 8px;         
 			}
-			.panel-heading {		
-				border: none;
-				background-color: rgba(0, 0, 0, 0.1);
-				color: #000000;
-			}
-			.panel-heading:hover {    
-				cursor:pointer;
-			}
 
 			.panel.panel-default { 		
 				border: none;
@@ -1208,29 +1200,32 @@
 				border-bottom-left-radius: 0px;
 				border-radius: 8px;              
 				background-color: rgba(255, 255, 255, 0.2);
+				width: 270px;
 			}
 			
-			@media (min-width: 1200px) {
-				#collapseOne {
-					width: 260px;
-				}
-				#collapseTwo {
-					width: 260px;
-				}
-				#collapseThree {
-					width: 260px;
-				}
-				.panel.panel-default {
-					width: 260px;
-				}
-			} 
-			@media (max-width: 1199px) {
-				.panel.panel-default { 					
-					background-color: rgb(241, 241, 241);
-					color: #000000;
-					font-size: 14px;
-				}	
+			.panel-heading {		
+				border: none;
+				background-color: rgba(0, 0, 0, 0.1);
+				color: #000000;
+				width: 270px;
+
 			}
+			.panel-heading:hover {    
+				cursor:pointer;
+			}
+			
+			#collapseOne {
+				width: 270px;
+			}
+			
+			#collapseTwo {
+				width: 270px;
+			}
+			
+			#collapseThree {
+				width: 270px;
+			}
+
 		</style>
 		
 		<!-- 相關網站 -->
@@ -5058,14 +5053,18 @@ head.appendChild(script);
     <data:content/>
   </div>
 
+  
   <b:include name='quickedit'/>
 </b:includable>
-  </b:widget>
-  <b:widget id='HTML5' locked='false' mobile='yes' title='' type='HTML' version='1'>
+</b:widget>
+<b:widget id='HTML5' locked='false' mobile='yes' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
+        <b:widget-setting name='content'>
+	  
+	  
+	  &lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+	  &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-md-4&quot;&gt;
             &lt;!-- begin panel group --&gt;
             &lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
@@ -5144,20 +5143,23 @@ head.appendChild(script);
             &lt;/div&gt; &lt;!-- / panel-group --&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;</b:widget-setting>
+
+
+		</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
-                <!-- only display title if it's non-empty -->
-                <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                </b:if>
-                <div class='widget-content'>
-                    <data:content/>
-                </div>
+		<!-- only display title if it's non-empty -->
+		<b:if cond='data:title != &quot;&quot;'>
+			<h2 class='title'><data:title/></h2>
+		</b:if>
+		<div class='widget-content'>
+			<data:content/>
+		</div>
 
-                <b:include name='quickedit'/>
-            </b:includable>
-  </b:widget>
+	<b:include name='quickedit'/>
+    </b:includable>
+</b:widget>
+  
   <b:widget id='Feed1' locked='false' title='' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>http://yogabuddha.blogspot.com/feeds/posts/default</b:widget-setting>
