@@ -49,7 +49,7 @@
 		   ====================
 		   <Variable name="keycolor" description="Main Color" type="color" default="#1a222a" value="#1a222a"/>
 		   <Variable name="body.background" description="Body Background" type="background"
-			   color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="$(color) url(http://4.bp.blogspot.com/-qp5AW-A2Aig/WRcD1RId0WI/AAAAAAAArz0/mlwvkkam_sMEqRIyamzphhSmSNaUu8_9QCK4B/s0/blog%25E8%2583%258C%25E6%2599%25AF%25E5%259C%2596.jpg) no-repeat fixed top center"/>
+			   color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="$(color) url(http://3.bp.blogspot.com/-Z1aAWKKaTwU/W3V7GCIHIyI/AAAAAAAA_oI/RPCnBucFOHg_w6luFhaPvoQC5hc7CrrxQCK4BGAYYCw/s0/flower-2358491.jpg) repeat fixed top center"/>
 
 		   <Group description="Page Text" selector="body">
 			 <Variable name="body.font" description="Font" type="font"
@@ -1465,48 +1465,33 @@ head.appendChild(script);
                         <span class='icon-bar'/>
                         <span class='icon-bar'/>
                     </button>
-                    <a class='navbar-brand' href='#'>本來無一物</a>
+                    <a class='navbar-brand' href='#'>貝特威土狗</a>
                 </div>
                 <div class='collapse navbar-collapse'>
                     <ul class='nav navbar-nav'>
                         <li>
-                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>佛學指南知識<b class='caret'/></a>
+                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>植物栽培研究<b class='caret'/></a>
                             <ul class='dropdown-menu'>
 							    <li>
-                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>如何修行&#65311;<b class='caret'/></a>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>蚯蚓糞肥技術<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
-                                        <li><a href='http://yogabuddha.blogspot.com/2018/04/blog-post_28.html'>(一)&#65306;佛在哪&#65311;為什麼&#65311;</a></li>
-                                        <li><a href='https://yogabuddha.blogspot.tw/2018/05/blog-post.html'>(二)&#65306;常行十善&#65292;遠離非十善</a></li>
-                                        <li><a href='https://yogabuddha.blogspot.tw/2018/05/blog-post_23.html'>(三)&#65306;保持生活環境整潔</a></li>
+                                        <li><a href='https://betterwaystogo.blogspot.com/2018/08/diy.html'>如何DIY製作液肥&#65311;---蚯蚓糞液肥</a></li>
+                                        <li><a href='https://betterwaystogo.blogspot.com/2017/04/blog-post.html'>蚓糞滲透液為補給肥&#65292;來增加番茄果實質量</a></li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>佛學與生活<b class='caret'/></a>
-                                    <ul class='dropdown-menu'>
-                                        <li><a href='http://yogabuddha.blogspot.com/2017/06/blog-post_26.html'>何謂&#12300;善事&#12301;&#65311;如何&#12300;做善事&#12301;&#65311;(一)</a></li>
-										<li><a href='http://yogabuddha.blogspot.tw/2017/07/blog-post.html'>何謂&#12300;善事&#12301;&#65311;如何&#12300;做善事&#12301;&#65311;(二)</a></li>
-										<li class='divider'/>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_79.html'>教你如何拜佛&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_40.html'>念佛一定得吃素&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_92.html'>學佛拜佛&#65292;如何供養佛&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_49.html'>重要&#65281;不要再燒經文咒文了&#65281;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_95.html'>一生只念阿彌陀佛就能成佛&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_14.html'>佛像&#12289;法器要開光&#65311;怎麼開光&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_72.html'>念佛&#65311;怎麼念佛&#65311;就是念佛號&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/led.html'>佛前供養點燈&#65292;能不能用LED燈&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_47.html'>哪個法門最好&#65311;初學佛要學哪個法門&#65311;</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_61.html'>繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;</a></li>
-										<li class='divider'/>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_83.html'>佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!</a></li>
-                                    </ul>
+                                    <li><a href='http://betterwaystogo.blogspot.com/2017/02/blog-post_79.html'>小番茄營養成分資訊圖</a></li>
                                 </li>
                             </ul>
                         </li>
-						
-						<li>
-                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>優質推薦<b class='caret'/></a>
+                        <li>
+                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>特色景點介紹<b class='caret'/></a>
                             <ul class='dropdown-menu'>
-								<li><a href='https://betterwaystogo.blogspot.tw/'>貝特威土狗</a></li>
+                                <li><a href='http://betterwaystogo.blogspot.com/2017/04/blog-post_13.html'>台南仁德奇美博物館</a></li>
+                            </ul>
+                        </li>						
+						<li>
+                            <a class='dropdown-toggle' data-toggle='dropdown' href='#' target='_blank'>其他推薦<b class='caret'/></a>
+                            <ul class='dropdown-menu'>
+								<li><a href='http://yogabuddha.blogspot.com/'>本來無一物</a></li>
 								<li><a href='https://fifiplanet.blogspot.tw/'>FIFI的星球</a></li>
 								<li class='divider'/>
 								<li><a href='https://fifiplanet.blogspot.tw/2017/05/fifi.html'>Fifi貼圖&#65306;生活篇(一)</a></li>
@@ -2926,12 +2911,12 @@ head.appendChild(script);
                     &lt;/span&gt;
                     &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot;&gt;
                         &lt;div class=&quot;panel-body&quot;&gt;
-							&#65339;貼心提醒&#65341;佛經咒內容有修正更新&#65292;會直接修改舊文章&#65292;如果只追蹤此網站的CSS&#65292;您將永遠無法得知我們的舊文章裡面的佛經咒做了修正更新&#65292;所以還是建議要追蹤我們的FB&#65292;有修正更新一定會在FB貼文公告&#12290;
+							
 							&lt;div class=&quot;container&quot;&gt;
-								&lt;a href=&quot;https://www.facebook.com/%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9-Sense-all-is-void-741472839357411&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;FB粉絲專頁&quot;&gt;&lt;i id=&quot;social-fb&quot; class=&quot;fa fa-facebook-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-								&lt;a href=&quot;http://www.youtube.com/c/SenseAllisVoid%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;Youtube Channel&quot;&gt;&lt;i id=&quot;social-yt&quot; class=&quot;fa fa-youtube-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-								&lt;a href=&quot;https://plus.google.com/111149140642619080523&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;Google+&quot;&gt;&lt;i id=&quot;social-gp&quot; class=&quot;fa fa-google-plus-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-								&lt;a href=&quot;mailto:yesyogabudha@gmail.com&quot;&gt;&lt;i id=&quot;social-em&quot; class=&quot;fa fa-envelope-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a href=&quot;https://www.facebook.com/BetterWaysToGo/&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;FB粉絲專頁&quot;&gt;&lt;i id=&quot;social-fb&quot; class=&quot;fa fa-facebook-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a href=&quot;https://www.youtube.com/channel/UCXRWmidHBz_2h9XDbbLo1xw&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;Youtube Channel&quot;&gt;&lt;i id=&quot;social-yt&quot; class=&quot;fa fa-youtube-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a href=&quot;https://plus.google.com/104310744112693555661&quot; onclick=&quot;window.open&quot; target=&quot;_blank&quot; title=&quot;Google+&quot;&gt;&lt;i id=&quot;social-gp&quot; class=&quot;fa fa-google-plus-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a href=&quot;mailto:betterwaystogo@gmail.com&quot;&gt;&lt;i id=&quot;social-em&quot; class=&quot;fa fa-envelope-square fa-3x social&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 							&lt;/div&gt;
 							&lt;form action=&#39;http://feedburner.google.com/fb/a/mailverify&#39; id=&#39;emailForm&#39; method=&#39;post&#39; onsubmit=&#39;window.open(&quot;http://feedburner.google.com/fb/a/mailverify?uri=SenseAllIsVoid&quot;, &quot;popupwindow&quot;, &quot;scrollbars=yes,width=550,height=520&quot;); return true;&#39; target=&#39;popupwindow&#39;&gt;
 							&lt;input class=&#39;emailInput&#39; name=&#39;email&#39; placeholder=&#39;輸入 EMAIL&#39; type=&#39;text&#39;/&gt;
@@ -2948,17 +2933,16 @@ head.appendChild(script);
                     &lt;!--wrap panel heading in span to trigger image change as well as collapse --&gt;
                     &lt;span class=&quot;side-tab&quot; data-target=&quot;#tab2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot; aria-expanded=&quot;false&quot;&gt;
                         &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
-                            &lt;h4 class=&quot;panel-title collapsed&quot;&gt;功德迴向 Transfer of Merit&lt;/h4&gt;
+                            &lt;h4 class=&quot;panel-title collapsed&quot;&gt; &lt;/h4&gt;
                         &lt;/div&gt;
                     &lt;/span&gt;
 
                     &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot;&gt;
                         &lt;div class=&quot;panel-body&quot;&gt;
-							&lt;span style=&quot;font-weight: normal;color:#cc0000;&quot;&gt;我此普賢殊勝行&#65292;無邊勝福皆迴向&#65292;普願沉溺諸眾生&#65292;速往無量光佛剎&#12290;願以此整理&#12289;校對&#12289;修正&#12289;發佈佛學內容的一切功德&#65292;上報四重恩&#65292;下濟三途苦&#65292;迴向給一切見聞或聽聞我所做佛學等一字一句資料的一切有情眾生&#65292;願諸有情擺脫障難&#12289;卸除病痛&#12289;遠離厄運&#12289;隨順心願&#12289;廣結佛緣&#12289;速成菩提&#12290;&lt;/span&gt;
-							&lt;div style=&quot;font-weight: normal;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
-							&lt;div style=&quot;font-weight: normal;&quot;&gt;如果您閱讀過本站任何經文內容後&#65292;也想功德迴向&#65292;可以跟我這樣說&#65306;&#12302;&lt;span style=&quot;font-weight: normal;color:#cc0000;&quot;&gt;我此普賢殊勝行&#65292;無邊勝福皆迴向&#65292;普願沉溺諸眾生&#65292;速往無量光佛剎&#12290;&lt;/span&gt;&#12303;或參閱下面這篇文章更深入了解&#65306;&lt;b style=&quot;font-size: 100%;&quot;&gt;&lt;a href=&quot;http://yogabuddha.blogspot.com/2017/03/blog-post_16.html#04&quot; style=&quot;font-size: 100%;&quot; target=&quot;_blank&quot;&gt;要如何迴向&#65311;&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
+							&lt;span style=&quot;font-weight: normal;color:#cc0000;&quot;&gt;
+
+
+                    &lt;/span&gt;&lt;/div&gt;
                 &lt;/div&gt;
                 
                 &lt;!--  panel 3 --&gt;
@@ -2989,7 +2973,7 @@ head.appendChild(script);
                       &lt;/div&gt;
             &lt;/div&gt; &lt;!-- / panel-group --&gt;
         &lt;/div&gt;
-    &lt;/div&gt;</b:widget-setting>
+    &lt;/div&gt;&lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
                 <!-- only display title if it's non-empty -->
