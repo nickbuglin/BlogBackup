@@ -1490,6 +1490,14 @@ head.appendChild(script);
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_83.html'>佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!</a></li>
                                     </ul>
                                 </li>
+								<li>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>該如何修行？<b class='caret'/></a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a href='http://yogabuddha.blogspot.com/2018/04/blog-post_28.html'>(一)：佛在哪？為什麼？</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/05/blog-post.html'>(二)：常行十善，遠離非十善</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/05/blog-post_23.html'>(三)：保持生活環境整潔</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>佛學人物介紹<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
@@ -1523,6 +1531,7 @@ head.appendChild(script);
                                     </ul>
                                 </li>
 								<li><a href='https://yogabuddha.blogspot.tw/2017/11/blog-post_14.html'>咒卷佛珠手串免費結緣辦法</a></li>
+								<li><a href='https://yogabuddha.blogspot.com/2018/06/blog-post.html'>梁皇寶懺活動免費報名辦法</a></li>
                             </ul>
                         </li>
 					
@@ -1618,6 +1627,7 @@ head.appendChild(script);
 										<li class='divider'/>
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_10.html'>佛頂大白傘蓋陀羅尼經(加註解)</a></li>
 										<li class='divider'/>
+										<li><a href='https://yogabuddha.blogspot.com/2018/03/201803.html'>2018.03修正內容詳解</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2018/02/201802.html'>2018.02修正內容詳解</a></li>
 										<li><a href='http://yogabuddha.blogspot.tw/2018/01/201801.html'>2018.01修正內容詳解</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/09/2017.html'>2017.09超級更新(一)&#65306;感慨與省思</a></li>
@@ -1645,6 +1655,13 @@ head.appendChild(script);
 										<li><a href='http://yogabuddha.blogspot.com/2017/09/blog-post_29.html'>十一面觀音神咒-全文字各版本咒語對照</a></li>
 										<li class='divider'/>
 										<li><a href='http://yogabuddha.blogspot.com/2017/07/blog-post_13.html'>十一面神咒心經-利益功德出處</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>藥師佛經咒<b class='caret'/></a>
+                                    <ul class='dropdown-menu'>
+										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_23.html'>藥師琉璃光如來本願功德經(加註解)</a></li>
+                                        <li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post_4.html'>藥師咒徹底解析釋疑與利益功德</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1687,7 +1704,6 @@ head.appendChild(script);
 										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_7.html'>八十八佛大懺悔文仿貝葉經書</a></li>
                                     </ul>
                                 </li>
-								<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_23.html'>藥師琉璃光如來本願功德經(加註解)</a></li>
                             </ul>
                         </li>
 						
@@ -3535,6 +3551,16 @@ head.appendChild(script);
 								<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_77.html'>右繞佛塔功德經</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_20.html'>大方廣如來藏經</a></li>
 								<li>
+									<a class='dropdown-toggle' data-toggle='dropdown' href='#'>維摩詰所說經<b class='caret'/></a>
+									<ul class='dropdown-menu'>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post.html'>佛國品第一</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_64.html'>方便品第二</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_51.html'>弟子品第三</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_63.html'>菩薩品第四</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_27.html'>文殊師利問疾品第五</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_29.html'>不思議品第六</a></li>
+									</ul>
+								</li>								<li>
 									<a class='dropdown-toggle' data-toggle='dropdown' href='#'>妙法蓮華經<b class='caret'/></a>
 									<ul class='dropdown-menu'>
 										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_150.html'>序品第一</a></li>
@@ -3613,6 +3639,7 @@ head.appendChild(script);
 								<li><a href='http://yogabuddha.blogspot.com/2017/12/blog-post_21.html'>(十一)&#65306;佛頂尊勝咒發音示範</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2018/01/blog-post.html'>(十二)&#65306;青頸觀音陀羅尼(漢傳大悲咒)發音示範</a></li>
 								<li><a href='https://yogabuddha.blogspot.tw/2018/02/blog-post.html'>(十三)&#65306;梵文前後字字母縮寫問題</a></li>
+								<li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post.html'>(十四)：白傘蓋陀羅尼(首楞嚴咒)發音示範</a></li>
 								<li class='divider'/>
 								<li><a href='http://yogabuddha.blogspot.com/2017/08/blog-post_26.html'>暗度陳倉錯千百年的悉曇梵字</a></li>
                             </ul>
@@ -3623,6 +3650,7 @@ head.appendChild(script);
                             <ul class='dropdown-menu'>
 								<li><a href='http://yogabuddha.blogspot.com/2017/10/blog-post_27.html'>(一)&#65306;認識瑜伽與禪定</a></li>
 								<li><a href='http://yogabuddha.blogspot.com/2017/11/blog-post.html'>(二)&#65306;瑜伽與佛法相依相輔</a></li>
+								<li><a href='https://yogabuddha.blogspot.com/2018/05/app.html'>(三)：利用免費App來學習瑜伽運動</a></li>
                             </ul>
                         </li>
 						
