@@ -1486,8 +1486,6 @@ head.appendChild(script);
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/led.html'>佛前供養點燈&#65292;能不能用LED燈&#65311;</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/02/blog-post_47.html'>哪個法門最好&#65311;初學佛要學哪個法門&#65311;</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_61.html'>繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;</a></li>
-										<li class='divider'/>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_83.html'>佛學不是覺悟唯一道路&#65292;卻是一條高速公路!!</a></li>
                                     </ul>
                                 </li>
 								<li>
@@ -1638,12 +1636,11 @@ head.appendChild(script);
                                 <li>
                                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>施食佛法<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
+										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_36.html'>施食名詞解說導引與釋疑</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_28.html'>怎麼施食最如法&#65311;最簡易方法</a></li>
+										<li class='divider'/>
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_65.html'>佛說妙色陀羅尼經</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_86.html'>佛說救拔熖口餓鬼陀羅尼經</a></li>
-										<li class='divider'/>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_36.html'>施食餓鬼導引介紹與釋疑</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_28.html'>怎麼施食最如法&#65311;最簡易方法</a></li>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_25.html'>怎麼施食最如法&#65311;節錄&#12298;瑜伽焰口施食&#12299;方法</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1660,8 +1657,10 @@ head.appendChild(script);
                                 <li>
                                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>藥師佛經咒<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
-										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_23.html'>藥師琉璃光如來本願功德經(加註解)</a></li>
                                         <li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post_4.html'>藥師咒徹底解析釋疑與利益功德</a></li>
+										<li class='divider'/>
+										<li><a href='http://yogabuddha.blogspot.com/2017/04/blog-post_23.html'>藥師琉璃光如來本願功德經(加註解)</a></li>
+                                        <li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_26.html'>藥師琉璃光七佛本願功德經(藥師咒出處)</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1702,6 +1701,18 @@ head.appendChild(script);
                                     <ul class='dropdown-menu'>
 										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_6.html'>八十八佛大懺悔文</a></li>
 										<li><a href='http://yogabuddha.blogspot.com/2017/03/blog-post_7.html'>八十八佛大懺悔文仿貝葉經書</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>佛說大集會正法經(僧伽吒經)<b class='caret'/></a>
+                                    <ul class='dropdown-menu'>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_30.html'>利益功德與導引介紹</a></li>
+										<li class='divider'/>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_77.html'>佛說大集會正法經(僧伽吒經)：卷一</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_36.html'>佛說大集會正法經(僧伽吒經)：卷二</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_3.html'>佛說大集會正法經(僧伽吒經)：卷三</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_96.html'>佛說大集會正法經(僧伽吒經)：卷四</a></li>
+										<li><a href='http://yogabuddha.blogspot.com/2018/08/blog-post_73.html'>佛說大集會正法經(僧伽吒經)：卷五</a></li>
                                     </ul>
                                 </li>
                             </ul>
