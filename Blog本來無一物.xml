@@ -5247,7 +5247,9 @@ head.appendChild(script);
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'>
   <b:widget id='HTML1' locked='false' title='關於本來無一物' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<span style="font-family:&quot;;">　　本來無一物的起因是因為一位癌症離世的友人來夢中跟我道別，但我卻半年後才知道這位友人已經離世，傷心之餘展開了一連串的探尋友人行動，當然找不到...。後來想說，也許深入佛法能找到友人去了哪? 於是開始讀遍群經，踏上佛學之路。 </span><div><span style="font-family:&quot;;"><span style="font-family:&quot;;">　　Google電子書</span></span><span =""  style="font-size:100%;">的</span><span =""  style="font-size:100%;">佛經</span><span =""  style="font-size:100%;">，原本用意只是要方便自己出門在外可以研讀佛經，沒想到受到這麼多人愛戴，跟著下載研讀。</span></div>]]></b:widget-setting>
+      <b:widget-setting name='content'>&lt;span style=&quot;font-family:&amp;quot;;&quot;&gt;&#12288;&#12288;&#12300;本來無一物&#12301;的起因&#65292;是因為一位癌症離世的友人來夢中跟我們道別&#65292;但我們卻將近一年後才知道這位友人已經離世&#65292;傷心之餘展開了一連串的探尋友人行動&#65292;走遍了全台各大佛寺&#65292;抱著微弱的希望跟佛菩薩祈求是否能再見友人一面&#65311;
+&lt;br/&gt;&lt;br/&gt;&#12288;&#12288;當然見不到面......後來想說&#65292;也許深讀佛經能找到友人去了哪&#65311;搞不好我們能夠去找友人&#65292;於是開始讀遍群經&#65292;把所有地藏&#12289;死亡&#12289;中陰相關的佛經全部都翻出來閱讀&#65292;稍微有了答案......&#12290;
+&lt;br/&gt;&lt;br/&gt;&#12288;&#12288;為了讓友人能免於墮入惡道受苦&#65292;決定要找出最厲害的佛法來超度友人&#65292;順便超度其他有緣孤魂野鬼亡靈們&#65292;於是便把所有的佛咒相關經書全部都翻出來研究閱讀了一番&#65292;便開始努力念經持咒&#65292;功德迴向&#65292;超度友人和其他亡靈......&#12290;&lt;/span&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
             <!-- only display title if it's non-empty -->
@@ -5264,7 +5266,11 @@ head.appendChild(script);
 </b:section-contents><b:section-contents id='footer-2-2'>
   <b:widget id='HTML2' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<span style="font-family:&quot;;"><br />　　考據校對佛經咒，原本用意只是要修正出最正確的佛經咒，希望自己持誦後能給亡者或孤魂野鬼等最正確最大的幫助，讓祂們得以盡快解脫，沒想到好多人隨喜讚嘆，跟著修正持念更正確的佛咒。</span><br />　　當今佛學有許多錯誤、相掙、矛盾、後人竄改的內容，甚至有許多法師根本沒讀過該本經書，就大言不慚口若懸河地解說起該本經書內容。末學也只能感嘆，末法時期了，妖魔鬼怪，附佛外道橫生，到處胡說八道，怪不得學佛者眾，成道者如鳳毛麟角。]]></b:widget-setting>
+      <b:widget-setting name='content'>&lt;span style=&quot;font-family:&amp;quot;;&quot;&gt;&lt;br /&gt;&#12288;&#12288;後來&#65292;發現佛經咒有諸多錯誤&#65292;又卯起來校對修正佛經咒文資料&#65292;把數個常見咒文&#65292;一字一句比對各同本異譯經書內容&#12289;梵英字典&#12289;梵文文法&#12289;悉曇梵文&#12289;天城梵文......&#12290;
+&lt;br /&gt;&lt;br /&gt;&#12288;&#12288;校對修正佛經咒文&#65292;原本用意只是要修正出最正確的佛經咒&#65292;希望持誦後能給亡靈或孤魂野鬼等最正確最大的幫助&#65292;讓祂們得以盡快解脫&#65292;沒想到後來好多人隨喜讚嘆&#65292;跟著修正持念更正確的佛咒&#12290;
+&lt;br /&gt;&lt;br /&gt;&#12288;&#12288;Google電子書的佛經&#65292;原本用意只是在於校對修正佛經內容&#65292;然後方便我們自己出門在外可以研讀佛經&#65292;沒想到受到這麼多人愛戴&#65292;跟著下載研讀&#12290;
+&lt;br /&gt;&lt;br /&gt;&#12288;&#12288;咒卷佛珠&#65292;原本只是為了幫親友避邪&#65292;還有方便度化無形眾生用的&#65292;結果卻不斷傳來各種靈異神奇事件&#65292;又越來越多人跟我們索取&#65292;我們只好花費大量金錢不斷想辦法測試改良材料&#65292;才有今天這個樣貌能讓大家免費結緣&#12290;
+&lt;/span&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
