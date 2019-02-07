@@ -19,10 +19,10 @@
         </script>
 
         <!--ADSense 自動廣告-->
-		<script async='async' src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
 		<script>
 			 (adsbygoogle = window.adsbygoogle || []).push({
-				  google_ad_client: "ca-pub-6678320447129348",
+				  google_ad_client: &quot;ca-pub-6678320447129348&quot;,
 				  enable_page_level_ads: true
 			 });
 		</script>
@@ -1280,7 +1280,7 @@
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9+Sense+all+is+void\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9+Sense+all+is+akasha\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -1365,7 +1365,7 @@ head.appendChild(script);
 								
                                 <div class='region-inner cherrychili-header-inner'>
 									<b:section class='header-left' id='header-left' maxwidgets='1' name='Header-Left' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='本來無一物 Sense all is void (標頭)' type='Header'>
+<b:widget id='Header1' locked='false' title='本來無一物 Sense all is akasha (標頭)' type='Header'>
   <b:widget-settings>
     <b:widget-setting name='displayUrl'/>
     <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1484,15 +1484,15 @@ head.appendChild(script);
 										<li><a href='https://yogabuddha.blogspot.com/2017/04/led.html'>佛前供養點燈&#65292;能不能用LED燈&#65311;</a></li>
 										<li><a href='https://yogabuddha.blogspot.com/2017/02/blog-post_47.html'>哪個法門最好&#65311;初學佛要學哪個法門&#65311;</a></li>
 										<li><a href='https://yogabuddha.blogspot.com/2017/03/blog-post_61.html'>繞佛三匝或繞塔三匝&#65292;為何要繞佛或繞塔&#65311;</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/09/blog-post_9.html'>「齋食」不等於「素食」，「八關齋戒」的意思為何？</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/09/blog-post_9.html'>&#12300;齋食&#12301;不等於&#12300;素食&#12301;&#65292;&#12300;八關齋戒&#12301;的意思為何&#65311;</a></li>
                                     </ul>
                                 </li>
 								<li>
-                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>該如何修行？<b class='caret'/></a>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>該如何修行&#65311;<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
-                                        <li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post_28.html'>(一)：佛在哪？為什麼？</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/05/blog-post.html'>(二)：常行十善，遠離非十善</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/05/blog-post_23.html'>(三)：保持生活環境整潔</a></li>
+                                        <li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post_28.html'>(一)&#65306;佛在哪&#65311;為什麼&#65311;</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/05/blog-post.html'>(二)&#65306;常行十善&#65292;遠離非十善</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/05/blog-post_23.html'>(三)&#65306;保持生活環境整潔</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1635,7 +1635,7 @@ head.appendChild(script);
                                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>施食佛法<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
 										<li><a href='https://yogabuddha.blogspot.com/2017/04/blog-post_36.html'>施食名詞解說導引與釋疑</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2017/04/blog-post_28.html'>如何施食？怎麼施食最簡單如法？</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2017/04/blog-post_28.html'>如何施食&#65311;怎麼施食最簡單如法&#65311;</a></li>
 										<li><a href='https://yogabuddha.blogspot.com/2017/02/blog-post_77.html'>七如來到底為何&#65311;有甘露王如來&#65311;</a></li>
 										<li class='divider'/>
 										<li><a href='https://yogabuddha.blogspot.com/2017/04/blog-post_65.html'>佛說妙色陀羅尼經</a></li>
@@ -1713,11 +1713,11 @@ head.appendChild(script);
                                     <ul class='dropdown-menu'>
 										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_30.html'>利益功德與導引介紹</a></li>
 										<li class='divider'/>
-										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_77.html'>佛說大集會正法經(僧伽吒經)：卷一</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_36.html'>佛說大集會正法經(僧伽吒經)：卷二</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_3.html'>佛說大集會正法經(僧伽吒經)：卷三</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_96.html'>佛說大集會正法經(僧伽吒經)：卷四</a></li>
-										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_73.html'>佛說大集會正法經(僧伽吒經)：卷五</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_77.html'>佛說大集會正法經(僧伽吒經)&#65306;卷一</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_36.html'>佛說大集會正法經(僧伽吒經)&#65306;卷二</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_3.html'>佛說大集會正法經(僧伽吒經)&#65306;卷三</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_96.html'>佛說大集會正法經(僧伽吒經)&#65306;卷四</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2018/08/blog-post_73.html'>佛說大集會正法經(僧伽吒經)&#65306;卷五</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -3664,7 +3664,7 @@ head.appendChild(script);
 								<li><a href='https://yogabuddha.blogspot.com/2017/12/blog-post_21.html'>(十一)&#65306;佛頂尊勝咒發音示範</a></li>
 								<li><a href='https://yogabuddha.blogspot.com/2018/01/blog-post.html'>(十二)&#65306;青頸觀音陀羅尼(漢傳大悲咒)發音示範</a></li>
 								<li><a href='https://yogabuddha.blogspot.tw/2018/02/blog-post.html'>(十三)&#65306;梵文前後字字母縮寫問題</a></li>
-								<li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post.html'>(十四)：白傘蓋陀羅尼(首楞嚴咒)發音示範</a></li>
+								<li><a href='https://yogabuddha.blogspot.com/2018/04/blog-post.html'>(十四)&#65306;白傘蓋陀羅尼(首楞嚴咒)發音示範</a></li>
 								<li class='divider'/>
 								<li><a href='https://yogabuddha.blogspot.com/2017/08/blog-post_26.html'>暗度陳倉錯千百年的悉曇梵字</a></li>
                             </ul>
@@ -3675,7 +3675,7 @@ head.appendChild(script);
                             <ul class='dropdown-menu'>
 								<li><a href='https://yogabuddha.blogspot.com/2017/10/blog-post_27.html'>(一)&#65306;認識瑜伽與禪定</a></li>
 								<li><a href='https://yogabuddha.blogspot.com/2017/11/blog-post.html'>(二)&#65306;瑜伽與佛法相依相輔</a></li>
-								<li><a href='https://yogabuddha.blogspot.com/2018/05/app.html'>(三)：利用免費App來學習瑜伽運動</a></li>
+								<li><a href='https://yogabuddha.blogspot.com/2018/05/app.html'>(三)&#65306;利用免費App來學習瑜伽運動</a></li>
                             </ul>
                         </li>
 						
@@ -3812,6 +3812,7 @@ head.appendChild(script);
                                                           <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                                                           <b:widget-setting name='style.urlcolor'>#ff3300</b:widget-setting>
                                                           <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                                                          <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                                                           <b:widget-setting name='style.linkcolor'>#993322</b:widget-setting>
                                                           <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                                                           <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -5072,7 +5073,7 @@ head.appendChild(script);
                 </div>
             </b:includable>
   </b:widget>
-  <b:widget id='HTML10' locked='false' title='' type='HTML'>
+  <b:widget id='HTML10' locked='false' title='' type='HTML' version='1'>
     <b:widget-settings>
       <b:widget-setting name='content'><![CDATA[<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYesYogaBuddha%2F&tabs=timeline&width=273&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="273" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>]]></b:widget-setting>
     </b:widget-settings>
@@ -5088,13 +5089,10 @@ head.appendChild(script);
   
   <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
-<b:widget id='HTML5' locked='false' mobile='yes' title='' type='HTML' version='1'>
+  </b:widget>
+  <b:widget id='HTML5' locked='false' mobile='yes' title='' type='HTML' version='1'>
     <b:widget-settings>
-        <b:widget-setting name='content'>
-	  
-	  
-	  &lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+      <b:widget-setting name='content'>&lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
 
 	  &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-md-4&quot;&gt;
@@ -5174,10 +5172,7 @@ head.appendChild(script);
                       &lt;/div&gt;
             &lt;/div&gt; &lt;!-- / panel-group --&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
-
-
-		</b:widget-setting>
+    &lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
 		<!-- only display title if it's non-empty -->
@@ -5190,9 +5185,8 @@ head.appendChild(script);
 
 	<b:include name='quickedit'/>
     </b:includable>
-</b:widget>
-  
-  <b:widget id='Feed1' locked='false' title='最新文章' type='Feed'>
+  </b:widget>
+  <b:widget id='Feed1' locked='false' title='' type='Feed'>
     <b:widget-settings>
       <b:widget-setting name='feedUrl'>https://yogabuddha.blogspot.com/feeds/posts/default</b:widget-setting>
       <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
