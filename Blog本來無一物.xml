@@ -1645,7 +1645,7 @@ head.appendChild(script);
                                 <li>
                                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>六字大明咒<b class='caret'/></a>
                                     <ul class='dropdown-menu'>
-										<li><a href=''>六字大明咒的真實義</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2019/01/blog-post_21.html'>六字大明咒的真實義</a></li>
 										<li class='divider'/>
 										<li><a href='https://yogabuddha.blogspot.com/2018/11/blog-post_12.html'>佛說大乘莊嚴寶王經-卷一</a></li>
 										<li><a href='https://yogabuddha.blogspot.com/2018/11/blog-post_15.html'>佛說大乘莊嚴寶王經-卷二</a></li>
@@ -4154,12 +4154,6 @@ head.appendChild(script);
 
                                                                     <b:include data='top' name='status-message'/>
 																	
-																	<!-- ADSense行動版自適應(行動版頂端) -->
-																	<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-																	<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-format='auto' data-ad-slot='9079166037' style='display:block'/>
-																	<script>
-																	(adsbygoogle = window.adsbygoogle || []).push({});
-																	</script>
 
                                                                     <b:if cond='data:blog.pageType == &quot;index&quot;'>
                                                                         <b:loop values='data:posts' var='post'>
@@ -4288,12 +4282,6 @@ head.appendChild(script);
                                                                                 </div>
                                                                             </div>
 																			
-																		<!-- 行動版ADSense_320x100 -->
-																		<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-																		<ins class='adsbygoogle' data-ad-client='ca-pub-6678320447129348' data-ad-slot='5318168966' style='display:inline-block;width:320px;height:100px'/>
-																		<script>
-																		(adsbygoogle = window.adsbygoogle || []).push({});
-																		</script>
 
 																		<!-- Related Posts widget with Thumbnails Code Before Post Footer Start-->
 																		<b:if cond='data:blog.pageType == &quot;item&quot;'>
