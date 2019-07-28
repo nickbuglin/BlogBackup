@@ -858,19 +858,19 @@
 		<!--畫底線功能-->
         <style type='text/css'>
             b1{
-            background: url(https://lh3.googleusercontent.com/-Wd1DcB7n2_k/WRbAYwEGiiI/AAAAAAAAruA/cFEfuqZfU1MwjuDOw31GbbgzdGDb7lEJgCHM/blue_cprs.png) repeat no-repeat bottom;
+            background: url(https://1.bp.blogspot.com/-qDC2uclpVo8/XT4d3RguxHI/AAAAAAABEm4/hxxQHs6QXF0W2D7LSgbdI7SLM2JCd7YpQCLcBGAs/s1600/blue_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
             g1{
-            background: url(https://lh3.googleusercontent.com/-mEfnYXDG3KA/WRbAY7mrF6I/AAAAAAAAruA/uNAKW3-t74YTOpczFKHeME8M2pdA8x4AwCHM/Green_cprs.png) repeat no-repeat bottom;
+            background: url(https://1.bp.blogspot.com/-SWaRbnmpsAE/XT4d2dDw7AI/AAAAAAABEms/V86otpNKr5IXaZ9FGdGrKF70z8rzlF_JwCLcBGAs/s1600/Green_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
             r1{
-            background: url(https://lh3.googleusercontent.com/-R82k3K79Mm8/WRbAY9Zg_jI/AAAAAAAAruA/iGFvz00xsSEgeaqHGFPbqA6xOlElyouegCHM/Pink_cprs.png) repeat no-repeat bottom;
+            background: url(https://1.bp.blogspot.com/-k3jD2JmoorY/XT4d2QY2GKI/AAAAAAABEmo/jUJIwoIhjEIRW0cGG8JjNd9YSaJDq7mdACLcBGAs/s1600/Pink_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
             y1{
-            background: url(https://lh3.googleusercontent.com/-jUAdH9jfRkY/WRbAY9fTVbI/AAAAAAAAruA/mpNvvbHIzhw4AIOyN5yaYe2VKjuDqwtbwCHM/Yellow_cprs.png) repeat no-repeat bottom;
+            background: url(https://1.bp.blogspot.com/-LxXFfA3x-Aw/XT4d3I-_bZI/AAAAAAABEm0/buQmdxSS_O48io9r8g0l1sSXlzXk_lZgQCLcBGAs/s1600/Yellow_cprs.png) repeat no-repeat bottom;
             line-height: 22px;
             }
         </style>
@@ -1280,7 +1280,7 @@
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9+Sense+all+is+akasha\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2647128903513882230\x26blogName\x3d%E6%9C%AC%E4%BE%86%E7%84%A1%E4%B8%80%E7%89%A9+Sense+All+is+Akasha\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://yogabuddha.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://yogabuddha.blogspot.com/\x26vt\x3d4531341616274685954&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -1365,7 +1365,7 @@ head.appendChild(script);
 								
                                 <div class='region-inner cherrychili-header-inner'>
 									<b:section class='header-left' id='header-left' maxwidgets='1' name='Header-Left' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='本來無一物 Sense all is akasha (標頭)' type='Header'>
+<b:widget id='Header1' locked='false' title='本來無一物 Sense All is Akasha (標頭)' type='Header'>
   <b:widget-settings>
     <b:widget-setting name='displayUrl'/>
     <b:widget-setting name='displayHeight'>0</b:widget-setting>
