@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' itemscope='itemscope' itemtype='http://schema.org/Blog'>
     <head>
         <meta content='0OAlcfKoOM0CwcoKerZueh_8A9GSxaTBhfEUr79ds68' name='google-site-verification'/>  <!--google-search-->
         <meta content='728642E177C012CBB30C5442E988DEF6' name='msvalidate.01'/>  <!--MS-BingSearch-->
@@ -26,6 +26,25 @@
 				  enable_page_level_ads: true
 			 });
 		</script>
+		
+		<!--FB的轉貼優化og meta 設定-->
+		<meta property="fb:app_id" content="1392915110876661" />
+		<meta property='og:site_name' expr:content='data:blog.title'/>
+		<meta property='article:author' content='https://yogabuddha.blogspot.com/'/>
+		<meta property='og:description' expr:content='data:blog.metaDescription'/>
+		<b:if cond='data:blog.pageType == "index"'>
+			<meta property='og:type' content='blog'/>
+			<meta property='og:title' expr:content='data:blog.title'/>
+			<meta property='og:image' content='http://1.bp.blogspot.com/-avvwsFF105Y/XesLpmEJ4OI/AAAAAAABF5s/pF8DnJwhN5MbvbHBbY7med7lhsIMWjFrgCLcBGAsYHQ/s1600/%25E6%259C%25AC%25E4%25BE%2586%25E7%2584%25A1%25E4%25B8%2580%25E7%2589%25A9om_PNG.png'/>
+		<b:else/>
+			<meta property='og:type' content='article'/>
+			<meta property='og:title' expr:content='data:blog.pageName + "｜本來無一物"'/>
+			<meta itemprop='keywords' expr:content='data:blog.pageName'/>
+			<b:if cond='data:blog.postImageUrl'>
+				<meta property='og:image' expr:content='data:blog.postImageUrl'/>
+			</b:if>
+		</b:if>
+		<!--FB的轉貼優化og meta 結尾-->
 		
         <b:include data='blog' name='all-head-content'/>
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1623,8 +1642,9 @@ head.appendChild(script);
 										<li><a href='https://yogabuddha.blogspot.com/2017/02/blog-post_83.html'>&quot;楞嚴咒&quot;還是&quot;首楞嚴咒&quot;&#65311;傻傻分不清楚&#65311;</a></li>
 										<li class='divider'/>
 										<li><a href='https://yogabuddha.blogspot.com/2017/02/20181022.html'>首楞嚴咒-結構解析</a></li>
-                                        <li><a href='https://yogabuddha.blogspot.com/2017/02/20181019.html'>首楞嚴咒-仿貝葉經書(有注音)</a></li>
-                                        <li><a href='https://yogabuddha.blogspot.com/2017/02/20181019_23.html'>首楞嚴咒-雙面列印仿貝葉經書</a></li>
+                                        <li><a href='https://yogabuddha.blogspot.com/2017/02/20181019.html'>首楞嚴咒-注音經書漢字仿貝葉經書</a></li>
+										<li><a href='https://yogabuddha.blogspot.com/2019/11/blog-post_40.html'>首楞嚴咒-PDF梵音翻譯注音仿貝葉經書</a></li>
+                                        <li><a href='https://yogabuddha.blogspot.com/2017/02/20181019_23.html'>首楞嚴咒-梵音雙面列印仿貝葉經書</a></li>
 										<li><a href='https://yogabuddha.blogspot.com/2017/09/20181018.html'>首楞嚴咒-全文字各版本咒語對照</a></li>
 										<li class='divider'/>
 										<li><a href='https://yogabuddha.blogspot.com/2017/04/blog-post_10.html'>佛頂大白傘蓋陀羅尼經(加註解)</a></li>
